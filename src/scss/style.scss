@@ -1,0 +1,15 @@
+// ------------- FONTS
+@import "./settings/fonts.scss";
+
+// ------------- RESET
+@import "./settings/reset";
+
+// ------------- GLOBAL
+@import "./settings/vars";
+@import "./settings/mixins";
+@import "./settings/global";
+
+// ------------- COMPONENTS
+
+// ------------- SECTIONS
+@import "./components/_header";

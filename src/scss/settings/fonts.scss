@@ -1,0 +1,39 @@
+@font-face {
+   font-family: 'Ubuntu';
+   src: url('../assets/fonts/Ubuntu-Bold.woff2') format('woff2'),
+      url('../assets/fonts/Ubuntu-Bold.woff') format('woff'),
+      url('../assets/fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Lato';
+   src: url('../assets/fonts/Lato-Bold.woff2') format('woff2'),
+      url('../assets/fonts/Lato-Bold.woff') format('woff'),
+      url('../assets/fonts/Lato-Bold.svg#Lato-Bold') format('svg');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Ubuntu';
+   src: url('../assets/fonts/Ubuntu-Regular.woff2') format('woff2'),
+      url('../assets/fonts/Ubuntu-Regular.woff') format('woff'),
+      url('../assets/fonts/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Lato';
+   src: url('../assets/fonts/Lato-Black.woff2') format('woff2'),
+      url('../assets/fonts/Lato-Black.woff') format('woff'),
+      url('../assets/fonts/Lato-Black.svg#Lato-Black') format('svg');
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}

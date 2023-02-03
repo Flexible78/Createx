@@ -1,0 +1,76 @@
+.container {
+   max-width: 1274px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.header__container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 22px;
+   gap: 60px;
+}
+
+.logo {
+   display: flex;
+   align-items: center
+}
+
+.menu__list {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   gap: 40px;
+
+}
+
+.menu__link {
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.6;
+}
+
+.connections {
+   display: flex;
+   justify-content: space-between;
+   padding-left: 115px;
+}
+
+.connections__phone_item {
+   display: flex;
+   justify-content: space-between;
+   gap: 12px;
+}
+
+.connections__email_item {
+   display: flex;
+   justify-content: space-between;
+   gap: 12px;
+   padding-left: 36px;
+}
+
+.connections__title {
+   display: flex;
+   align-items: center;
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.5;
+   color: #1E212C;
+}
+
+.connections__contact {
+   display: flex;
+   align-items: center;
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.5;
+   color: #1E212C;
+}
