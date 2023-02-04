@@ -1,31 +1,28 @@
 <header class="header">
    <div class="container header__container">
-      <a class="logo" href="#home"><img src="../assets/img/svg/logo.svg" alt='logo'></a>
-      <nav class="menu">
+      <a class="logo" href="#home"><img class='logo__img' src="../assets/img/svg/logo.svg" alt='logo'></a>
+      <nav class="menu header__menu">
          <ul class="menu__list">
-            <li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
-            <li class="menu__item"><a href="#services" class="menu__link">Services</a></li>
-            <li class="menu__item"><a href="#work" class="menu__link">Work</a></li>
-            <li class="menu__item"><a href="#news" class="menu__link">News</a></li>
-            <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+            <li class="menu__item"><a class="menu__link" href="#about">About Us</a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#services">Services</a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#work">Work</a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#news">News</a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#contacts">Contacts</a></li>
          </ul>
       </nav>
       <div class="connections">
-         <div class="connections__phone_item">
-            <div class="connections__img"><img src="../assets/img/svg/iphone.svg" alt='phone'></a></div>
-            <div class="connections__descr">
-               <span class="connections__title">Call us</span>
-               <span class="connections__contact"><a href="tel:4055550128">(405) 555-0128</a></span>
-            </div>
-         </div>
-         <div class="connections__email_item">
-            <div class="connections__img"><img src="../assets/img/svg/chat.svg" alt='chat'></a></div>
-            <div class="connections__descr">
-               <span class="connections__title">Talk to us</span>
-               <span class="connections__contact"><a href="mailto:hello@createx.com">hello@createx.com</a></span>
-            </div>
-         </div>
+         <a class='connections__item connections__item--phone' href="tel:4055550128">
+            <span class="connections__descr connections__descr--title">Call us</span><span
+               class="connections__descr">(405) 555-0128</span>
+         </a>
+         <a class='connections__item connections__item--email'>
+            <span class="connections__descr connections__descr--title">Talk to us</span><span
+               class="connections__descr">hello@createx.com</span>
+         </a>
       </div>
-   </div>
    </div>
 </header>

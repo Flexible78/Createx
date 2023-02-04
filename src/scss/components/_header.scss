@@ -1,16 +1,17 @@
-.container {
-   max-width: 1274px;
-   padding: 0 15px;
-   margin: 0 auto;
-}
+.header {
+   padding: 22px 0;
+   background-color: var(--color-white);
 
-.header__container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: flex-start;
-   align-items: center;
-   padding: 22px;
-   gap: 60px;
+   &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__menu {
+      margin-right: 115px;
+   }
 }
 
 .logo {
@@ -18,59 +19,108 @@
    align-items: center
 }
 
-.menu__list {
-   display: flex;
-   justify-content: center;
-   list-style: none;
-   gap: 40px;
+.menu {
+   &__list {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 40px;
 
-}
+   }
 
-.menu__link {
-   font-family: 'Ubuntu';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.6;
+   &__link {
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.6;
+   }
 }
 
 .connections {
    display: flex;
-   justify-content: space-between;
-   padding-left: 115px;
-}
-
-.connections__phone_item {
-   display: flex;
-   justify-content: space-between;
-   gap: 12px;
-}
-
-.connections__email_item {
-   display: flex;
-   justify-content: space-between;
-   gap: 12px;
-   padding-left: 36px;
-}
-
-.connections__title {
-   display: flex;
    align-items: center;
-   font-family: 'Ubuntu';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.5;
-   color: #1E212C;
+   column-gap: 36px;
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      background-repeat: no-repeat;
+      padding-left: 52px;
+      background-position: left;
+      background-size: 40px 40px;
+
+      &--phone {
+         background-image: url(../assets/img/svg/iphone.svg);
+      }
+
+      &--email {
+         background-image: url(../assets/img/svg/chat.svg);
+      }
+   }
+
+   &__descr {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.5;
+      color: var(--color-grey--900);
+
+      &--title {
+         font-weight: 700;
+         font-size: 14px;
+         line-height: 1.5;
+         color: var(--color-grey--800);
+      }
+   }
 }
 
-.connections__contact {
-   display: flex;
-   align-items: center;
-   font-family: 'Ubuntu';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 1.5;
-   color: #1E212C;
-}
+.connections__item {}
+
+.connections__item--phone {}
+
+.connections__descr {}
+
+.connections__descr--title {}
+
+.connections__item--email {}
+
+// .connections {
+//    display: flex;
+//    justify-content: space-between;
+//    padding-left: 115px;
+// }
+
+// .connections__phone_item {
+//    display: flex;
+//    justify-content: space-between;
+//    gap: 12px;
+// }
+
+// .connections__email_item {
+//    display: flex;
+//    justify-content: space-between;
+//    gap: 12px;
+//    padding-left: 36px;
+// }
+
+// .connections__title {
+//    display: flex;
+//    align-items: center;
+//    font-family: 'Ubuntu';
+//    font-style: normal;
+//    font-weight: 700;
+//    font-size: 14px;
+//    line-height: 1.5;
+//    color: #1E212C;
+// }
+
+// .connections__contact {
+//    display: flex;
+//    align-items: center;
+//    font-family: 'Ubuntu';
+//    font-style: normal;
+//    font-weight: 400;
+//    font-size: 18px;
+//    line-height: 1.5;
+//    color:  --color-grey--900;
+// }

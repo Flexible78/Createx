@@ -249,7 +249,8 @@ button,
 input,
 optgroup,
 select,
-textarea {
+textarea,
+details {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -404,19 +405,38 @@ dl {
   list-style: none;
 }
 
+:root {
+  --color-grey--700: #787A80;
+  --color-grey--800: #424551;
+  --color-grey--900: #1E212C;
+  --color-primary: #FF5A30;
+  --color-white: #FFFFFF;
+}
+
+body {
+  font-family: "Ubuntu";
+}
+
 .container {
-  max-width: 1274px;
+  max-width: 1260px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.header {
+  padding: 22px 0;
+  background-color: var(--color-white);
 }
 
 .header__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding: 22px;
-  gap: 60px;
+}
+
+.header__menu {
+  margin-right: 115px;
 }
 
 .logo {
@@ -441,41 +461,38 @@ dl {
 
 .connections {
   display: flex;
-  justify-content: space-between;
-  padding-left: 115px;
-}
-
-.connections__phone_item {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.connections__email_item {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding-left: 36px;
-}
-
-.connections__title {
-  display: flex;
   align-items: center;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #1e212c;
+  -moz-column-gap: 36px;
+       column-gap: 36px;
 }
 
-.connections__contact {
+.connections__item {
   display: flex;
-  align-items: center;
-  font-family: "Ubuntu";
-  font-style: normal;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  padding-left: 52px;
+  background-position: left;
+  background-size: 40px 40px;
+}
+
+.connections__item--phone {
+  background-image: url(../assets/img/svg/iphone.svg);
+}
+
+.connections__item--email {
+  background-image: url(../assets/img/svg/chat.svg);
+}
+
+.connections__descr {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  color: #1e212c;
+  color: var(--color-grey--900);
+}
+
+.connections__descr--title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-grey--800);
 }
