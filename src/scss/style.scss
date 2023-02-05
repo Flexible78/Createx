@@ -10,7 +10,9 @@
 @import "./settings/global";
 
 // ------------- COMPONENTS
-
+@import "./components/_page-title";
+@import "./components/_page-descr";
+@import "./components/_buttons";
 // ------------- SECTIONS
 @import "./components/_header";
 @import "./components/_promo";
