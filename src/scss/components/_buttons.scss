@@ -31,11 +31,9 @@
       background: none;
 
       &--primary {
-         color: var(--btn-outline-border-pr);
+         color: var(--btn-outline-border-primary);
          border-color: var(--btn-outline-border-primary-color);
-      }
-
-      &:hover {
+       &:hover {
          color: var(--btn-fill-text-color);
          background-color: var(--btn-fill-bg-color);
       }
@@ -44,14 +42,16 @@
          color: var(--btn-fill-text-color);
          background-color: var(--btn-fill-bg-color);
       }
+   }
 
       &--white {
          color: var(--btn-outline-border-white-color);
          border-color: var(--btn-outline-border-white-color);
 
          &:hover {
-            color: var(--color-primary);
+            // color: var(--color-primary);
             border-color: var(--color-primary);
+            background-color: var(--color-primary);
          }
    
          &:active {
