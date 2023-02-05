@@ -14,7 +14,7 @@
    &--fill {
       border: none;
       color: var(--btn-fill-text-color);
-      background-color: var(--btn--fill-bg-color);
+      background-color: var(--btn-fill-bg-color);
 
       &:hover {
          background-color: var(--btn-fill-bg-color-state);
@@ -37,17 +37,27 @@
 
       &:hover {
          color: var(--btn-fill-text-color);
-         background-color: var(--btn--fill-bg-color);
+         background-color: var(--btn-fill-bg-color);
       }
 
       &:active {
          color: var(--btn-fill-text-color);
-         background-color: var(--btn--fill-bg-color);
+         background-color: var(--btn-fill-bg-color);
       }
 
       &--white {
          color: var(--btn-outline-border-white-color);
          border-color: var(--btn-outline-border-white-color);
+
+         &:hover {
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+         }
+   
+         &:active {
+            color: var(--color-primary);
+            border-color: var(--btn-fill-bg-color);
+         }
       }
    }
 
@@ -55,6 +65,18 @@
       padding: 0 40px;
       font-size: 16px;
       line-height: 3.25;
+
+      &--p44 {
+         padding: 0 44px;
+      }
+      &--p54 {
+         padding: 0 54px;
+      }
+
+      &--p112 {
+         padding: 0 112px;
+      }
+      
    }
 
    &--regular {
