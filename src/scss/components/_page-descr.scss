@@ -4,8 +4,15 @@
    font-size: 20px;
    line-height: 1.5;
    color: var(--page--descr-color);
-   
+
    &--home {
       color: var(--color-white);
    }
+}
+
+.section-descr {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.5;
+   color: var(--page--descr-color);
 }
