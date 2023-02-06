@@ -16,6 +16,10 @@
    line-height: 1.5;
    color: var(--page--descr-color);
 
+   &--center {
+   text-align: center;
+   }
+
    &--item {
    font-size: 16px;
    line-height: 1.6;

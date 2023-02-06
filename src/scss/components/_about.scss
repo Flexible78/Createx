@@ -1,61 +1,18 @@
 .about {
    padding: 120px 0;
    background-color: var(--color-white);
-   position: relative;
 
-   &__content {}
-
-   &__page-title {
-      text-align: center;
+   &__section-title {
       margin-bottom: 24px;
    }
 
-   &__page-descr {
+   &__section-descr {
       text-align: center;
       margin-bottom: 60px;
    }
 
-   &__video {
-      width: 1230px;
+   &__video-block {
+      width: 100%;
       height: 500px;
-      border-radius: 4px;
-      background-color: var(--color-grey--900);
-
-      &--overlay {
-         opacity: 0.6;
-      }
-   }
-}
-
-.video-block {
-   position: relative;
-
-   &__btn-play {
-      position: absolute;
-      top: -290px;
-      left: 575px;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background-color: var(--color-primary);
-      fill: var(--color-white);;
-   }
-
-   &__btn-play-icon {}
-
-   &__btn-mute {
-      position: absolute;
-      top: -72px;
-      left: 31px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: var(--color-grey--700);
-      fill: var(--color-white);
-
-      &--icon {
-         top: 0px;
-         left: 0px;
-      }
    }
 }
