@@ -687,6 +687,17 @@ body {
   margin-bottom: 60px;
 }
 
+.about__video {
+  width: 1230px;
+  height: 500px;
+  border-radius: 4px;
+  background-color: var(--color-grey--900);
+}
+
+.about__video--overlay {
+  opacity: .6;
+}
+
 .video-block {
   position: relative;
   display: flex;
@@ -694,8 +705,8 @@ body {
 
 .video-block__btn-play {
   position: absolute;
-  top: -300px;
-  left: 600px;
+  top: -290px;
+  left: 575px;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -704,11 +715,12 @@ body {
 
 .video-block__btn-mute {
   position: absolute;
-  top: -40px;
-  left: 30px;
+  top: -72px;
+  left: 31px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  background-color: var(--color-white);
 }
 
 .video-block__btn-mute--icon {
