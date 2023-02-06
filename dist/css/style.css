@@ -700,7 +700,6 @@ body {
 
 .video-block {
   position: relative;
-  display: flex;
 }
 
 .video-block__btn-play {
@@ -711,6 +710,7 @@ body {
   height: 80px;
   border-radius: 50%;
   background-color: var(--color-primary);
+  fill: var(--color-white);
 }
 
 .video-block__btn-mute {
@@ -720,7 +720,8 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--color-white);
+  background-color: var(--color-grey--700);
+  fill: var(--color-white);
 }
 
 .video-block__btn-mute--icon {
