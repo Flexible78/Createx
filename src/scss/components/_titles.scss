@@ -27,8 +27,38 @@
       text-align: center;
    }
 
-   &--item {
+   // &--item {
+   //    font-size: 20px;
+   //    line-height: 1.5;
+   // }
+}
+
+// .form-title {
+//    font-weight: 700;
+//    font-size: 28px;
+//    line-height: 1.5;
+// }
+.block-heading {
+   --block-title-main-color: var(--color-grey--900);
+
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 1.5;
+   color: var(--block-title-main-color);
+
+   &--center {
+      text-align: center;
+   }
+
+   &--regular {
+      font-size: 28px;
+   }
+
+   &--small {
       font-size: 20px;
-      line-height: 1.5;
+   }
+
+   &--primary {
+      color: var(--color-primary);
    }
 }

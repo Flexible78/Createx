@@ -8,6 +8,13 @@
    &--home {
       color: var(--color-white);
    }
+
+   &--fz14 {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+      color: var(--color-grey--700);
+      }
 }
 
 .section-descr {
@@ -19,11 +26,43 @@
    &--center {
    text-align: center;
    }
+}
 
-   &--item {
+.block-descr {
+   font-weight: 400;
    font-size: 16px;
    line-height: 1.6;
-   text-align: center;
+   color: var(--color-grey--700);
+
+   &--center {
+      text-align: center;
+   }
+
+   &--large {
+      font-size: 18px;
+      line-height: 1.5;
+   }
+   &--small {
+      font-size: 14px;
+      line-height: 1.5;
+
+      &--extra {
+         font-size: 12px;
+      }
+   }
+
+   &--grey-800 {
+      color: var(--color-grey--800);
+   }
+
+   &--grey-900 {
+      color: var(--color-grey--900);
+   }
+
+   &--white {
+      color: var(--color-white);
+   }
 }
-}
+
+
 

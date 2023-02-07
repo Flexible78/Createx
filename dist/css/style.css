@@ -457,9 +457,28 @@ body {
   text-align: center;
 }
 
-.section-title--item {
-  font-size: 20px;
+.block-heading {
+  --block-title-main-color: var(--color-grey--900);
+  font-weight: 700;
+  font-size: 32px;
   line-height: 1.5;
+  color: var(--block-title-main-color);
+}
+
+.block-heading--center {
+  text-align: center;
+}
+
+.block-heading--regular {
+  font-size: 28px;
+}
+
+.block-heading--small {
+  font-size: 20px;
+}
+
+.block-heading--primary {
+  color: var(--color-primary);
 }
 
 .page-descr {
@@ -474,6 +493,13 @@ body {
   color: var(--color-white);
 }
 
+.page-descr--fz14 {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-grey--700);
+}
+
 .section-descr {
   font-weight: 400;
   font-size: 18px;
@@ -485,10 +511,41 @@ body {
   text-align: center;
 }
 
-.section-descr--item {
+.block-descr {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  color: var(--color-grey--700);
+}
+
+.block-descr--center {
   text-align: center;
+}
+
+.block-descr--large {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.block-descr--small {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.block-descr--small--extra {
+  font-size: 12px;
+}
+
+.block-descr--grey-800 {
+  color: var(--color-grey--800);
+}
+
+.block-descr--grey-900 {
+  color: var(--color-grey--900);
+}
+
+.block-descr--white {
+  color: var(--color-white);
 }
 
 .btn {
@@ -591,6 +648,8 @@ body {
 
 .video-block {
   position: relative;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .video-block__content {
@@ -608,6 +667,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
+  z-index: 10;
+  transition: all .3s ease;
 }
 
 .video-block__btn--play {
@@ -620,6 +681,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.video-block__btn--play:hover {
+  box-shadow: 0 0 0 16px rgba(255,90,48,.12);
+}
+
 .video-block__btn--mute {
   bottom: 32px;
   left: 32px;
@@ -627,6 +692,10 @@ body {
   height: 40px;
   border: 1px solid rgba(0,0,0,.12);
   background-color: rgba(255,255,255,.12);
+}
+
+.video-block__btn:hover {
+  box-shadow: 0 0 3px 4px rgba(255,255,255,.12);
 }
 
 .video-block__btn-icon {
@@ -641,6 +710,17 @@ body {
 .video-block__btn-icon--mute {
   width: 20x;
   height: 20px;
+}
+
+.video-block:before {
+  position: absolute;
+  content: "";
+  top: o;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(30,33,44,.6);
 }
 
 .header {
@@ -764,26 +844,20 @@ body {
   height: 500px;
 }
 
-.values {
+.mission {
   padding: 60px 0;
   background-color: var(--color-white);
 }
 
-.values__page-title {
-  text-align: center;
-}
-
-.values__page-descr {
-  padding-top: 24px;
-  text-align: center;
+.mission__section-descr {
+  margin-top: 24px;
 }
 
 .section-title--item {
-  text-align: center;
   margin-bottom: 7px;
 }
 
-.icon-items {
+.goals-block {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -794,18 +868,18 @@ body {
   padding-top: 60px;
 }
 
-.icon-items__section {
+.goals-block__section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.icon-items__section__img {
+.goals-block__section__img {
   padding-bottom: 24px;
 }
 
-.icon-items:after {
+.goals-block:after {
   position: absolute;
   top: 170px;
   left: 285px;
@@ -818,7 +892,7 @@ body {
   transform: rotate(90deg);
 }
 
-.icon-items:before {
+.goals-block:before {
   position: absolute;
   top: 170px;
   left: 758px;
@@ -843,6 +917,13 @@ body {
   color: var(--color-white);
 }
 
+.page-descr--fz14 {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-grey--700);
+}
+
 .section-descr {
   font-weight: 400;
   font-size: 18px;
@@ -854,8 +935,39 @@ body {
   text-align: center;
 }
 
-.section-descr--item {
+.block-descr {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  color: var(--color-grey--700);
+}
+
+.block-descr--center {
   text-align: center;
+}
+
+.block-descr--large {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.block-descr--small {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.block-descr--small--extra {
+  font-size: 12px;
+}
+
+.block-descr--grey-800 {
+  color: var(--color-grey--800);
+}
+
+.block-descr--grey-900 {
+  color: var(--color-grey--900);
+}
+
+.block-descr--white {
+  color: var(--color-white);
 }
