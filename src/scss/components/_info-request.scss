@@ -1,0 +1,27 @@
+.info-request {
+   margin-top: 120px;
+
+   &__section-title {
+      margin-bottom: 2px;
+   }
+
+   &__form-block {
+      display: flex;
+      justify-content: space-evenly;
+      align-items:start;
+      flex-direction: row;
+      column-gap: 24px;
+
+      &__item {
+         display: flex;
+         flex-direction: column;
+         justify-content: left;
+         align-items:left;
+         row-gap: 8px;
+      }
+      
+      &__btn {
+         padding-top: 38px;
+      }
+   }
+}
