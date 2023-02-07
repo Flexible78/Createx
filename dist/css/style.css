@@ -830,3 +830,32 @@ body {
   display: block;
   transform: rotate(90deg);
 }
+
+.page-descr {
+  --page--descr-color: var(--color-grey--700);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--page--descr-color);
+}
+
+.page-descr--home {
+  color: var(--color-white);
+}
+
+.section-descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--page--descr-color);
+}
+
+.section-descr--center {
+  text-align: center;
+}
+
+.section-descr--item {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
