@@ -1,74 +1,13 @@
 .mission {
-   padding: 60px 0;
+   padding-top: 60px;
+   padding-bottom: 120px;
    background-color: var(--color-white);
 
-   &__section-descr {
-      margin-top: 24px;
+   &__section-title {
+      margin-bottom: 24px;
+   }
+
+      &__section-descr {
+      margin-bottom: 60px;
    }
 }
-.section-title {
-
-   &--item {
-      margin-bottom: 7px;
-   }
-}
-.goals-block {
-   position: relative;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items:center;
-   column-gap: 188px;
-   padding-top: 60px;
-   
-   &__section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items:center;
-      // background-size: cover;
-      // background-repeat: no-repeat;
-      // background-position: center;
-      // background-size: 48px 48px;
-
-      &__img {
-         padding-bottom: 24px;
-      }
-
-      &--like {
-         // background-image: url(../assets/img/svg/like.svg);
-      }
-
-      &--hand {
-         // background-image: url(../assets/img/svg/hand.svg);
-      }
-
-      &--slippers {
-         // background-image: url(../assets/img/svg/slippers.svg);
-      }
-   }
-}
-.goals-block:after {
-   position: absolute;
-   top: 170px;
-   left: 285px;
-   content: '';
-   background-color: #DADBDD;
-  background: linear-gradient(to right, #DADBDD 0%, #DADBDD 50%, #DADBDD 100%, #DADBDD 50%, #DADBDD 0%);
-   height: 1px;
-   width:188px;
-   display: block;
-   transform: rotate(90deg);
- }
- .goals-block:before {
-   position: absolute;
-   top: 170px;
-   left: 758px;
-   content: '';
-   background-color: #DADBDD;
-  background: linear-gradient(to right, #DADBDD 0%, #DADBDD 50%, #DADBDD 100%, #DADBDD 50%, #DADBDD 0%);
-   height: 1px;
-   width:188px;
-   display: block;
-   transform: rotate(90deg);
- }

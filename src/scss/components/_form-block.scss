@@ -1,5 +1,5 @@
-.info-request {
-   margin-top: 120px;
+.request {
+   padding-top: 48px;
 
    &__section-title {
       margin-bottom: 2px;
@@ -22,6 +22,29 @@
       
       &__btn {
          padding-top: 38px;
+      }
+   }
+}
+.request {
+
+		&__title {
+		}
+}
+
+.form-block {
+
+   &--input {
+   }
+
+   &__item {
+   }
+
+   &__title {
+   }
+
+   &__btn {
+
+      &--submit {
       }
    }
 }

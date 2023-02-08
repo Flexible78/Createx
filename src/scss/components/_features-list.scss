@@ -1,0 +1,48 @@
+.features-list {
+	--grid-column-gap: 188px;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: var(--grid-column-gap);
+
+	&__item {
+		position: relative;
+		padding-top: 72px;
+		background-size: 48px 48px;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+
+		&:not(:nth-child(3n)) {
+
+			::after {
+				position: absolute;
+				content: '';
+				top: 0;
+				right: calc(var(--grid-column-gap) / 2 * -1);
+				width: 1px;
+				height: 100%;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-image: url(../assets/img/svg/divider.svg);
+
+			}
+		}
+
+		&--quality {
+			background-image: url(../assets/img/bg/like.svg);
+		}
+
+		&--safety {
+			background-image: url(../assets/img/bg/hand.svg);
+		}
+
+		&--comfort {
+			background-image: url(../assets/img/bg/slippers.svg);
+		}
+	}
+
+	&__heading {
+		margin-bottom: 8px;
+	}
+}
