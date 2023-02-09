@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Ubuntu";
-  src: url("../assets/fonts/Ubuntu-Bold.woff2") format("woff2"),url("../assets/fonts/Ubuntu-Bold.woff") format("woff"),url("../assets/fonts/Ubuntu-Bold.svg#Ubuntu-Bold") format("svg");
+  src: url("../assets/fonts/Ubuntu-Bold.woff2") format("woff2"), url("../assets/fonts/Ubuntu-Bold.woff") format("woff"), url("../assets/fonts/Ubuntu-Bold.svg#Ubuntu-Bold") format("svg");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("../assets/fonts/Lato-Bold.woff2") format("woff2"),url("../assets/fonts/Lato-Bold.woff") format("woff"),url("../assets/fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+  src: url("../assets/fonts/Lato-Bold.woff2") format("woff2"), url("../assets/fonts/Lato-Bold.woff") format("woff"), url("../assets/fonts/Lato-Bold.svg#Lato-Bold") format("svg");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Ubuntu";
-  src: url("../assets/fonts/Ubuntu-Regular.woff2") format("woff2"),url("../assets/fonts/Ubuntu-Regular.woff") format("woff"),url("../assets/fonts/Ubuntu-Regular.svg#Ubuntu-Regular") format("svg");
+  src: url("../assets/fonts/Ubuntu-Regular.woff2") format("woff2"), url("../assets/fonts/Ubuntu-Regular.woff") format("woff"), url("../assets/fonts/Ubuntu-Regular.svg#Ubuntu-Regular") format("svg");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("../assets/fonts/Lato-Black.woff2") format("woff2"),url("../assets/fonts/Lato-Black.woff") format("woff"),url("../assets/fonts/Lato-Black.svg#Lato-Black") format("svg");
+  src: url("../assets/fonts/Lato-Black.woff2") format("woff2"), url("../assets/fonts/Lato-Black.woff") format("woff"), url("../assets/fonts/Lato-Black.svg#Lato-Black") format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -42,7 +42,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   scroll-behavior: smooth;
 }
 
@@ -60,7 +60,7 @@ section {
 }
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -134,7 +134,7 @@ a {
   color: inherit;
   font-weight: inherit;
   text-decoration: none;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 a:not([href]):not([tabindex]) {
@@ -153,14 +153,14 @@ a:not([tabindex]):focus {
 
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 code,
 kbd,
 pre,
 samp {
-  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
 }
 
@@ -271,7 +271,7 @@ select {
   appearance: none;
   border: none;
   outline: none;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   font: inherit;
 }
 
@@ -280,7 +280,7 @@ select {
 [type=submit],
 button {
   -moz-appearance: button;
-       appearance: button;
+  appearance: button;
   -webkit-appearance: button;
 }
 
@@ -310,7 +310,7 @@ input[type=datetime-local],
 input[type=month],
 input[type=time] {
   -moz-appearance: listbox;
-       appearance: listbox;
+  appearance: listbox;
   -webkit-appearance: listbox;
 }
 
@@ -346,7 +346,7 @@ progress {
 [type=search] {
   outline-offset: -2px;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   -webkit-appearance: none;
 }
 
@@ -402,6 +402,7 @@ dl {
 
 :root {
   --bg-color-grey--200: #F4F5F6;
+  --color-grey--300: #e5e8ed;
   --color-grey--400: #d7dadd;
   --color-grey--600: #9A9CA5;
   --color-grey--700: #787A80;
@@ -658,9 +659,9 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 .video-block__btn {
@@ -684,7 +685,7 @@ body {
 }
 
 .video-block__btn--play:hover {
-  box-shadow: 0 0 0 16px rgba(255,90,48,.12);
+  box-shadow: 0 0 0 16px rgba(255, 90, 48, .12);
 }
 
 .video-block__btn--mute {
@@ -692,12 +693,12 @@ body {
   left: 32px;
   width: 40px;
   height: 40px;
-  border: 1px solid rgba(0,0,0,.12);
-  background-color: rgba(255,255,255,.12);
+  border: 1px solid rgba(0, 0, 0, .12);
+  background-color: rgba(255, 255, 255, .12);
 }
 
 .video-block__btn:hover {
-  box-shadow: 0 0 3px 4px rgba(255,255,255,.12);
+  box-shadow: 0 0 3px 4px rgba(255, 255, 255, .12);
 }
 
 .video-block__btn-icon {
@@ -722,7 +723,7 @@ body {
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: rgba(30,33,44,.6);
+  background-color: rgba(30, 33, 44, .6);
 }
 
 .features-list {
@@ -730,7 +731,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: var(--grid-column-gap);
-       column-gap: var(--grid-column-gap);
+  column-gap: var(--grid-column-gap);
 }
 
 .features-list__item {
@@ -810,7 +811,7 @@ body {
   display: flex;
   align-items: center;
   -moz-column-gap: 36px;
-       column-gap: 36px;
+  column-gap: 36px;
 }
 
 .connections__item {
@@ -868,7 +869,7 @@ body {
 .promo__btns-block {
   display: flex;
   -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
   align-items: center;
 }
 
@@ -918,7 +919,7 @@ body {
   flex-direction: row;
   padding: 0 60px;
   -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
 }
 
 .form-block__item {
@@ -935,7 +936,7 @@ body {
   background-color: var(--bg-color-grey--200);
   border: 1px solid var(--color-grey--400);
   border-radius: 4px;
-  box-shadow: 0px 80px 80px -20px rgba(154,156,165,.8),0px 30px 24px -10px rgba(154,156,165,.05),0px 12px 10px -6px rgba(154,156,165,.04),0px 4px 4px -4px rgba(30,33,44,.03);
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, .8), 0px 30px 24px -10px rgba(154, 156, 165, .05), 0px 12px 10px -6px rgba(154, 156, 165, .04), 0px 4px 4px -4px rgba(30, 33, 44, .03);
 }
 
 .form-block__input::-moz-placeholder {
@@ -954,4 +955,67 @@ body {
 
 .form-block__submit {
   margin-top: 30px;
+}
+
+.our-service {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background-color: var(--bg-color-grey--200);
+}
+
+.our-service__title {
+  margin-bottom: 24px;
+}
+
+.our-service__descr {
+  margin-bottom: 60px;
+}
+
+.directions-list {
+  --grid-column-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: var(--grid-column-gap);
+  column-gap: var(--grid-column-gap);
+  margin-bottom: 79px;
+  background-color: var(--bg-color-grey--200);
+}
+
+.directions-list__title {
+  padding-top: 165px;
+}
+
+.directions-list__item {
+  width: 285px;
+  height: 285px;
+  background-size: 52px 52px;
+  background-repeat: no-repeat;
+  background-position: 50% 38%;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-grey--300);
+}
+
+.directions-list__item--construction {
+  background-image: url(../assets/img/bg/ic-construction.svg);
+}
+
+.directions-list__item--project {
+  background-image: url(../assets/img/bg/ic-plan.svg);
+}
+
+.directions-list__item--interior {
+  background-image: url(../assets/img/bg/ic-pantone.svg);
+}
+
+.directions-list__item--repairs {
+  background-image: url(../assets/img/bg/ic-painting.svg);
+}
+
+.directions-view {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 55px;
+  column-gap: 55px;
+  align-items: center;
+  justify-content: center;
 }

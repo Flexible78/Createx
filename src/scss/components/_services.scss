@@ -1,0 +1,60 @@
+.our-service {
+   padding-top: 120px;
+   padding-bottom: 60px;
+   background-color: var(--bg-color-grey--200);
+
+   &__title {
+      margin-bottom: 24px;
+   }
+
+   &__descr {
+      margin-bottom: 60px;
+   }
+}
+
+.directions-list {
+   --grid-column-gap: 30px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   column-gap: var(--grid-column-gap);
+   margin-bottom: 79px;
+   background-color: var(--bg-color-grey--200);
+
+   &__title {
+      padding-top: 165px;
+   }
+
+   &__item {
+      width: 285px;
+      height: 285px;
+      background-size: 52px 52px;
+      background-repeat: no-repeat;
+      background-position: 50% 38%;
+      background-color: var(--color-white);
+      border: 1px solid var(--color-grey--300);
+
+      &--construction {
+         background-image: url(../assets/img/bg/ic-construction.svg);
+      }
+
+      &--project {
+         background-image: url(../assets/img/bg/ic-plan.svg);
+      }
+
+      &--interior {
+         background-image: url(../assets/img/bg/ic-pantone.svg);
+      }
+
+      &--repairs {
+         background-image: url(../assets/img/bg/ic-painting.svg);
+      }
+   }
+}
+
+.directions-view {
+   display: flex;
+   flex-direction: row;
+   column-gap: 55px;
+   align-items: center;
+   justify-content: center;
+}
