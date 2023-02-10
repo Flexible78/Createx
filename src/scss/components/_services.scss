@@ -4,61 +4,79 @@
    background-color: var(--bg-color-grey--200);
 
    &__title {
-      margin-bottom: 24px;
+         margin-bottom: 24px;
+      }
+
+      &__descr {
+         margin-bottom: 60px;
+      }
+
+   &__activities-list {
+      gap: 30px;
    }
 
-   &__descr {
-      margin-bottom: 60px;
-   }
-}
+   &__activity-card {
+       row-gap: 24px;
+       padding: 89px 20px 90px;
+       border: 1px solid #E5E8ED;
 
-.directions-list {
-   --grid-column-gap: 30px;
-   display: grid;
-   grid-auto-flow:column;
-   grid-template-columns: repeat(4, 1fr);
-   grid-column-gap: var(--grid-column-gap);
-   margin-bottom: 79px;
-   background-color: var(--bg-color-grey--200);
-
-   &__title {
-      padding-top: 165px;
-   }
-
-   &__item {
-      width: 285px;
-      height: 285px;
-      background-size: 52px 52px;
-      background-repeat: no-repeat;
-      background-position: 50% 38%;
-      background-color: var(--color-white);
-      border: 1px solid var(--color-grey--300);
-
-      &--construction {
-         background-image: url(../assets/img/bg/ic-construction.svg);
-         &:hover {
-            background-size: contain;
-            width: 285px;
-            height: 285px;
-            background-image: url(../assets/img/svg/s-construction.svg);
+      .activity-card__icon {
+         transition: all 0.1s ease;
          }
-      }
+      
+         .activity-card__title {
+            transition: all 0.3s ease;
+         }
 
-      &--project {
-         background-image: url(../assets/img/bg/ic-plan.svg);
-      }
+      &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("../../assets/img/bg/ic-pantone.png");
+            transition: all 0.3s ease;
+         }
 
-      &--interior {
-         background-image: url(../assets/img/bg/ic-pantone.svg);
-      }
+         &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba($color: #1e212c, $alpha: 0.6);
+         }
 
-      &--repairs {
-         background-image: url(../assets/img/bg/ic-painting.svg);
-      }
+         &:hover {
+            .activity-card__icon {
+               fill: var(--color-white);
+            }
+
+           .activity-card__title {
+               color: var(--color-white);
+                         }
+            &::before {
+               opacity: 1;
+            }
+
+            &::after {
+               opacity: 1;
+            }
+         }
    }
 }
 
-.directions-view {
+.activities-view {
    display: flex;
    flex-direction: row;
    column-gap: 55px;
