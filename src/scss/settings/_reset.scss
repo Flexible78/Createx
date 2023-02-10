@@ -99,6 +99,7 @@ sup {
 }
 
 a {
+   display: inline-block;
    color: inherit;
    font-weight: inherit;
    text-decoration: none;
@@ -254,7 +255,7 @@ button {
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled),
 button:not(:disabled) {
-cursor: pointer;
+   cursor: pointer;
 }
 
 [type=button]::-moz-focus-inner,

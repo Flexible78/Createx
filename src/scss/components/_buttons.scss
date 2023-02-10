@@ -31,7 +31,7 @@
       background: none;
 
       &--primary {
-         color: var(--btn-outline-border-primary);
+         color: var(--btn-fill-bg-color);
          border-color: var(--btn-outline-border-primary-color);
        &:hover {
          color: var(--btn-fill-text-color);
@@ -93,7 +93,6 @@
       &--fz14 {
          font-size: 14px;
          line-height: 3.1428;
-
       }
    }
 }

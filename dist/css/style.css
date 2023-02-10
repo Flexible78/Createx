@@ -131,6 +131,7 @@ sup {
 }
 
 a {
+  display: inline-block;
   color: inherit;
   font-weight: inherit;
   text-decoration: none;
@@ -585,7 +586,7 @@ body {
 }
 
 .btn--outline--primary {
-  color: var(--btn-outline-border-primary);
+  color: var(--btn-fill-bg-color);
   border-color: var(--btn-outline-border-primary-color);
 }
 
@@ -986,7 +987,7 @@ body {
 
 .our-service {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   background-color: var(--bg-color-grey--200);
 }
 
@@ -1000,6 +1001,7 @@ body {
 
 .our-service__activities-list {
   gap: 30px;
+  margin-bottom: 77px;
 }
 
 .our-service__activity-card {
@@ -1071,7 +1073,7 @@ body {
 }
 
 .portfolio {
-  padding-top: 138px;
+  padding-top: 120px;
 }
 
 .portfolio__title {
