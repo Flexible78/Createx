@@ -38,12 +38,13 @@
    justify-content: center;
    padding-top: 80px;
 }
-   .portfolio-list {
 
-      &__btn {
-         display: grid;
-         justify-content: center;
-         padding-top: 28px;
-         padding-bottom: 24px;
-      }
+.portfolio-list {
+
+   &__btn {
+      display: grid;
+      justify-content: center;
+      padding-top: 28px;
+      padding-bottom: 24px;
    }
+}
