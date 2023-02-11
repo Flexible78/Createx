@@ -413,6 +413,7 @@ dl {
   --color-primary-state: #FC3300;
   --color-white: #FFFFFF;
   --color-black: #000000;
+  --section-offset: 120px;
 }
 
 body {
@@ -560,7 +561,7 @@ body {
   --btn-outline-border-white-color: var(--color-white);
   border-radius: 4px;
   font-weight: 700;
-  letter-spacing: .5;
+  letter-spacing: .5px;
   text-transform: uppercase;
   transition: all .3s ease;
 }
@@ -799,6 +800,97 @@ body {
   z-index: 5;
 }
 
+.projects-slider {
+  --grid-column-gap: 30px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: var(--grid-column-gap);
+       column-gap: var(--grid-column-gap);
+  background-color: var(--color-white);
+}
+
+.projects-slider__item {
+  max-width: 390px;
+}
+
+.projects-slider__img {
+  padding-bottom: 16px;
+}
+
+.projects-slider--finger {
+  height: 345px;
+}
+
+.projects-slider--cubes {
+  height: 277px;
+}
+
+.projects-slider--pencil {
+  height: 345px;
+}
+
+.projects-slider__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 100px;
+  bottom: 100px;
+}
+
+.projects-slider__btn--play {
+  top: 50%;
+  left: 50%;
+  right: 100px;
+  bottom: 100px;
+}
+
+.slider-nav {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  justify-content: center;
+  align-items: center;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.slider-btn {
+  width: 48px;
+  height: 48px;
+  transition: all .18s ease-in-out;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-btn__icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-grey--800);
+}
+
+.slider-btn--primary:hover {
+  background-color: var(--color-primary);
+  transition: all .18s ease-in-out;
+}
+
+.slider-btn--primary:hover .slider-btn__icon {
+  fill: var(--color-white);
+}
+
+.slider-btn--light {
+  background-color: rgba(255,255,255,.5);
+  transition: all .18s ease-in-out;
+}
+
+.slider-btn--light:hover {
+  background-color: var(--color-white);
+}
+
 .header {
   padding: 22px 0;
   background-color: var(--color-white);
@@ -922,7 +1014,7 @@ body {
 
 .mission {
   padding-top: 60px;
-  padding-bottom: 120px;
+  padding-bottom: 271px;
   background-color: var(--color-white);
 }
 
@@ -935,7 +1027,16 @@ body {
 }
 
 .request {
-  padding: 48px 0;
+  position: relative;
+}
+
+.request__inner {
+  position: absolute;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  top: -151px;
+  left: 345px;
+  background-color: #fff;
 }
 
 .request__title {
@@ -948,6 +1049,7 @@ body {
   padding: 0 60px;
   -moz-column-gap: 24px;
        column-gap: 24px;
+  background-color: var(--color-white);
 }
 
 .form-block__item {
@@ -986,7 +1088,7 @@ body {
 }
 
 .our-service {
-  padding-top: 120px;
+  padding-top: 212px;
   padding-bottom: 80px;
   background-color: var(--color-grey--300);
 }
@@ -1073,14 +1175,33 @@ body {
 }
 
 .portfolio {
-  padding-top: 120px;
+  padding-top: var(--section-offset);
   padding-bottom: 120px;
   background-color: var(--bg-color-grey--200);
+  position: relative;
+}
+
+.portfolio__header {
+  padding-right: 124px;
+  margin-bottom: 60px;
+  position: relative;
 }
 
 .portfolio__title {
-  padding-right: 505px;
-  margin-bottom: 60px;
+  max-width: 705px;
+}
+
+.portfolio__slider-nav {
+  position: absolute;
+  right: -13px;
+  bottom: -13px;
+}
+
+.portfolio__project-slider__btn {
+  display: grid;
+  justify-content: center;
+  padding-top: 28px;
+  padding-bottom: 24px;
 }
 
 .portfolio-view {
@@ -1091,36 +1212,6 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 80px;
-}
-
-.projects-slider {
-  --grid-column-gap: 30px;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: var(--grid-column-gap);
-       column-gap: var(--grid-column-gap);
-  background-color: var(--color-white);
-}
-
-.projects-slider__item {
-  max-width: 390px;
-}
-
-.projects-slider__img {
-  padding-bottom: 16px;
-}
-
-.projects-slider--finger {
-  height: 345px;
-}
-
-.projects-slider--cubes {
-  height: 277px;
-}
-
-.projects-slider--pencil {
-  height: 345px;
 }
 
 .portfolio-list__btn {
