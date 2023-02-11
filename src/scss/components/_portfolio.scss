@@ -1,8 +1,74 @@
 .portfolio {
-   padding-top: 120px; //125px;
+   padding-top: 120px;
+   padding-bottom: 120px;
+   background-color: var(--bg-color-grey--200);
 
    &__title {
       padding-right: 505px;
       margin-bottom: 60px;
+   }
+}
+
+.portfolio-view {
+   display: flex;
+   flex-direction: row;
+   column-gap: 40px;
+   align-items: center;
+   justify-content: center;
+   padding-top: 80px;
+}
+
+
+.projects-slider {
+   --grid-column-gap: 30px;
+
+   display: grid;
+   justify-items: center;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: var(--grid-column-gap);
+   background-color: var(--color-white);
+}
+
+.portfolio {
+
+   &__cards-list {}
+}
+
+.projects-slider {
+
+   &__item {
+      max-width: 390px;
+      // background-position: center;
+      // background-size: cover;
+      // background-repeat: no-repeat;
+   }
+
+   &__img {
+      padding-bottom: 16px;
+   }
+
+   &--finger {
+      height: 345px;
+      // background-image: url("../assets/img/content/sliders/1st_3card/finger.jpg");
+   }
+
+   &--cubes {
+      height: 277px;
+      // background-image: url("../assets/img/content/sliders/1st_3card/cubes.jpg");
+   }
+
+   &--pencil {
+      height: 345px;
+      // background-image: url("../assets/img/content/sliders/1st_3card/pencil.jpg");
+   }
+}
+
+.portfolio-list {
+
+   &__btn {
+      display: grid;
+      justify-content: center;
+      padding-top: 28px;
+      padding-bottom: 24px;
    }
 }
