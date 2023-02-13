@@ -1,0 +1,48 @@
+.progress-circles {
+  padding-top: 180px;
+  padding-bottom: 60px;
+}
+
+.circles-bar {
+  display: grid;
+
+  grid-template-columns: repeat(4, 148px);
+  grid-template-rows: 150px;
+  column-gap: var(--grid-column-gap);
+  justify-content: center;
+  padding-top: 60px;
+  --grid-column-gap: 48px;
+
+  &__title {
+    padding-top: 50px;
+  }
+
+  &__descr {
+    padding-top: 70px;
+  }
+
+  &__item {
+    content: "";
+    position: relative;
+    background-position: 50% 50%;
+    background-size: 148px 148px;
+    background-repeat: no-repeat;
+
+    &--orange-circle {
+      background-image: url(../assets/img/svg/circles/orange-circle-progress.svg);
+    }
+
+    &--red-circle {
+      background-image: url(../assets/img/svg/circles/red-circle-progress.svg);
+    }
+
+    &--blue-circle {
+      background-image: url(../assets/img/svg/circles/blue-circle-progress.svg);
+    }
+
+    &--green-circle {
+      background-image: url(../assets/img/svg/circles/green-circle-progress.svg);
+    }
+  }
+}
+

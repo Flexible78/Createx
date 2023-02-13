@@ -940,6 +940,15 @@ body {
   bottom: -58px;
 }
 
+.partners-list {
+  --grid-column-gap: 102px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: stretch;
+  -moz-column-gap: var(--grid-column-gap);
+       column-gap: var(--grid-column-gap);
+}
+
 .header {
   padding: 22px 0;
   background-color: var(--color-white);
@@ -1277,4 +1286,52 @@ body {
 
 .clients__title {
   margin-bottom: 60px;
+}
+
+.progress-circles {
+  padding-top: 180px;
+  padding-bottom: 60px;
+}
+
+.circles-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 148px);
+  grid-template-rows: 150px;
+  -moz-column-gap: var(--grid-column-gap);
+       column-gap: var(--grid-column-gap);
+  justify-content: center;
+  padding-top: 60px;
+  --grid-column-gap: 48px;
+}
+
+.circles-bar__title {
+  padding-top: 50px;
+}
+
+.circles-bar__descr {
+  padding-top: 70px;
+}
+
+.circles-bar__item {
+  content: "";
+  position: relative;
+  background-position: 50% 50%;
+  background-size: 148px 148px;
+  background-repeat: no-repeat;
+}
+
+.circles-bar__item--orange-circle {
+  background-image: url(../assets/img/svg/circles/orange-circle-progress.svg);
+}
+
+.circles-bar__item--red-circle {
+  background-image: url(../assets/img/svg/circles/red-circle-progress.svg);
+}
+
+.circles-bar__item--blue-circle {
+  background-image: url(../assets/img/svg/circles/blue-circle-progress.svg);
+}
+
+.circles-bar__item--green-circle {
+  background-image: url(../assets/img/svg/circles/green-circle-progress.svg);
 }
