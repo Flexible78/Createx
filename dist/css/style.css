@@ -482,6 +482,12 @@ body {
   font-size: 20px;
 }
 
+.block-heading--extra {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
 .block-heading--primary {
   color: var(--color-primary);
 }
@@ -801,13 +807,13 @@ body {
 }
 
 .projects-slider {
-  --grid-column-gap: 30px;
   display: grid;
-  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: var(--grid-column-gap);
        column-gap: var(--grid-column-gap);
+  justify-items: center;
   background-color: var(--color-white);
+  --grid-column-gap: 30px;
 }
 
 .projects-slider__item {
@@ -832,23 +838,21 @@ body {
 
 .projects-slider__btn {
   position: absolute;
-  top: 50%;
   left: 50%;
   right: 100px;
+  top: 50%;
   bottom: 100px;
 }
 
 .projects-slider__btn--play {
-  top: 50%;
   left: 50%;
   right: 100px;
+  top: 50%;
   bottom: 100px;
 }
 
 .slider-nav {
   display: flex;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
   justify-content: center;
   align-items: center;
   width: -moz-min-content;
@@ -889,6 +893,51 @@ body {
 
 .slider-btn--light:hover {
   background-color: var(--color-white);
+}
+
+.partners-list {
+  --grid-column-gap: 102px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: stretch;
+  -moz-column-gap: var(--grid-column-gap);
+       column-gap: var(--grid-column-gap);
+}
+
+.review-block {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(min-content, 600px) minmax(min-content, 495px);
+  -moz-column-gap: var(--grid-column-gap);
+       column-gap: var(--grid-column-gap);
+  padding-top: 180px;
+  padding-bottom: 96px;
+  --grid-column-gap: 135px;
+}
+
+.review-block__content {
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.review-block__slider-nav {
+  position: absolute;
+  left: 515px;
+  bottom: 109px;
+}
+
+.review-block__title {
+  margin-bottom: 60px;
+}
+
+.review-block__img {
+  margin-bottom: 24px;
+}
+
+.review-block__image {
+  position: absolute;
+  right: 0px;
+  bottom: -58px;
 }
 
 .header {
@@ -967,11 +1016,11 @@ body {
 
 .promo {
   padding: 220px 0 353px 0;
-  background-color: var(--bg-color-grey--200);
   background-image: url("../assets/img/bg/bgpromo.jpg");
-  background-size: cover;
   background-position: 50% 50%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--bg-color-grey--200);
 }
 
 .promo__content {
@@ -1219,4 +1268,13 @@ body {
   justify-content: center;
   padding-top: 28px;
   padding-bottom: 24px;
+}
+
+.clients {
+  padding-top: 80px;
+  background-color: var(--bg-color-grey--200);
+}
+
+.clients__title {
+  margin-bottom: 60px;
 }

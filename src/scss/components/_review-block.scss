@@ -1,0 +1,35 @@
+.review-block {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(min-content, 600px) minmax(min-content, 495px);
+  column-gap: var(--grid-column-gap);
+  padding-top: 180px;
+
+  padding-bottom: 96px;
+  --grid-column-gap: 135px;
+
+  &__content {
+    position: relative;
+    margin-bottom: 26px;
+  }
+
+  &__slider-nav {
+    position: absolute;
+    left: 515px;
+    bottom: 109px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__img {
+    margin-bottom: 24px;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0px;
+    bottom: -58px;
+  }
+}

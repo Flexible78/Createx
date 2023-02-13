@@ -1,26 +1,26 @@
 .promo {
-   padding: 220px 0 353px 0;
-   background-color: var(--bg-color-grey--200);
-   background-image: url("../assets/img/bg/bgpromo.jpg");
-   background-size: cover;
-   background-position: 50% 50%;
-   background-repeat: no-repeat;
+  padding: 220px 0 353px 0;
+  background-image: url("../assets/img/bg/bgpromo.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color-grey--200);
 
-   &__content {
-      max-width: 595px;
-   }
+  &__content {
+    max-width: 595px;
+  }
 
-   &__page-title {
-      margin-bottom: 24px;
-   }
+  &__page-title {
+    margin-bottom: 24px;
+  }
 
-   &__page-descr {
-      margin-bottom: 61px;
-   }
+  &__page-descr {
+    margin-bottom: 61px;
+  }
 
-   &__btns-block {
-      display: flex;
-      column-gap: 24px;
-      align-items: center;
-   }
+  &__btns-block {
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+  }
 }

@@ -1,45 +1,43 @@
 .projects-slider {
-   --grid-column-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--grid-column-gap);
+  justify-items: center;
+  background-color: var(--color-white);
+  --grid-column-gap: 30px;
 
-   display: grid;
-   justify-items: center;
-   grid-template-columns: repeat(3, 1fr);
-   column-gap: var(--grid-column-gap);
-   background-color: var(--color-white);
+  &__item {
+    max-width: 390px;
+  }
 
-   &__item {
-      max-width: 390px;
-   }
+  &__img {
+    padding-bottom: 16px;
+  }
 
-   &__img {
-      padding-bottom: 16px;
-   }
+  &--finger {
+    height: 345px;
+  }
 
-   &--finger {
-      height: 345px;
-      // background-image: url("../assets/img/content/sliders/1st_3card/finger.jpg");
-   }
+  &--cubes {
+    height: 277px;
+  }
 
-   &--cubes {
-      height: 277px;
-   }
+  &--pencil {
+    height: 345px;
+  }
 
-   &--pencil {
-      height: 345px;
-   }
+  &__btn {
+    position: absolute;
+    left: 50%;
+    right: 100px;
+    top: 50%;
+    bottom: 100px;
 
-   &__btn {
-      position: absolute;
-      top: 50%;
+    &--play {
       left: 50%;
       right: 100px;
+      top: 50%;
       bottom: 100px;
-
-      &--play {
-         top: 50%;
-         left: 50%;
-         right: 100px;
-         bottom: 100px;
-      }
-   }
+    }
+  }
 }
