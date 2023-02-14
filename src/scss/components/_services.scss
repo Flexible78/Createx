@@ -18,8 +18,8 @@
 
    &__activity-card {
       row-gap: 24px;
+      border: 1px solid #e5e8ed;
       padding: 89px 20px 90px;
-      border: 1px solid #E5E8ED;
 
       .activity-card__icon {
          transition: all 0.1s ease;
@@ -30,32 +30,32 @@
       }
 
       &::before {
-         content: '';
+         content: "";
          position: absolute;
          top: 0;
-         left: 0;
          right: 0;
          bottom: 0;
-         opacity: 0;
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
+         left: 0;
          background-image: url("../../assets/img/bg/ic-pantone.png");
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         opacity: 0;
          transition: all 0.3s ease;
       }
 
       &::after {
-         content: '';
+         content: "";
          position: absolute;
          top: 0;
-         left: 0;
          right: 0;
          bottom: 0;
-         opacity: 0;
+         left: 0;
          background-position: center;
-         background-repeat: no-repeat;
          background-size: cover;
+         background-repeat: no-repeat;
          background-color: rgba($color: #1e212c, $alpha: 0.6);
+         opacity: 0;
       }
 
       &:hover {
@@ -76,12 +76,10 @@
          }
       }
    }
+
+   &__view {
+      column-gap: 55px;
+      padding-top: 0px;
+   }
 }
 
-.activities-view {
-   display: flex;
-   flex-direction: row;
-   column-gap: 55px;
-   align-items: center;
-   justify-content: center;
-}
