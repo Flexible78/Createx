@@ -1,8 +1,7 @@
 .partners-list {
-  --grid-column-gap: 102px;
-
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  justify-content: stretch;
-  column-gap: var(--grid-column-gap);
+   --grid-column-gap: 102px;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   justify-content: stretch;
+   column-gap: var(--grid-column-gap);
 }

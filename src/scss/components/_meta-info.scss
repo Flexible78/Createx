@@ -1,0 +1,41 @@
+.meta-info {
+   --meta-col-gap: 24px;
+   display: flex;
+   column-gap: var(--meta-col-gap);
+   align-items: center;
+
+   &__item {
+      position: relative;
+
+      &:not(:last-child) {
+         &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: calc((-1) * var(--meta-col-gap) / 2);
+            width: 1px;
+            height: 12px;
+            transform: translateY(-50%);
+            background-color: var(--color-grey--700);
+            background-position: center;
+            background-size: cover;
+         }
+      }
+   }
+
+   &__link {
+      transition: color 0.18s ease-in-out;
+
+      &--comment {
+         padding-left: 24px;
+         background-image: url("@img/bg/chat-grey.svg");
+         background-position: left;
+         background-size: 16px 16px;
+         background-repeat: no-repeat;
+      }
+
+      &:hover {
+         color: var(--color-primary);
+      }
+   }
+}

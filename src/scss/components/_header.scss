@@ -16,7 +16,7 @@
 
 .logo {
    display: flex;
-   align-items: center
+   align-items: center;
 }
 
 .menu {
@@ -25,11 +25,10 @@
       justify-content: center;
       list-style: none;
       gap: 40px;
-
    }
 
    &__link {
-      font-family: 'Ubuntu';
+      font-family: "Ubuntu";
       font-style: normal;
       font-weight: 700;
       font-size: 16px;
