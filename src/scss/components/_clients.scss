@@ -2,7 +2,17 @@
   padding-top: 80px;
   background-color: var(--bg-color-grey--200);
 
+  &__feedback-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+  }
+
+  &__partners-list {
+    margin-bottom: 180px;
+  }
+
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 60.1px;
   }
 }

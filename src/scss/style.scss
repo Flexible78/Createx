@@ -6,7 +6,6 @@
 
 // ------------- GLOBAL
 @import "./settings/vars";
-@import "./settings/mixins";
 @import "./settings/global";
 
 // ------------- COMPONENTS
@@ -19,11 +18,14 @@
 @import "./components/_activity-card";
 @import "./components/_projects-slider";
 @import "./components/_slider-nav";
+@import "./settings/mixins";
 @import "./components/_partners-list";
 @import "./components/_review-block";
-@import "./components/_partners-list";
 @import "./components/_more-info-block";
 @import "./components/_news-card";
+@import "./components/_feedback-block";
+@import "./components/_testimonial";
+@import "./components/_testimonial-slider";
 
 // ------------- SECTIONS
 @import "./components/_header";
@@ -36,3 +38,4 @@
 @import "./components/_clients";
 @import "./components/_progress-circles";
 @import "./components/_news";
+@import "./components/_contacts";

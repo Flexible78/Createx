@@ -5,7 +5,6 @@
 
 .circles-bar {
   display: grid;
-
   grid-template-columns: repeat(4, 148px);
   grid-template-rows: 150px;
   column-gap: var(--grid-column-gap);

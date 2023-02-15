@@ -1,14 +1,25 @@
 body {
-font-family: 'Ubuntu';
+   height: 100%;
+   font-family: "Ubuntu";
+}
+
+html {
+   height: 100%;
 }
 
 .container {
    max-width: 1260px;
-   padding: 0 15px;
    margin: 0 auto;
+   padding: 0 15px;
+
 }
-.container-hd {
-   max-width: 1950px;
-   padding: 0 15px;
-   margin: 0 auto;
+
+.page__wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+main {
+   flex: 1 1 auto;
 }

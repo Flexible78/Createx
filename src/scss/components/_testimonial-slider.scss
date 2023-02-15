@@ -1,0 +1,9 @@
+.testimonial-slider {
+   position: relative;
+
+   &__slider-nav {
+      position: absolute;
+      right: 4px;
+      bottom: -13px;
+   }
+}

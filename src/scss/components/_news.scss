@@ -16,11 +16,9 @@
 
    grid-template-columns: 705px 495px;
    grid-template-rows: repeat(2, 255px);
-   column-gap: var(--grid-column-gap);
-   row-gap: var(--grid-row-gap);
+   gap: var(--grid-gap);
    justify-content: center;
-   --grid-column-gap: 30px;
-   --grid-row-gap: 30px;
+   --grid-gap: 30px;
 
    &__item {
       &--a {
