@@ -1,7 +1,95 @@
 .contacts {
+   position: relative;
+   min-height: 100vh;
    padding: 80px 0;
    background-image: url("@img/bg/applic.jpg");
+   background-position: center top;
+   background-size: 100% auto;
    background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
+}
+
+.details-request {
+   position: absolute;
+   top: 73px;
+   right: 331px;
+   margin-bottom: 80px;
+   border: 1px solid;
+   border-color: var(--color-grey--300);
+   border-radius: 4px;
+   padding: 48px 40px;
+   box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+   background: #ffffff;
+
+   &__title {
+      margin-bottom: 24px;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: start;
+
+      &--checkbox {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         column-gap: 12px;
+         align-items: start;
+
+         input[type=checkbox] {
+            // display: none;
+         }
+
+         &:after {
+            content: "";
+            position: absolute;
+            display: flex;
+            background: #6c757d;
+         }
+      }
+
+      &__input {
+         &--message {
+            height: 66px;
+         }
+
+      }
+
+      &__submit {
+      }
+   }
+
+   &--agree {
+      // padding-right: 50px;
+
+   }
+
+   &__btn {
+      display: flex;
+      justify-content: center;
+      padding-top: 24px;
+   }
+
+   &__input {
+      width: 415px;
+      border: 1px solid var(--color-grey--400);
+      border-radius: 4px;
+      padding: 11px 16px 12px 16px;
+      background-color: var(--bg-color-grey--200);
+      // box-shadow: 0;
+      &--message {
+         height: 66px;
+         padding: 11px 0px 34px 16px;
+
+      }
+   }
 }

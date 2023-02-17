@@ -1,9 +1,74 @@
 <section class="contacts">
    <div class="container">
-      <form action="#" method="#">
-         <h2 class="block-heading block-heading--regular block-heading--center">A quick way to
-            discuss details
+      <form class="details-request" action="#" method="#">
+         <h2
+            class="block-heading block-heading--regular block-heading--center details-request__title">
+            A&nbsp;quick way to&nbsp;discuss details
          </h2>
+
+         <ul class="details-request__list">
+
+            <li class="details-request__item">
+               <label class="details-request__text-descr text-descr text-descr--small"
+                      for="name">
+                  Name*
+               </label>
+               <input
+                  class="details-request__input text-descr text-descr--small text-descr--grey-600"
+                  type="text" id="name" name="name" value=""
+                  required placeholder="Your name">
+            <li>
+
+            <li class="details-request__item">
+               <label class="details-request__text-descr text-descr text-descr--small"
+                      for="phone">
+                  Phone*
+               </label>
+               <input
+                  class="details-request__input text-descr text-descr--small text-descr--grey-600"
+                  type="text" id="phone" name="phone" value=""
+                  required placeholder="Your phone number">
+            </li>
+
+            <li class="details-request__item">
+               <label class="details-request__text-descr text-descr text-descr--small"
+                      for="email">Email
+               </label>
+               <input
+                  class="details-request__input details-request__input text-descr text-descr--small text-descr--grey-600"
+                  type="text"
+                  id="email" name="email"
+                  value="" required placeholder="Your working email">
+            </li>
+
+            <li class="details-request__item">
+               <label class="details-request__text-descr text-descr text-descr--small"
+                      for="message">Message*
+               </label>
+               <input
+                  class="details-request__input details-request__input--message text-descr text-descr--small text-descr--grey-600"
+                  type="text"
+                  id="message" name="message"
+                  value="" required placeholder="Your message">
+            </li>
+
+            <li class="details-request__item details-request__item--checkbox">
+               <input
+                  class="details-request__agree text-descr text-descr--small text-descr--grey-600--agree"
+                  type="checkbox"
+                  id="agree" name="agree" value="">
+               <label
+                  class="text-descr text-descr--small text-descr--grey-800"
+                  for="agree">I&nbsp;agree to&nbsp;receive communications from Createx
+                  Construction
+                  Bureau.
+               </label>
+            </li>
+         </ul>
+         <div class="details-request__btn">
+            <input class="btn btn--fill btn--regular details-request__submit" type="submit"
+                   value="Send request">
+         </div>
       </form>
    </div>
 </section>
