@@ -1,73 +1,71 @@
 <section class="contacts">
    <div class="container">
-      <form class="details-request" action="#" method="#">
+      <form class="contacts__form" action="#" name="callBackForm" id="callBackForm">
          <h2
-            class="block-heading block-heading--regular block-heading--center details-request__title">
+            class="contacts__form-title block-heading block-heading--center block-heading--regular">
             A&nbsp;quick way to&nbsp;discuss details
          </h2>
 
-         <ul class="details-request__list">
-
-            <li class="details-request__item">
-               <label class="details-request__text-descr text-descr text-descr--small"
-                      for="name">
-                  Name*
-               </label>
+         <fieldset class="contacts__form-actions">
+            <label class="form-field contacts__form-field" for="userName">
+                  <span
+                     class="text-descr text-descr--small text-descr--grey-800 form-field__caption">Name*</span>
                <input
-                  class="details-request__input text-descr text-descr--small text-descr--grey-600"
-                  type="text" id="name" name="name" value=""
-                  required placeholder="Your name">
-            <li>
+                  class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
+                  name="userName"
+                  id="userName"
+                  required placeholder="Your name"
+                  type="text"/>
+            </label>
 
-            <li class="details-request__item">
-               <label class="details-request__text-descr text-descr text-descr--small"
-                      for="phone">
-                  Phone*
-               </label>
+            <label class="form-field contacts__form-field" for="userPhone">
+                  <span
+                     class="text-descr text-descr--small text-descr--grey-800 form-field__caption">Phone*</span>
                <input
-                  class="details-request__input text-descr text-descr--small text-descr--grey-600"
-                  type="text" id="phone" name="phone" value=""
-                  required placeholder="Your phone number">
-            </li>
+                  class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
+                  name="userPhone"
+                  id="userPhone"
+                  required placeholder="Your phone number"
+                  type="tel"/>
+            </label>
+            <label class="form-field contacts__form-field" for="userPhone">
+               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption">Email</span>
+               <input
+                  class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
+                  name="userEmail"
+                  id="userEmail"
+                  placeholder="Your working email"
+                  type="email"/>
+            </label>
 
-            <li class="details-request__item">
-               <label class="details-request__text-descr text-descr text-descr--small"
-                      for="email">Email
-               </label>
+            <label class="form-field contacts__form-field contacts__form-field--message"
+                   for="userMessage">
+                  <span
+                     class="text-descr text-descr--small text-descr--grey-800 form-field__caption">Message*</span>
                <input
-                  class="details-request__input details-request__input text-descr text-descr--small text-descr--grey-600"
-                  type="text"
-                  id="email" name="email"
-                  value="" required placeholder="Your working email">
-            </li>
+                  class="contacts__input contacts__input--message input form-field__input form-field__input--message text-descr text-descr--grey-800 text-descr--small"
+                  name="userMessage"
+                  id="userMessage"
+                  required placeholder="Your message"
+                  type="text"/>
+            </label>
 
-            <li class="details-request__item">
-               <label class="details-request__text-descr text-descr text-descr--small"
-                      for="message">Message*
-               </label>
+            <div class="contacts__checkBox">
                <input
-                  class="details-request__input details-request__input--message text-descr text-descr--small text-descr--grey-600"
-                  type="text"
-                  id="message" name="message"
-                  value="" required placeholder="Your message">
-            </li>
-
-            <li class="details-request__item details-request__item--checkbox">
-               <input
-                  class="details-request__agree text-descr text-descr--small text-descr--grey-600--agree"
+                  class="text-descr text-descr--small text-descr--grey-600--agree"
                   type="checkbox"
-                  id="agree" name="agree" value="">
+                  id="agreeBox" name="agreeBox" value="">
                <label
                   class="text-descr text-descr--small text-descr--grey-800"
-                  for="agree">I&nbsp;agree to&nbsp;receive communications from Createx
+                  for="agreeBox">I&nbsp;agree to&nbsp;receive communications from Createx
                   Construction
                   Bureau.
                </label>
-            </li>
-         </ul>
-         <div class="details-request__btn">
-            <input class="btn btn--fill btn--regular details-request__submit" type="submit"
-                   value="Send request">
+            </div>
+
+         </fieldset>
+         <div class="contacts__btn">
+            <input class="btn btn--fill btn--regular" type="submit" value="Send request"/>
          </div>
       </form>
    </div>
