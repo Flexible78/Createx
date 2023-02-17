@@ -1,7 +1,10 @@
 .our-service {
-   padding-top: 212px;
+   padding-top: 214px;
    padding-bottom: 80px;
-   background-color: var(--color-grey--300);
+   background-image: url("@img/bg/section-services-bg.jpg");
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
 
    &__title {
       margin-bottom: 24px;
