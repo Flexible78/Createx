@@ -1191,6 +1191,38 @@ main {
   font-size: 12px;
 }
 
+.application-form__title {
+  margin-bottom: 24px;
+}
+
+.application-form .application-form__elements {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.application-form__touch-block {
+  display: flex;
+  flex-flow: row nowrap;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  align-items: start;
+}
+
+.application-form__touch-block::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  background: #6c757d;
+}
+
+.application-form__btn-send {
+  display: inline-block;
+  align-self: center;
+  width: -moz-min-content;
+  width: min-content;
+}
+
 .header {
   padding: 22px 0;
   background-color: var(--color-white);
@@ -1577,7 +1609,6 @@ main {
 }
 
 .contacts {
-  min-height: 100vh;
   padding: 80px 0;
   background-image: url("../assets/img/bg/applic.jpg");
   background-position: center top;
@@ -1585,20 +1616,20 @@ main {
   background-repeat: no-repeat;
 }
 
-.contacts__form-title {
-  margin-bottom: 24px;
-}
-
-.contacts__form-actions {
+.contacts__container {
   display: flex;
-  flex-direction: column;
-  row-gap: 20px;
+  justify-content: flex-end;
 }
 
-.contacts__form {
-  position: relative;
+.contacts__section-title {
+  position: absolute;
   top: 0;
-  right: -735px;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.contacts__application-form {
   max-width: 495px;
   margin-bottom: 80px;
   border: 1px solid;
@@ -1625,19 +1656,4 @@ main {
   display: flex;
   justify-content: center;
   padding-top: 24px;
-}
-
-.contacts__checkBox {
-  display: flex;
-  flex-flow: row nowrap;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
-  align-items: start;
-}
-
-.contacts__checkBox::after {
-  content: "";
-  position: absolute;
-  display: flex;
-  background: #6c757d;
 }

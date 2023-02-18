@@ -1,13 +1,21 @@
 <section class="contacts">
-   <div class="container">
-      <form class="contacts__form" action="#" name="callBackForm" id="callBackForm">
-         <h2 class="contacts__form-title block-heading block-heading--center block-heading--regular">
+   <div class="container contacts__container">
+      <h2 class="section-title contacts__section-title">A quick way to discuss details</h2>
+
+      <form
+         class="application-form contacts__application-form"
+         action="#"
+         name="applicationForm"
+         id="applicationForm">
+         <h2 class="application-form__title block-heading block-heading--center block-heading--regular">
             A&nbsp;quick way to&nbsp;discuss details
          </h2>
 
-         <fieldset class="contacts__form-actions">
-            <label class="form-field contacts__form-field" for="userName">
-               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption">Name*</span>
+         <fieldset class="application-form__elements">
+            <label class="form-field application-form__form-field" for="userName">
+               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption">
+                  Name*
+               </span>
                <input
                   class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
                   name="userName"
@@ -17,8 +25,10 @@
                   type="text" />
             </label>
 
-            <label class="form-field contacts__form-field" for="userPhone">
-               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption">Phone*</span>
+            <label class="form-field application-form__form-field" for="userPhone">
+               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption">
+                  Phone*
+               </span>
                <input
                   class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
                   name="userPhone"
@@ -27,8 +37,11 @@
                   placeholder="Your phone number"
                   type="tel" />
             </label>
-            <label class="form-field contacts__form-field" for="userPhone">
-               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption">Email</span>
+
+            <label class="form-field application-form__form-field" for="userPhone">
+               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption">
+                  Email
+               </span>
                <input
                   class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
                   name="userEmail"
@@ -37,8 +50,12 @@
                   type="email" />
             </label>
 
-            <label class="form-field contacts__form-field contacts__form-field--message" for="userMessage">
-               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption">Message*</span>
+            <label
+               class="form-field application-form__form-field application-form__form-field--message"
+               for="userMessage">
+               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption">
+                  Message*
+               </span>
                <input
                   class="contacts__input contacts__input--message input form-field__input form-field__input--message text-descr text-descr--grey-800 text-descr--small"
                   name="userMessage"
@@ -48,21 +65,22 @@
                   type="text" />
             </label>
 
-            <div class="contacts__checkBox">
+            <label class="application-form__touch-block">
                <input
                   class="text-descr text-descr--small text-descr--grey-600--agree"
                   type="checkbox"
                   id="agreeBox"
                   name="agreeBox"
                   value="" />
-               <label class="text-descr text-descr--small text-descr--grey-800" for="agreeBox"
-                  >I&nbsp;agree to&nbsp;receive communications from Createx Construction Bureau.
-               </label>
-            </div>
+               <div class="text-descr text-descr--small text-descr--grey-800" for="agreeBox">
+                  I&nbsp;agree to&nbsp;receive communications from Createx Construction Bureau.
+               </div>
+            </label>
+            <input
+               class="application-form__btn-send btn btn--fill btn--regular"
+               type="submit"
+               value="Send request" />
          </fieldset>
-         <div class="contacts__btn">
-            <input class="btn btn--fill btn--regular" type="submit" value="Send request" />
-         </div>
       </form>
    </div>
 </section>
