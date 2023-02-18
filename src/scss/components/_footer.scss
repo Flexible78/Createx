@@ -1,0 +1,37 @@
+.footer {
+  padding: calc(var(--section-offset) - 40px);
+  background: var(--color-grey--300);
+
+  &__header {
+    display: flex;
+    column-gap: 60px;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .social-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    align-items: start;
+    justify-content: space-between;
+
+    &__item {
+
+    }
+
+    &__link {
+    }
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+      opacity: 0.6;
+
+      // color: var(--color-white);
+    }
+  }
+
+  &--logo {
+  }
+}

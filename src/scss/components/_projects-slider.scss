@@ -1,10 +1,11 @@
 .projects-slider {
+  --grid-column-gap: 30px;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: var(--grid-column-gap);
   justify-items: center;
   background-color: var(--color-white);
-  --grid-column-gap: 30px;
 
   &__item {
     max-width: 390px;
@@ -12,6 +13,21 @@
 
   &__img {
     padding-bottom: 16px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    bottom: 100px;
+    left: 50%;
+
+    &--play {
+      top: 50%;
+      right: 100px;
+      bottom: 100px;
+      left: 50%;
+    }
   }
 
   &--finger {
@@ -24,20 +40,5 @@
 
   &--pencil {
     height: 345px;
-  }
-
-  &__btn {
-    position: absolute;
-    left: 50%;
-    right: 100px;
-    top: 50%;
-    bottom: 100px;
-
-    &--play {
-      left: 50%;
-      right: 100px;
-      top: 50%;
-      bottom: 100px;
-    }
   }
 }

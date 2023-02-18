@@ -1,12 +1,12 @@
 .review-block {
+  --grid-column-gap: 135px;
+
   position: relative;
   display: grid;
   grid-template-columns: minmax(min-content, 600px) minmax(min-content, 495px);
   column-gap: var(--grid-column-gap);
   padding-top: 180px;
-
   padding-bottom: 96px;
-  --grid-column-gap: 135px;
 
   &__content {
     position: relative;
@@ -15,8 +15,8 @@
 
   &__slider-nav {
     position: absolute;
-    left: 515px;
     bottom: 109px;
+    left: 515px;
   }
 
   &__title {
@@ -29,7 +29,7 @@
 
   &__image {
     position: absolute;
-    right: 0px;
+    right: 0;
     bottom: -58px;
   }
 }

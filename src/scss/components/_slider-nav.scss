@@ -1,44 +1,44 @@
 .slider-nav {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min-content;
 }
 
 .slider-btn {
-   width: 48px;
-   height: 48px;
-   transition: all 0.18s ease-in-out;
-   border: none;
-   background-color: transparent;
-   border-radius: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 100%;
+  background-color: transparent;
+  transition: all 0.18s ease-in-out;
 
-   &__icon {
-      width: 24px;
-      height: 24px;
-      fill: var(--color-grey--800);
-   }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-grey--800);
+  }
 
-   &--primary {
-      &:hover {
-         background-color: var(--color-primary);
-         transition: all 0.18s ease-in-out;
-
-         .slider-btn__icon {
-            fill: var(--color-white);
-         }
-      }
-   }
-
-   &--light {
-      background-color: rgba(#fff, 0.5);
+  &--primary {
+    &:hover {
+      background-color: var(--color-primary);
       transition: all 0.18s ease-in-out;
 
-      &:hover {
-         background-color: var(--color-white);
+      .slider-btn__icon {
+        fill: var(--color-white);
       }
-   }
+    }
+  }
+
+  &--light {
+    background-color: rgba(#fff, 0.5);
+    transition: all 0.18s ease-in-out;
+
+    &:hover {
+      background-color: var(--color-white);
+    }
+  }
 }
