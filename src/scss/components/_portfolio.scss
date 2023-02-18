@@ -1,13 +1,13 @@
 .portfolio {
+  position: relative;
   padding-top: var(--section-offset);
   padding-bottom: 120px;
   background-color: var(--bg-color-grey--200);
-  position: relative;
 
   &__header {
-    padding-right: 124px;
-    margin-bottom: 60px;
     position: relative;
+    margin-bottom: 60px;
+    padding-right: 124px;
   }
 
   &__title {
@@ -31,7 +31,6 @@
 }
 
 .portfolio-projects {
-
   &__btn {
     display: grid;
     justify-content: center;

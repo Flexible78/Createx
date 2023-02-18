@@ -1,100 +1,99 @@
 .btn {
-   --btn-fill-text-color: var(--color-white);
-   --btn-fill-bg-color: var(--color-primary);
-   --btn-fill-bg-color-state: var(--color-primary-state);
-   --btn-outline-border-primary-color: var(--color-primary-state);
-   --btn-outline-border-white-color: var(--color-white);
+  --btn-fill-text-color: var(--color-white);
+  --btn-fill-bg-color: var(--color-primary);
+  --btn-fill-bg-color-state: var(--color-primary-state);
+  --btn-outline-border-primary-color: var(--color-primary-state);
+  --btn-outline-border-white-color: var(--color-white);
 
-   border-radius: 4px;
-   font-weight: 700;
-   letter-spacing: 0.5px;
-   text-transform: uppercase;
-   transition: all 0.3s ease;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 
-   &--fill {
-      border: none;
-      color: var(--btn-fill-text-color);
-      background-color: var(--btn-fill-bg-color);
+  &--fill {
+    border: none;
+    color: var(--btn-fill-text-color);
+    background-color: var(--btn-fill-bg-color);
+
+    &:hover {
+      background-color: var(--btn-fill-bg-color-state);
+    }
+
+    &:active {
+      background-color: var(--btn-fill-bg-color-state);
+    }
+  }
+
+  &--outline {
+    border-style: solid;
+    border-width: 1px;
+    background: none;
+
+    &--primary {
+      border-color: var(--btn-outline-border-primary-color);
+      color: var(--btn-fill-bg-color);
 
       &:hover {
-         background-color: var(--btn-fill-bg-color-state);
+        color: var(--btn-fill-text-color);
+        background-color: var(--btn-fill-bg-color);
       }
 
       &:active {
-         background-color: var(--btn-fill-bg-color-state);
+        color: var(--btn-fill-text-color);
+        background-color: var(--btn-fill-bg-color);
       }
-   }
+    }
 
-   &--outline {
-      border-width: 1px;
-      border-style: solid;
-      background: none;
+    &--white {
+      border-color: var(--btn-outline-border-white-color);
+      color: var(--btn-outline-border-white-color);
 
-      &--primary {
-         color: var(--btn-fill-bg-color);
-         border-color: var(--btn-outline-border-primary-color);
-
-         &:hover {
-            color: var(--btn-fill-text-color);
-            background-color: var(--btn-fill-bg-color);
-         }
-
-         &:active {
-            color: var(--btn-fill-text-color);
-            background-color: var(--btn-fill-bg-color);
-         }
+      &:hover {
+        // color: var(--color-primary);
+        border-color: var(--color-primary);
+        background-color: var(--color-primary);
       }
 
-      &--white {
-         color: var(--btn-outline-border-white-color);
-         border-color: var(--btn-outline-border-white-color);
-
-         &:hover {
-            // color: var(--color-primary);
-            border-color: var(--color-primary);
-            background-color: var(--color-primary);
-         }
-
-         &:active {
-            color: var(--color-primary);
-            border-color: var(--btn-fill-bg-color);
-         }
+      &:active {
+        border-color: var(--btn-fill-bg-color);
+        color: var(--color-primary);
       }
-   }
+    }
+  }
 
-   &--large {
-      padding: 0 40px;
-      font-size: 16px;
-      line-height: 3.25;
+  &--large {
+    padding: 0 40px;
+    font-size: 16px;
+    line-height: 3.25;
 
-      &--p44 {
-         padding: 0 44px;
-      }
+    &--p44 {
+      padding: 0 44px;
+    }
 
-      &--p54 {
-         padding: 0 54px;
-      }
+    &--p54 {
+      padding: 0 54px;
+    }
 
-      &--p112 {
-         padding: 0 112px;
-      }
+    &--p112 {
+      padding: 0 112px;
+    }
+  }
 
-   }
+  &--regular {
+    padding: 0 32px;
+    font-size: 14px;
+    line-height: 3.1428;
+  }
 
-   &--regular {
-      padding: 0 32px;
+  &--small {
+    padding: 0 24px;
+    font-size: 12px;
+    line-height: 3;
+
+    &--fz14 {
       font-size: 14px;
       line-height: 3.1428;
-   }
-
-   &--small {
-      padding: 0 24px;
-      font-size: 12px;
-      line-height: 3;
-
-      &--fz14 {
-         font-size: 14px;
-         line-height: 3.1428;
-      }
-   }
+    }
+  }
 }

@@ -1,70 +1,71 @@
 .page-descr {
-   --page--descr-color: var(--color-grey--700);
-   font-weight: 400;
-   font-size: 20px;
-   line-height: 1.5;
-   color: var(--page--descr-color);
+  --page--descr-color: var(--color-grey--700);
 
-   &--home {
-      color: var(--color-white);
-   }
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--page--descr-color);
 
-   &--fz14 {
-      font-size: 14px;
-      line-height: 1.5;
-      text-align: center;
-      color: var(--color-grey--700);
-   }
+  &--home {
+    color: var(--color-white);
+  }
+
+  &--fz14 {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-grey--700);
+  }
 }
 
 .section-descr {
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 1.5;
-   color: var(--page--descr-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--page--descr-color);
 
-   &--center {
-      text-align: center;
-   }
+  &--center {
+    text-align: center;
+  }
 }
 
 .text-descr {
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.6;
-   color: var(--color-grey--700);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-grey--700);
 
-   &--center {
-      text-align: center;
-   }
+  &--center {
+    text-align: center;
+  }
 
-   &--large {
-      font-size: 18px;
-      line-height: 1.5;
-   }
+  &--large {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 
-   &--small {
-      font-size: 14px;
-      line-height: 1.5;
+  &--small {
+    font-size: 14px;
+    line-height: 1.5;
 
-      &--extra {
-         font-size: 12px;
-      }
-   }
+    &--extra {
+      font-size: 12px;
+    }
+  }
 
-   &--grey-700 {
-      color: var(--color-grey--700);
-   }
+  &--grey-700 {
+    color: var(--color-grey--700);
+  }
 
-   &--grey-800 {
-      color: var(--color-grey--800);
-   }
+  &--grey-800 {
+    color: var(--color-grey--800);
+  }
 
-   &--grey-900 {
-      color: var(--color-grey--900);
-   }
+  &--grey-900 {
+    color: var(--color-grey--900);
+  }
 
-   &--white {
-      color: var(--color-white);
-   }
+  &--white {
+    color: var(--color-white);
+  }
 }

@@ -1,75 +1,74 @@
 .header {
-   padding: 22px 0;
-   background-color: var(--color-white);
+  padding: 22px 0;
+  background-color: var(--color-white);
 
-   &__container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-   }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-   &__menu {
-      margin-right: 115px;
-   }
+  &__menu {
+    margin-right: 115px;
+  }
 }
 
 .logo {
-   display: flex;
-   align-items: center
+  display: flex;
+  align-items: center;
 }
 
 .menu {
-   &__list {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      gap: 40px;
+  &__list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    list-style: none;
+  }
 
-   }
-
-   &__link {
-      font-family: 'Ubuntu';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.6;
-   }
+  &__link {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }
 
 .connections {
-   display: flex;
-   align-items: center;
-   column-gap: 36px;
+  display: flex;
+  column-gap: 36px;
+  align-items: center;
 
-   &__item {
-      display: flex;
-      flex-direction: column;
-      background-repeat: no-repeat;
-      padding-left: 52px;
-      background-position: left;
-      background-size: 40px 40px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 52px;
+    background-position: left;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
 
-      &--phone {
-         background-image: url(../assets/img/svg/iphone.svg);
-      }
+    &--phone {
+      background-image: url("../assets/img/svg/iphone.svg");
+    }
 
-      &--email {
-         background-image: url(../assets/img/svg/chat.svg);
-      }
-   }
+    &--email {
+      background-image: url("../assets/img/svg/chat.svg");
+    }
+  }
 
-   &__descr {
-      font-weight: 400;
-      font-size: 18px;
+  &__descr {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-grey--900);
+
+    &--title {
+      font-weight: 700;
+      font-size: 14px;
       line-height: 1.5;
-      color: var(--color-grey--900);
-
-      &--title {
-         font-weight: 700;
-         font-size: 14px;
-         line-height: 1.5;
-         color: var(--color-grey--800);
-      }
-   }
+      color: var(--color-grey--800);
+    }
+  }
 }
