@@ -623,15 +623,16 @@
 
       </main>
       <footer class="footer">
-   <div class="container footer__container">
-         <div class="footer__header">
-            <a class="footer__header footer__header--logo" href="#home">
+   <div class="container">
+      <div class="footer__inner">
+         <div class="footer__about about-us">
+            <a class="about-us__logo" href="#home">
                <img
-                  class="footer__logo footer__header--img"
-                  src="../assets/img/svg/logo.svg"
-                  alt="logo" />
+                  class="about-us__img"
+                  src="assets/img/content/footer-logo.png"
+                  alt="logo"/>
             </a>
-            <ul class="footer__social social-list">
+            <ul class="about__social social-list">
                <li class="social-list__item">
                   <a class="social-list__link" href="#">
                      <svg class="social-list__icon">
@@ -672,9 +673,89 @@
                   </a>
                </li>
             </ul>
+            <p class="footer__head--descr">
+               Createx Construction Bureau has been successfully operating in&nbsp;the USA
+               construction
+               market since 2000. We&nbsp;are proud to&nbsp;offer you quality construction and exemplary
+               service. Our mission is&nbsp;to&nbsp;set the highest standards for construction sphere.
+            </p>
          </div>
+
+         <div class="office-contacts footer__office-contacts">
+            <h3 class="office-contacts__title">Head Office</h3>
+            <address>
+               <p class="office-contacts__title">Address:</p>
+               <p class="office-contacts__descr">8502 Preston Rd. Inglewood, New York</p>
+               <p class="office-contacts__title">Call:</p>
+               <a class="office-contacts__descr" href="tel:405-555-012">(405) 555-0128</a>
+               <p class="office-contacts__title">Email:</p>
+               <a class="office-contacts__descr" href="mailto:hello@createx.com">hello@createx.com</a>
+            </address>
+         </div>
+         <div class="footer-copyright">&copy;&nbsp;All rights reserved. Made with
+            <img class="footer-copyright__img" src="assets/img/svg/heart.svg"
+                 alt="heart">
+            by&nbsp;Createx Studio
+         </div>
+
+         <div class="experience-links">
+            <h3 class="experience-links__title">Who we are</h3>
+            <ul class="experience-links__list">
+               <li class="experience-links__list experience-links__list--item">
+                  <a href="#">experience us</a>
+               </li>
+               <li class="experience-links__list experience-links__list--item">
+                  <a href="#">Available Positions</a>
+               </li>
+               <li class="experience-links__list experience-links__list--item">
+                  <a href="#">Contacts</a>
+               </li>
+            </ul>
+         </div>
+
          <div class="footer__subscribe subscribe-section"></div>
          <h2 class="subscribe-section__title">Let&rsquo;s stay in&nbsp;touch</h2>
+         <label class="form-field contacts__form-field" for="userEmail">
+               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
+               >Email</span
+               >
+            <input
+               class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
+               name="userEmail"
+               id="userEmail"
+               placeholder="Your email adress"
+               type="email"/>
+         </label>
+         <input class="btn btn--fill btn--regular" type="submit" value="Subscribe"/>
+         <P class="text-descr">*Subscribe to&nbsp;our newsletter to&nbsp;receive communications and
+            early updates from Createx Construction Bureau.
+         </P>
+
+         <div class="experience-links">
+            <h3 class="experience-links__title">Our experience</h3>
+            <ul class="experience-links__list">
+               <li class="experience-links__list experience-links__list--item">
+                  <a href="#">Service</a>
+               </li>
+               <li class="experience-links__list experience-links__list--item">
+                  <a href="#">Work</a>
+               </li>
+               <li class="experience-links__list experience-links__list--item">
+                  <a href="#">News</a>
+               </li>
+            </ul>
+         </div>
+
+      </div>
+
+      <div class="footer__up-btn up-navigation">
+         <span class="up-navigation__title">Go to top</span>
+         <a class="up-navigation__btn" href="#">
+            <svg class="up-navigation__icon">
+               <use href="../assets/img/svg/svg-sprite.svg#up-btn"></use>
+            </svg>
+         </a>
+      </div>
    </div>
 </footer>
 

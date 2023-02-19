@@ -1591,7 +1591,6 @@ main {
 }
 
 .contacts {
-  min-height: 100vh;
   padding: 80px 0;
   background-image: url("../assets/img/bg/applic.jpg");
   background-position: center top;
@@ -1661,25 +1660,24 @@ main {
   background: var(--color-grey--300);
 }
 
-.footer__header {
-  display: flex;
-  -moz-column-gap: 60px;
-       column-gap: 60px;
-  align-items: start;
-  justify-content: start;
+.footer__inner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
-.footer .social-list {
-  display: flex;
-  flex-direction: row;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
-  align-items: start;
-  justify-content: space-between;
+.about-us {
+  display: contents;
+  grid-column: 2 span;
 }
 
-.footer .social-list__icon {
+.about-us__logo {
+  grid-column: 2 span;
+}
+
+.social-list__icon {
   width: 24px;
   height: 24px;
-  opacity: .6;
 }
