@@ -1,62 +1,59 @@
 <section class="contacts">
-   <div class="container">
-      <form class="contacts__form" action="#" name="callBackForm" id="callBackForm">
+   <div class="container contacts__container">
+      <h2 class="contacts__section-title">section`s application form</h2>
+      <form class="application-form contacts__form" action="#" name="callBackForm" id="callBackForm">
          <h2
-            class="contacts__form-title block-heading block-heading--center block-heading--regular">
+            class="application-form__title block-heading block-heading--center block-heading--regular">
             A&nbsp;quick way to&nbsp;discuss details
          </h2>
 
-         <fieldset class="contacts__form-actions">
-            <label class="form-field contacts__form-field" for="userName">
+         <fieldset class="application-form__actions">
+            <label class="form-field application-form__field" for="userName">
                <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
-                  >Name*</span
-               >
+               >Name*</span>
                <input
                   class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
                   name="userName"
                   id="userName"
                   required
                   placeholder="Your name"
-                  type="text" />
+                  type="text"/>
             </label>
 
-            <label class="form-field contacts__form-field" for="userPhone">
+            <label class="form-field application-form__field" for="userPhone">
                <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
-                  >Phone*</span
-               >
+               >Phone*</span>
                <input
                   class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
                   name="userPhone"
                   id="userPhone"
                   required
                   placeholder="Your phone number"
-                  type="tel" />
+                  type="tel"/>
             </label>
-            <label class="form-field contacts__form-field" for="userEmail">
+            <label class="form-field application-form__field" for="userEmail">
                <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
-                  >Email</span
-               >
+               >Email</span>
                <input
                   class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
                   name="userEmail"
                   id="userEmail"
                   placeholder="Your working email"
-                  type="email" />
+                  type="email"/>
             </label>
 
             <label
-               class="form-field contacts__form-field contacts__form-field--message"
+               class="form-field application-form-field application-form-field--message"
                for="userMessage">
                <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
-                  >Message*</span
-               >
+               >Message*</span>
                <input
                   class="contacts__input contacts__input--message input form-field__input form-field__input--message text-descr text-descr--grey-800 text-descr--small"
                   name="userMessage"
                   id="userMessage"
                   required
                   placeholder="Your message"
-                  type="text" />
+                  type="text"/>
             </label>
 
             <div class="contacts__checkBox">
@@ -65,15 +62,13 @@
                   type="checkbox"
                   id="agreeBox"
                   name="agreeBox"
-                  value="" />
+                  value=""/>
                <label class="text-descr text-descr--small text-descr--grey-800" for="agreeBox"
-                  >I&nbsp;agree to&nbsp;receive communications from Createx Construction Bureau.
+               >I&nbsp;agree to&nbsp;receive communications from Createx Construction Bureau.
                </label>
             </div>
          </fieldset>
-         <div class="contacts__btn">
-            <input class="btn btn--fill btn--regular" type="submit" value="Send request" />
-         </div>
+            <input class="btn btn--fill btn--regular" type="submit" value="Send request"/>
       </form>
    </div>
 </section>
