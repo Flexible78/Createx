@@ -3,7 +3,7 @@
   "bracketSpacing": false,
   "singleAttributePerLine": false,
   "bracketSameLine": true,
-  "printWidth": 100,
+  "printWidth": 150,
   "endOfLine": "auto",
   "tabWidth": 2,
 
@@ -18,14 +18,14 @@
     {
       "files": "*.css",
       "options": {
-        "printWidth": 80,
+        "printWidth": 100,
         "tabWidth": 2
       }
     },
     {
       "files": "*.html",
       "options": {
-        "printWidth": 100,
+        "printWidth": 120,
         "tabWidth": 3
       }
     }

@@ -53,4 +53,25 @@
       font-size: 12px;
     }
   }
+
+  &--light {
+    border-color: rgba($color: #fff, $alpha: 20%);
+    color: var(--color-white);
+    background-color: rgba($color: #fff, $alpha: 12%);
+    transition: all 0.02s linear;
+
+    &::placeholder {
+      color: inherit;
+      opacity: 0.6;
+    }
+
+    &:focus {
+      outline: 1px solid rgba($color: #1e212c, $alpha: 40%);
+      border-width: 1px;
+      border-color: rgba($color: #fff, $alpha: 30%);
+      border-radius: 4px;
+      box-shadow: none;
+      background-color: #22252e;
+    }
+  }
 }
