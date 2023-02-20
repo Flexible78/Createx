@@ -1,0 +1,26 @@
+.go-to-top {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+
+  &__title {
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+
+  &__link {
+
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-primary);
+      transition: all 0.68s ease-in-out;
+    }
+  }
+}
+

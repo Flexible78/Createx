@@ -29,11 +29,10 @@
   &:focus {
     outline: 1px solid rgba($color: #ff5a30, $alpha: 40%);
     border-radius: 4px;
-    box-shadow:
-      0 80px 80px -20px rgb(255 90 48 / 8%),
-      0 30px 24px -10px rgb(255 90 48 / 5%),
-      0 12px 10px -6px rgb(255 90 48 / 4%),
-      0 4px 4px -4px rgb(30 33 44 / 3%);
+    box-shadow: 0 80px 80px -20px rgb(255 90 48 / 8%),
+    0 30px 24px -10px rgb(255 90 48 / 5%),
+    0 12px 10px -6px rgb(255 90 48 / 4%),
+    0 4px 4px -4px rgb(30 33 44 / 3%);
     background-color: var(--color-white);
   }
 
@@ -51,6 +50,27 @@
 
     &::placeholder {
       font-size: 12px;
+    }
+  }
+
+  &--light {
+    border-color: rgba($color: #fff, $alpha: 20%);
+    color: var(--color-white);
+    background-color: rgba($color: #fff, $alpha: 12%);
+    transition: all 0.02s linear;
+
+    &::placeholder {
+      color: inherit;
+      opacity: 0.6;
+    }
+
+    &:focus {
+      outline: 1px solid rgba($color: #1e212c, $alpha: 40%);
+      border-width: 1px;
+      border-color: rgba($color: #fff, $alpha: 30%);
+      border-radius: 4px;
+      box-shadow: none;
+      background-color: #22252e;
     }
   }
 }
