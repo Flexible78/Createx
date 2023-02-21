@@ -11,7 +11,6 @@ html {
   line-height: 1.15;
   text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  scroll-behavior: smooth;
 }
 
 article,
@@ -28,7 +27,19 @@ section {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    "Arial",
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   font-size: 1rem;
@@ -52,9 +63,7 @@ abbr[data-original-title],
 abbr[title] {
   border-bottom: 0;
   text-decoration: underline dotted;
-  text-decoration: underline dotted;
   cursor: help;
-  text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
@@ -127,7 +136,14 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+  font-family:
+    "SFMono-Regular",
+    "Menlo",
+    "Monaco",
+    "Consolas",
+    "Liberation Mono",
+    "Courier New",
+    monospace;
   font-size: 1em;
 }
 
@@ -232,8 +248,6 @@ select {
 
 select {
   appearance: none;
-  appearance: none;
-  appearance: none;
   outline: none;
   border: none;
   font: inherit;
@@ -244,7 +258,6 @@ select {
 [type="reset"],
 [type="submit"],
 button {
-  appearance: button;
   appearance: button;
 }
 
@@ -273,7 +286,6 @@ input[type="date"],
 input[type="datetime-local"],
 input[type="month"],
 input[type="time"] {
-  appearance: listbox;
   appearance: listbox;
 }
 
@@ -307,7 +319,6 @@ progress {
 }
 
 [type="search"] {
-  appearance: none;
   appearance: none;
   outline-offset: -2px;
 }

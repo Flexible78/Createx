@@ -1,26 +1,27 @@
-.go-to-top {
+.anchor-btn-top {
   position: absolute;
   right: 100px;
   bottom: 100px;
+  display: flex;
+  column-gap: 16px;
+  align-items: flex-end;
+  transition: all 0.15s linear;
 
-  &__title {
+  &__caption {
     text-transform: uppercase;
     color: var(--color-white);
   }
 
-  &__link {
-
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
   }
 
-  &__icon {
-    width: 24px;
-    height: 24px;
-    fill: var(--color-white);
-
-    &:hover {
-      background-color: var(--color-primary);
-      transition: all 0.68s ease-in-out;
-    }
+  &:hover {
+    text-decoration: none;
+    transform: scale(1.1);
   }
 }
-
