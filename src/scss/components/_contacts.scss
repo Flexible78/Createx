@@ -70,88 +70,11 @@
       // display: none;
     }
   }
+  &__section-title {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+  }
 }
-// .contacts {
-//   position: relative;
-//   padding: 80px 0;
-//   background-image: url("@img/bg/applic.jpg");
-//   background-position: center top;
-//   background-size: 100% auto;
-//   background-repeat: no-repeat;
-//
-//   &__container {
-//     display: flex;
-//     justify-content: flex-end;
-//   }
-//
-//   &__form-title {
-//     margin-bottom: 24px;
-//   }
-//
-//   &__form-actions {
-//     display: flex;
-//     flex-direction: column;
-//     row-gap: 20px;
-//   }
-//
-//   &__form {
-//     top: 0;
-//     right: -735px;
-//     max-width: 495px;
-//     margin-bottom: 80px;
-//     border: 1px solid;
-//     border-color: var(--color-grey--300);
-//     border-radius: 4px;
-//     padding: 48px 40px;
-//     box-shadow:
-//       0 60px 80px -20px rgb(30 33 44 / 16%),
-//       0 26px 24px -10px rgb(30 33 44 / 10%),
-//       0 12px 10px -6px rgb(30 33 44 / 8%),
-//       0 4px 4px -4px rgb(30 33 44 / 5%);
-//     background: #fff;
-//   }
-//
-//   &__input {
-//     border: 1px solid var(--color-grey--400);
-//     border-radius: 4px;
-//     padding: 11px 16px 12px;
-//     background-color: var(--bg-color-grey--200);
-//
-//     // box-shadow: 0;
-//     &--message {
-//       height: 66px;
-//       padding: 11px 0 34px 16px;
-//     }
-//   }
-//
-//   &__btn {
-//     display: flex;
-//     justify-content: center;
-//     padding-top: 24px;
-//   }
-//
-//   &__checkBox {
-//     display: flex;
-//     flex-flow: row nowrap;
-//     column-gap: 12px;
-//     align-items: start;
-//
-//     &::after {
-//       content: "";
-//       position: absolute;
-//       display: flex;
-//       background: #6c757d;
-//     }
-//
-//     input[type="checkbox"] {
-//       // display: none;
-//     }
-//   }
-// }
-//
-.contacts__section-title {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  opacity: 0;
-}
+

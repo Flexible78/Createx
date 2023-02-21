@@ -1,7 +1,12 @@
 .go-to-top {
   position: absolute;
-  right: 100px;
-  bottom: 100px;
+  right: 341px;
+  bottom: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min-content;
+  column-gap: 16px;
 
   &__title {
     text-transform: uppercase;
@@ -9,17 +14,31 @@
   }
 
   &__link {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: all 0.18s ease-in-out;
   }
 
   &__icon {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
     fill: var(--color-white);
+    background-color: var(--color-primary);
 
     &:hover {
-      background-color: var(--color-primary);
-      transition: all 0.68s ease-in-out;
+      width: 48px;
+      height: 48px;
+      border: none;
+      border-radius: 4px;
+      background-color: var(--color-primary-state);
+      transform: rotate(-90deg);
+      transition: all 0.18s ease-in-out;
     }
   }
 }
