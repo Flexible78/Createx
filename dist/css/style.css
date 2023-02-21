@@ -1753,26 +1753,43 @@ main {
   padding-top: 24px;
 }
 
-.contacts__checkBox {
+.contacts .contacts-checkBox {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   -moz-column-gap: 12px;
        column-gap: 12px;
-  align-items: start;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.contacts__checkBox::after {
-  content: "";
-  position: absolute;
-  display: flex;
-  background: #6c757d;
+.contacts .check-option__input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
-.contacts__section-title {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  opacity: 0;
+.contacts .check-option__input:checked+.check-option__text {
+  background-image: url(../assets/img/svg/checkbox/checked.svg);
+  background-repeat: no-repeat;
+}
+
+.contacts .check-option__input:focus+.check-option__text {
+  background-image: url(../assets/img/svg/checkbox/disabled.svg);
+  background-repeat: no-repeat;
+}
+
+.contacts .check-option__input:checked:focus+.check-option__text {
+  background-image: url(../assets/img/svg/checkbox/plate.svg);
+  background-repeat: no-repeat;
+}
+
+.contacts .check-option__text {
+  width: 16px;
+  height: 16px;
+  padding-left: 29px;
+  background-image: url(../assets/img/svg/checkbox/plate.svg);
+  background-repeat: no-repeat;
+  background-color: var(--color-white);
 }
 
 .footer {
