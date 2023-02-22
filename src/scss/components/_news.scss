@@ -1,5 +1,5 @@
 .news {
-  padding: calc(var(--section-offset) + 40px) 0 var(--section-offset);
+  padding: calc(var(--section-offset) + 40px) 0 118px;
 
   &__section-title {
     margin-bottom: 60px;
@@ -23,5 +23,9 @@
 
   &__news-article {
     height: 100%;
+  }
+
+  &__more-info {
+    padding-top: 80px;
   }
 }

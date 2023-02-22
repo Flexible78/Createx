@@ -1,0 +1,38 @@
+.application-form {
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__check-option {
+
+    padding-left: 27px;
+
+    &--input {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      position: absolute;
+
+      &:checked + .application-form__check-option--text {
+        background-image: url(@img/svg/checkbox/checked.svg);
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--text {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      margin-left: -27px;
+      background-image: url(@img/svg/checkbox/plate.svg);
+      background-repeat: no-repeat;
+      background-color: var(--color-white);
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .contacts {
-  padding: 76px 0;
+  padding: 80px 0;
   background-image: url("@img/bg/applic.jpg");
   background-position: center top;
   background-size: 100% auto;
@@ -9,17 +9,7 @@
     display: flex;
     justify-content: flex-end;
   }
-  .application-form {
-    &__title {
-      margin-bottom: 24px;
-    }
 
-    &__form-actions {
-      display: flex;
-      flex-direction: column;
-      row-gap: 20px;
-    }
-  }
   &__form {
     max-width: 495px;
     border: 1px solid;
@@ -49,40 +39,6 @@
     display: flex;
     justify-content: center;
     padding-top: 24px;
-  }
-
-  // .contacts-checkBox {
-  //   display: flex;
-  //   flex-direction: row;
-  //   column-gap: 12px;
-  //   align-items: center;
-  //   justify-content: flex-start;
-  //   padding-top: 20px;
-  // }
-
-  .check-option {
-    padding-top: 20px;
-    margin-bottom: 24px;
-
-    &__input {
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      appearance: none;
-
-      &:checked + .check-option__text {
-        background-image: url(@img/svg/checkbox/checked.svg);
-        background-repeat: no-repeat;
-      }
-    }
-
-    &__text {
-      width: 16px;
-      height: 16px;
-      padding-left: 29px;
-      background-image: url(@img/svg/checkbox/plate.svg);
-      background-repeat: no-repeat;
-      background-color: var(--color-white);
-    }
   }
 
   &__section-title {

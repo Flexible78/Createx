@@ -4,5 +4,8 @@
   column-gap: 40px;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
+
+  &__title {
+    padding: 8px 0;
+  }
 }

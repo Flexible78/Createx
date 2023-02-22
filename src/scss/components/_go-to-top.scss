@@ -1,7 +1,7 @@
 .go-to-top {
   position: absolute;
-  right: 341px;
-  bottom: 67px;
+  right: 346px;
+  bottom: 74px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,8 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border: none;
     border-radius: 4px;
     background-color: transparent;
@@ -26,14 +26,14 @@
   }
 
   &__icon {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     fill: var(--color-white);
     background-color: var(--color-primary);
 
     &:hover {
-      width: 48px;
-      height: 48px;
+      width: 40px;
+      height: 40px;
       border: none;
       border-radius: 4px;
       background-color: var(--color-primary-state);

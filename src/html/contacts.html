@@ -9,7 +9,7 @@
 
          <fieldset class="application-form__actions">
             <label class="form-field application-form__field" for="userName">
-               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
+               <span class="application-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
                >Name*</span>
                <input
                   class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
@@ -21,7 +21,7 @@
             </label>
 
             <label class="form-field application-form__field" for="userPhone">
-               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
+               <span class="application-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
                >Phone*</span>
                <input
                   class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
@@ -32,7 +32,7 @@
                   type="tel"/>
             </label>
             <label class="form-field application-form__field" for="userEmail">
-               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
+               <span class="application-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
                >Email</span>
                <input
                   class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
@@ -43,9 +43,9 @@
             </label>
 
             <label
-               class="form-field application-form-field application-form-field--message"
+               class="form-field application-form__field application-form__field--message"
                for="userMessage">
-               <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
+               <span class="application-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
                >Message*</span>
                <input
                   class="contacts__input contacts__input--message input form-field__input form-field__input--message text-descr text-descr--grey-800 text-descr--small"
@@ -56,17 +56,18 @@
                   type="text"/>
             </label>
 
-            <label class="check-option text-descr text-descr--small text-descr--grey-800" for="agreeBox"
+            <label class="application-form__check-option text-descr text-descr--small text-descr--grey-800" for="agreeBox"
             >
                <input
-                  class="check-option__input text-descr text-descr--small text-descr--grey-600--agree"
+                  class="application-form__check-option--input text-descr text-descr--small text-descr--grey-600--agree"
                   type="checkbox"
                   id="agreeBox"
                   name="agreeBox"
                />
-               <span class="check-option__text">I&nbsp;agree to&nbsp;receive communications from Createx Construction Bureau.</span>
+               <span class="application-form__check-option--text"></span>
+               I&nbsp;agree to&nbsp;receive communications from Createx Construction Bureau.
             </label>
-            <input class="form-field__btn btn btn--fill btn--regular" type="submit" value="Send request"/>
+            <input class="btn form-field__btn btn btn--fill btn--regular" type="submit" value="Send request"/>
          </fieldset>
 
       </form>

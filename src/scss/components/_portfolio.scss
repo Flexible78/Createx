@@ -1,6 +1,6 @@
 .portfolio {
   position: relative;
-  padding-top: var(--section-offset);
+  padding-top: 117px;
   padding-bottom: 120px;
   background-color: var(--bg-color-grey--200);
 
@@ -27,6 +27,9 @@
       padding-top: 28px;
       padding-bottom: 24px;
     }
+  }
+  &__more-info {
+    padding-top: 80px;
   }
 }
 
