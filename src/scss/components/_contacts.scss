@@ -9,17 +9,17 @@
     display: flex;
     justify-content: flex-end;
   }
+  .application-form {
+    &__title {
+      margin-bottom: 24px;
+    }
 
-  &__form-title {
-    margin-bottom: 24px;
+    &__form-actions {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
   }
-
-  &__form-actions {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
   &__form {
     max-width: 495px;
     border: 1px solid;
@@ -30,7 +30,7 @@
     0 26px 24px -10px rgb(30 33 44 / 10%),
     0 12px 10px -6px rgb(30 33 44 / 8%),
     0 4px 4px -4px rgb(30 33 44 / 5%);
-    background: #ffffff;
+    background-color: #ffffff;
   }
 
   &__input {
@@ -39,7 +39,6 @@
     padding: 11px 16px 12px;
     background-color: var(--bg-color-grey--200);
 
-    // box-shadow: 0;
     &--message {
       height: 66px;
       padding: 11px 0 34px 16px;
@@ -52,31 +51,20 @@
     padding-top: 24px;
   }
 
-  // &__checkBox {
+  // .contacts-checkBox {
   //   display: flex;
-  //   flex-flow: row nowrap;
+  //   flex-direction: row;
   //   column-gap: 12px;
-  //   align-items: start;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   display: flex;
-  //   background: #6c757d;
+  //   align-items: center;
+  //   justify-content: flex-start;
+  //   padding-top: 20px;
   // }
 
-  .contacts-checkBox {
-    display: flex;
-    flex-direction: row;
-    column-gap: 12px;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
   .check-option {
+    padding-top: 20px;
+    margin-bottom: 24px;
 
     &__input {
-      // position: absolute;
       -moz-appearance: none;
       -webkit-appearance: none;
       appearance: none;
@@ -85,20 +73,9 @@
         background-image: url(@img/svg/checkbox/checked.svg);
         background-repeat: no-repeat;
       }
-
-      &:focus + .check-option__text {
-        background-image: url(@img/svg/checkbox/disabled.svg);
-        background-repeat: no-repeat;
-      }
-
-      &:checked:focus + .check-option__text {
-        background-image: url(@img/svg/checkbox/plate.svg);
-        background-repeat: no-repeat;
-      }
     }
 
     &__text {
-      // position: absolute;
       width: 16px;
       height: 16px;
       padding-left: 29px;
@@ -107,13 +84,11 @@
       background-color: var(--color-white);
     }
   }
+
+  &__section-title {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+  }
 }
-
-// &__section-title {
-//   position: absolute;
-//   top: 0;
-//   z-index: -1;
-//   opacity: 0;
-// }
-//
-

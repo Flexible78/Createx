@@ -1190,6 +1190,11 @@ main {
   box-shadow: 0 4px 4px rgba(0,0,0,.25);
 }
 
+.form-field__btn {
+  display: flex;
+  margin: 0 auto;
+}
+
 .input {
   border: 1px solid var(--color-grey--400);
   border-radius: 4px;
@@ -1715,11 +1720,11 @@ main {
   justify-content: flex-end;
 }
 
-.contacts__form-title {
+.contacts .application-form__title {
   margin-bottom: 24px;
 }
 
-.contacts__form-actions {
+.contacts .application-form__form-actions {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -1732,7 +1737,7 @@ main {
   border-radius: 4px;
   padding: 48px 40px;
   box-shadow: 0 60px 80px -20px rgba(30,33,44,.16),0 26px 24px -10px rgba(30,33,44,.1),0 12px 10px -6px rgba(30,33,44,.08),0 4px 4px -4px rgba(30,33,44,.05);
-  background: #fff;
+  background-color: #fff;
 }
 
 .contacts__input {
@@ -1753,13 +1758,9 @@ main {
   padding-top: 24px;
 }
 
-.contacts .contacts-checkBox {
-  display: flex;
-  flex-direction: row;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
-  align-items: center;
-  justify-content: flex-start;
+.contacts .check-option {
+  padding-top: 20px;
+  margin-bottom: 24px;
 }
 
 .contacts .check-option__input {
@@ -1773,16 +1774,6 @@ main {
   background-repeat: no-repeat;
 }
 
-.contacts .check-option__input:focus+.check-option__text {
-  background-image: url(../assets/img/svg/checkbox/disabled.svg);
-  background-repeat: no-repeat;
-}
-
-.contacts .check-option__input:checked:focus+.check-option__text {
-  background-image: url(../assets/img/svg/checkbox/plate.svg);
-  background-repeat: no-repeat;
-}
-
 .contacts .check-option__text {
   width: 16px;
   height: 16px;
@@ -1790,6 +1781,13 @@ main {
   background-image: url(../assets/img/svg/checkbox/plate.svg);
   background-repeat: no-repeat;
   background-color: var(--color-white);
+}
+
+.contacts__section-title {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
 }
 
 .footer {
