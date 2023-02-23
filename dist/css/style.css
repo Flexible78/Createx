@@ -1301,12 +1301,12 @@ main {
   right: 346px;
   bottom: 74px;
   display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   align-items: center;
   justify-content: center;
   width: -moz-min-content;
   width: min-content;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
 }
 
 .go-to-top__title {
@@ -1379,9 +1379,70 @@ main {
   background-color: var(--color-white);
 }
 
-.header {
+.home-page__about {
+  padding: 120px 0;
+  background-color: var(--color-white);
+}
+
+.home-page__clients {
+  padding-top: 80px;
+  background-color: var(--bg-color-grey--200);
+}
+
+.home-page__contacts {
+  padding: 80px 0 78px;
+  background-image: url("../assets/img/bg/applic.jpg");
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.home-page__footer {
+  padding: 80px 0 84px;
+}
+
+.home-page__header {
   padding: 22px 0;
   background-color: var(--color-white);
+}
+
+.home-page__mission {
+  padding-top: 60px;
+  background-color: var(--color-white);
+}
+
+.home-page__news {
+  padding: calc(var(--section-offset) + 40px) 0 118px;
+}
+
+.home-page__portfolio {
+  position: relative;
+  padding-top: 117px;
+  padding-bottom: 120px;
+  background-color: var(--bg-color-grey--200);
+}
+
+.home-page__progress-circles {
+  padding-top: 180px;
+  padding-bottom: 60px;
+}
+
+.home-page__promo {
+  padding: 220px 0 353px;
+  background-image: url("../assets/img/bg/bgpromo.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color-grey--200);
+}
+
+.home-page__our-service {
+  padding-top: 214px;
+  padding-bottom: 80px;
+  background-image: url("../assets/img/bg/section-services-bg.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header__container {
@@ -1453,15 +1514,6 @@ main {
   color: var(--color-grey--800);
 }
 
-.promo {
-  padding: 220px 0 353px;
-  background-image: url("../assets/img/bg/bgpromo.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: var(--bg-color-grey--200);
-}
-
 .promo__content {
   max-width: 595px;
 }
@@ -1481,11 +1533,6 @@ main {
   align-items: center;
 }
 
-.about {
-  padding: 120px 0;
-  background-color: var(--color-white);
-}
-
 .about__section-title {
   margin-bottom: 24px;
 }
@@ -1498,11 +1545,6 @@ main {
 .about__video-block {
   width: 100%;
   height: 500px;
-}
-
-.mission {
-  padding-top: 60px;
-  background-color: var(--color-white);
 }
 
 .mission__section-title {
@@ -1545,15 +1587,6 @@ main {
   flex-grow: 1;
 }
 
-.our-service {
-  padding-top: 214px;
-  padding-bottom: 80px;
-  background-image: url("../assets/img/bg/section-services-bg.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .our-service__title {
   margin-bottom: 24px;
 }
@@ -1585,13 +1618,6 @@ main {
   -moz-column-gap: 40px;
        column-gap: 40px;
   padding-top: 0;
-}
-
-.portfolio {
-  position: relative;
-  padding-top: 117px;
-  padding-bottom: 120px;
-  background-color: var(--bg-color-grey--200);
 }
 
 .portfolio__header {
@@ -1647,11 +1673,6 @@ main {
   margin-bottom: 60.1px;
 }
 
-.progress-circles {
-  padding-top: 180px;
-  padding-bottom: 60px;
-}
-
 .circles-bar {
   --grid-column-gap: 48px;
   display: grid;
@@ -1695,10 +1716,6 @@ main {
   background-image: url("../assets/img/svg/circles/green-circle-progress.svg");
 }
 
-.news {
-  padding: calc(var(--section-offset) + 40px) 0 118px;
-}
-
 .news__section-title {
   margin-bottom: 60px;
 }
@@ -1725,14 +1742,6 @@ main {
 
 .news__more-info {
   padding-top: 80px;
-}
-
-.contacts {
-  padding: 80px 0;
-  background-image: url("../assets/img/bg/applic.jpg");
-  background-position: center top;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
 .contacts__container {
@@ -1776,7 +1785,6 @@ main {
 }
 
 .footer {
-  padding: 80px 0 84px;
   color: rgba(255,255,255,.6);
   background-color: var(--color-grey--900);
 }

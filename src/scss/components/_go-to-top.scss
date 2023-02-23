@@ -3,10 +3,10 @@
   right: 346px;
   bottom: 74px;
   display: flex;
+  column-gap: 16px;
   align-items: center;
   justify-content: center;
   width: min-content;
-  column-gap: 16px;
 
   &__title {
     text-transform: uppercase;
