@@ -1,4 +1,6 @@
 .header {
+  padding: 22px 0;
+  background-color: var(--color-white);
 
   &__container {
     display: flex;
@@ -9,6 +11,14 @@
 
   &__menu {
     margin-right: 115px;
+  }
+
+  &--secondary {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
   }
 }
 
@@ -31,6 +41,11 @@
     font-style: normal;
     font-size: 16px;
     line-height: 1.6;
+
+    &:hover {
+      color: var(--color-primary);
+      transition: 0.2s all ease-in-out;
+    }
   }
 }
 

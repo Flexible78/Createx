@@ -442,6 +442,12 @@ html {
   padding: 0 15px;
 }
 
+.container-hd {
+  max-width: 1950px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .page__wrapper {
   position: relative;
   display: flex;
@@ -1299,11 +1305,11 @@ main {
 .go-to-top {
   position: absolute;
   right: 346px;
-  bottom: 74px;
+  bottom: 83px;
   display: flex;
   -moz-column-gap: 16px;
        column-gap: 16px;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   width: -moz-min-content;
   width: min-content;
@@ -1315,9 +1321,6 @@ main {
 }
 
 .go-to-top__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 40px;
   height: 40px;
   border: none;
@@ -1329,18 +1332,15 @@ main {
 .go-to-top__icon {
   width: 40px;
   height: 40px;
+  padding: 15px 12px 16px 12px;
   fill: var(--color-white);
+  border-radius: 4px;
   background-color: var(--color-primary);
 }
 
 .go-to-top__icon:hover {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 4px;
-  background-color: var(--color-primary-state);
   transform: rotate(-90deg);
-  transition: all .18s ease-in-out;
+  transition: all .28s ease-in-out;
 }
 
 .application-form__title {
@@ -1401,11 +1401,6 @@ main {
   padding: 80px 0 84px;
 }
 
-.home-page__header {
-  padding: 22px 0;
-  background-color: var(--color-white);
-}
-
 .home-page__mission {
   padding-top: 60px;
   background-color: var(--color-white);
@@ -1445,6 +1440,26 @@ main {
   background-repeat: no-repeat;
 }
 
+.breadcrumb-list {
+  display: flex;
+}
+
+.breadcrumb-list__item:last-child::before {
+  content: "/";
+  padding: 0 8px;
+}
+
+.breadcrumb-list__item:hover {
+  color: var(--color-grey--600);
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.header {
+  padding: 22px 0;
+  background-color: var(--color-white);
+}
+
 .header__container {
   display: flex;
   flex-wrap: wrap;
@@ -1454,6 +1469,14 @@ main {
 
 .header__menu {
   margin-right: 115px;
+}
+
+.header--secondary {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0);
 }
 
 .logo {
@@ -1474,6 +1497,11 @@ main {
   font-style: normal;
   font-size: 16px;
   line-height: 1.6;
+}
+
+.menu__link:hover {
+  color: var(--color-primary);
+  transition: .2s all ease-in-out;
 }
 
 .connections {
@@ -1947,4 +1975,29 @@ main {
   background-position: left;
   background-size: 16px 16px;
   background-repeat: no-repeat;
+}
+
+.promo-services {
+  padding: 152px 0 179px;
+  background-image: url("../assets/img/bg/bg-serv-page.png");
+  background-position: 100% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color-grey--200);
+}
+
+.promo-services__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.promo-services__content {
+  grid-column: 6 span;
+}
+
+.promo-services__title {
+  padding-top: 40px;
+  padding-bottom: 24px;
 }

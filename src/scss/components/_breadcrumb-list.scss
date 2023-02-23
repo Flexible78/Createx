@@ -1,0 +1,17 @@
+.breadcrumb-list {
+  display: flex;
+
+  &__item {
+
+    &:last-child::before {
+      content: "/";
+      padding: 0 8px;
+    }
+
+    &:hover {
+      color: var(--color-grey--600);
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}

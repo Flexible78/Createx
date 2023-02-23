@@ -5,21 +5,21 @@
    <meta content="width=device-width, user-scalable=yes, initial-scale=1.0" name="viewport" />
    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
    <link href="css/style.min.css" rel="stylesheet" />
-   <title>Createx construction</title>
+   <title>Services</title>
 </head>
 
 
 <body class="services-page">
    <div class="page__wrapper">
-      <header class="header home-page__header">
+      <header class="header header--secondary">
    <div class="container header__container">
-      <a class="logo" href="#home">
+      <a class="logo" href="index.html">
          <img class="logo__img" src="../assets/img/svg/logo.svg" alt="logo" />
       </a>
       <nav class="menu header__menu">
          <ul class="menu__list">
             <li class="menu__item"><a class="menu__link" href="#about">About Us</a></li>
-            <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="services.html">Services</a></li>
             <li class="menu__item"><a class="menu__link" href="#work">Work</a></li>
             <li class="menu__item"><a class="menu__link" href="#news">News</a></li>
             <li class="menu__item"><a class="menu__link" href="#contacts">Contacts</a></li>
@@ -39,7 +39,103 @@
 </header>
 
       <main class="main">
-         
+         <section class="promo-services">
+   <div class="container promo-services__container">
+      <div class="promo-services__content">
+         <ul class="promo-services__breadcrumb breadcrumb-list">
+            <li class="breadcrumb-list__item text__descr text text--small text--grey-800">
+               <a href="index.html">Homepage</a>
+            </li>
+            <li class="breadcrumb-list__item text__descr text text--small text--grey-800"><a href="#">
+               Services</a></li>
+         </ul>
+         <h1 class="promo-services__title page-title">Services</h1>
+         <p class="page-descr promo-services__descr">If&nbsp;you are looking for a&nbsp;full-service construction
+            company,
+            look to&nbsp;Createx Construction Bureau. We&nbsp;are doing our best to&nbsp;be&nbsp;a&nbsp;partner for all
+            of&nbsp;your
+            construction needs.
+         </p>
+      </div>
+   </div>
+</section>
+
+         <section class="contacts home-page__contacts">
+   <div class="container contacts__container">
+      <h2 class="contacts__section-title">section`s application form</h2>
+      <form class="application-form contacts__form" action="#" name="callBackForm" id="callBackForm">
+         <h2
+            class="application-form__title block-heading block-heading--center block-heading--regular">
+            A&nbsp;quick way to&nbsp;discuss details
+         </h2>
+
+         <fieldset class="application-form__actions">
+            <label class="form-field application-form__field" for="userName">
+               <span class="application-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
+               >Name*</span>
+               <input
+                  class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
+                  name="userName"
+                  id="userName"
+                  required
+                  placeholder="Your name"
+                  type="text"/>
+            </label>
+
+            <label class="form-field application-form__field" for="userPhone">
+               <span class="application-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
+               >Phone*</span>
+               <input
+                  class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
+                  name="userPhone"
+                  id="userPhone"
+                  required
+                  placeholder="Your phone number"
+                  type="tel"/>
+            </label>
+            <label class="form-field application-form__field" for="userEmail">
+               <span class="application-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
+               >Email</span>
+               <input
+                  class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
+                  name="userEmail"
+                  id="userEmail"
+                  placeholder="Your working email"
+                  type="email"/>
+            </label>
+
+            <label
+               class="form-field application-form__field application-form__field--message"
+               for="userMessage">
+               <span class="application-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
+               >Message*</span>
+               <input
+                  class="contacts__input contacts__input--message input form-field__input form-field__input--message text-descr text-descr--grey-800 text-descr--small"
+                  name="userMessage"
+                  id="userMessage"
+                  required
+                  placeholder="Your message"
+                  type="text"/>
+            </label>
+
+            <label class="application-form__check-option text-descr text-descr--small text-descr--grey-800" for="agreeBox"
+            >
+               <input
+                  class="application-form__check-option--input text-descr text-descr--small text-descr--grey-600--agree"
+                  type="checkbox"
+                  id="agreeBox"
+                  name="agreeBox"
+               />
+               <span class="application-form__check-option--text"></span>
+               I&nbsp;agree to&nbsp;receive communications from Createx Construction Bureau.
+            </label>
+            <input class="btn form-field__btn btn btn--fill btn--regular" type="submit" value="Send request"/>
+         </fieldset>
+
+      </form>
+   </div>
+</section>
+
       </main>
       <footer class="footer home-page__footer">
    <div class="container footer__container">

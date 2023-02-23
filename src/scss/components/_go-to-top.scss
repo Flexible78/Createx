@@ -1,10 +1,10 @@
 .go-to-top {
   position: absolute;
   right: 346px;
-  bottom: 74px;
+  bottom: 83px;
   display: flex;
   column-gap: 16px;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   width: min-content;
 
@@ -14,9 +14,6 @@
   }
 
   &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 40px;
     height: 40px;
     border: none;
@@ -28,17 +25,14 @@
   &__icon {
     width: 40px;
     height: 40px;
+    padding: 15px 12px 16px 12px;
     fill: var(--color-white);
+    border-radius: 4px;
     background-color: var(--color-primary);
 
     &:hover {
-      width: 40px;
-      height: 40px;
-      border: none;
-      border-radius: 4px;
-      background-color: var(--color-primary-state);
       transform: rotate(-90deg);
-      transition: all 0.18s ease-in-out;
+      transition: all 0.28s ease-in-out;
     }
   }
 }
