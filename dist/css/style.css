@@ -2001,3 +2001,45 @@ main {
   padding-top: 40px;
   padding-bottom: 24px;
 }
+
+.services {
+  padding: 120px 0 180px;
+  background-color: var(--color-white);
+}
+
+.services__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 120px;
+}
+
+.service-block {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-block--reverse {
+  flex-direction: row-reverse;
+}
+
+.service-block__img {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.service-block__content {
+  flex: 1;
+}
+
+.service-block__heading {
+  margin-bottom: 24px;
+}
+
+.service-block__descr {
+  margin-bottom: 48px;
+}
