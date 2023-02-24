@@ -2045,7 +2045,7 @@ main {
 }
 
 .promo-services-offer {
-  padding: 152px 0 179px;
+  padding: 152px 0 116px;
   background-image: url("../assets/img/bg/bg-serv-offer.png");
   background-position: 100% 50%;
   background-size: contain;
@@ -2067,4 +2067,55 @@ main {
 .promo-services-offer__title {
   padding-top: 40px;
   padding-bottom: 24px;
+}
+
+.design-offer {
+  position: relative;
+  padding: 120px 180px;
+}
+
+.design-offer__container {
+  display: flex;
+  -moz-column-gap: 105px;
+       column-gap: 105px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.design-offer__img {
+  flex: 1;
+}
+
+.design-offer__title {
+  margin-bottom: 60px;
+}
+
+.design-offer__content {
+  flex: 1;
+}
+
+.design-offer__header {
+  margin-bottom: 12px;
+}
+
+.design-offer__header::before {
+  content: "";
+  position: absolute;
+  right: 35%;
+  top: 33%;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-image: url("../assets/img/svg/plus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.design-offer__header__item[open] .design-offer__header::after {
+  background-image: url("../assets/img/svg/minus.svg");
+}
+
+.design-offer__descr {
+  margin-bottom: 24px;
 }

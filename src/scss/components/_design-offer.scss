@@ -1,0 +1,52 @@
+.design-offer {
+  position: relative;
+  padding: 120px 180px;
+
+  &__container {
+    display: flex;
+    column-gap: 105px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__img {
+    flex: 1;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__item {
+  }
+
+  &__header {
+    margin-bottom: 12px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 35%;
+      top: 33%;
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      background-image: url("@img/svg/plus.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    &__item[open] &::after {
+      background-image: url("@img/svg/minus.svg");
+    }
+  }
+
+  &__descr {
+    margin-bottom: 24px;
+  }
+}
