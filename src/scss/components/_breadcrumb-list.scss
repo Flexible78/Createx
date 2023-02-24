@@ -3,9 +3,9 @@
 
   &__item {
 
-    &:last-child::before {
+    &:not(:last-child)::after {
       content: "/";
-      padding: 0 8px;
+      padding: 0 7px;
     }
 
     &:hover {

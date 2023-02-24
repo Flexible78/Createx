@@ -1444,9 +1444,9 @@ main {
   display: flex;
 }
 
-.breadcrumb-list__item:last-child::before {
+.breadcrumb-list__item:not(:last-child)::after {
   content: "/";
-  padding: 0 8px;
+  padding: 0 7px;
 }
 
 .breadcrumb-list__item:hover {
@@ -2042,4 +2042,29 @@ main {
 
 .service-block__descr {
   margin-bottom: 48px;
+}
+
+.promo-services-offer {
+  padding: 152px 0 179px;
+  background-image: url("../assets/img/bg/bg-serv-offer.png");
+  background-position: 100% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color-grey--200);
+}
+
+.promo-services-offer__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.promo-services-offer__content {
+  grid-column: 6 span;
+}
+
+.promo-services-offer__title {
+  padding-top: 40px;
+  padding-bottom: 24px;
 }
