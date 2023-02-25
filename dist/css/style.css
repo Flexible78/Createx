@@ -460,13 +460,13 @@ main {
 }
 
 .page-title {
-  --page--title-color: var(--color-grey--900);
   font-weight: 700;
   font-size: 72px;
   line-height: 1.3;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--page--title-color);
+  --page--title-color: var(--color-grey--900);
 }
 
 .page-title--home {
@@ -489,12 +489,18 @@ main {
   text-align: center;
 }
 
+.section-title--lato-900 {
+  font-family: "Lato";
+  font-weight: 900;
+  font-style: normal;
+}
+
 .block-heading {
-  --block-title-main-color: var(--color-grey--900);
   font-weight: 700;
   font-size: 32px;
   line-height: 1.5;
   color: var(--block-title-main-color);
+  --block-title-main-color: var(--color-grey--900);
 }
 
 .block-heading--center {
@@ -819,7 +825,7 @@ main {
 
 .activities-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(245px, auto));
   cursor: pointer;
 }
 
@@ -1682,6 +1688,10 @@ main {
   padding-bottom: 24px;
 }
 
+.portfolio-projects__descr {
+  transform: translateY(3px);
+}
+
 .clients {
   padding-top: 80px;
   background-color: var(--bg-color-grey--200);
@@ -2070,7 +2080,6 @@ main {
 }
 
 .design-offer {
-  position: relative;
   padding: 120px 180px;
 }
 
@@ -2084,6 +2093,7 @@ main {
 
 .design-offer__img {
   flex: 1;
+  color: var(--color-primary);
 }
 
 .design-offer__title {
@@ -2091,20 +2101,25 @@ main {
 }
 
 .design-offer__content {
+  position: relative;
   flex: 1;
+}
+
+.design-offer__item {
+  padding: 0 0 0 45px;
 }
 
 .design-offer__header {
   margin-bottom: 12px;
 }
 
-.design-offer__header::before {
+.design-offer__header::after {
   content: "";
   position: absolute;
-  right: 35%;
-  top: 33%;
+  left: 0px;
   width: 24px;
   height: 24px;
+  margin: -75px 0 0 0;
   border-radius: 100%;
   background-image: url("../assets/img/svg/plus.svg");
   background-position: center;
@@ -2112,8 +2127,9 @@ main {
   cursor: pointer;
 }
 
-.design-offer__header__item[open] .design-offer__header::after {
+.design-offer__item[open] .design-offer__header::after {
   background-image: url("../assets/img/svg/minus.svg");
+  background-repeat: no-repeat;
 }
 
 .design-offer__descr {
