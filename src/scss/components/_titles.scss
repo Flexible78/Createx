@@ -28,6 +28,10 @@
     text-align: center;
   }
 
+  &--grey-400 {
+    color: var(--color-grey--400);
+  }
+
   &--lato-900 {
     font-family: "Lato";
     font-weight: 900;

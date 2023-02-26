@@ -489,6 +489,10 @@ main {
   text-align: center;
 }
 
+.section-title--grey-400 {
+  color: var(--color-grey--400);
+}
+
 .section-title--lato-900 {
   font-family: "Lato";
   font-weight: 900;
@@ -2134,4 +2138,70 @@ main {
 
 .design-offer__descr {
   margin-bottom: 24px;
+}
+
+.sequence {
+  padding: 60px 120px;
+}
+
+.sequence__title {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.action-list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.action-list__item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.action-list__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 31px;
+  width: 209px;
+  height: 1px;
+  margin-left: 75px;
+  background-image: url(../assets/img/svg/line.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.action-list__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.action-list__number:hover {
+  box-shadow: 0 0 0 16px rgba(255,90,48,.06);
+  color: var(--color-primary);
+  background-position: center;
+  background-color: rgba(255,90,48,.12);
+  transition: .2s all ease-in-out;
+  cursor: pointer;
+}
+
+.action-list__header {
+  margin-bottom: 8px;
+  margin-left: 15px;
+}
+
+.action-list__descr {
+  margin-left: 15px;
 }

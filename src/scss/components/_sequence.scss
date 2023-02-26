@@ -1,0 +1,64 @@
+.sequence {
+  padding: 60px 120px;
+
+  &__title {
+    position: relative;
+    margin-bottom: 60px;
+  }
+}
+
+.action-list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+
+  &__item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 31px;
+      width: 209px;
+      height: 1px;
+      margin-left: 75px;
+      background-image: url(@img/svg/line.svg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      box-shadow: 0 0 0 16px rgba($color: #FF5A30, $alpha: 6%);
+      color: var(--color-primary);
+      background-position: center;
+      background-color: rgba($color: #FF5A30, $alpha: 12%);
+      transition: 0.2s all ease-in-out;
+      cursor: pointer;
+    }
+  }
+
+  &__header {
+    margin-bottom: 8px;
+    margin-left: 15px;
+  }
+
+  &__descr {
+    margin-left: 15px;
+  }
+}
