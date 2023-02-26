@@ -2205,3 +2205,43 @@ main {
 .action-list__descr {
   margin-left: 15px;
 }
+
+.benefits__section-title {
+  margin-bottom: 24px;
+}
+
+.benefits__section-descr {
+  margin-bottom: 60px;
+}
+
+.benefits__features-list {
+  margin-bottom: 25px;
+}
+
+.benefits__form {
+  position: relative;
+  top: 95px;
+  border-radius: 4px;
+  padding: 48px 60px;
+  box-shadow: 0 80px 80px -20px rgba(154,156,165,.08),0 30px 24px -10px rgba(154,156,165,.05),0 12px 10px -6px rgba(154,156,165,.04),0 4px 4px -4px rgba(30,33,44,.03);
+  background: #fff;
+}
+
+.benefits__form-actions {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  align-items: flex-end;
+}
+
+.benefits__form-title {
+  margin-bottom: 32px;
+}
+
+.benefits__form-field {
+  flex-basis: 260px;
+}
+
+.benefits__form-field--message {
+  flex-grow: 1;
+}
