@@ -28,6 +28,10 @@
     text-align: center;
   }
 
+  &--home {
+    color: var(--color-white);
+  }
+
   &--grey-400 {
     color: var(--color-grey--400);
   }
@@ -74,5 +78,9 @@
 
   &--primary {
     color: var(--color-primary);
+  }
+
+  &--home {
+    color: var(--color-white);
   }
 }

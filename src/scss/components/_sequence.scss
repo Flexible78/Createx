@@ -10,7 +10,7 @@
 .action-list {
   position: relative;
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   column-gap: 30px;
 
   &__item {
@@ -33,6 +33,7 @@
   }
 
   &__number {
+    justify-self: start;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,10 +56,10 @@
 
   &__header {
     margin-bottom: 8px;
-    margin-left: 15px;
+    // margin-left: 15px;
   }
 
   &__descr {
-    margin-left: 15px;
+    // margin-left: 15px;
   }
 }

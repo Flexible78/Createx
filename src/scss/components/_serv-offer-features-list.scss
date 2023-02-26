@@ -1,0 +1,46 @@
+.serv-offer-features-list {
+  --grid-column-gap: 188px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--grid-column-gap);
+
+  &__item {
+    position: relative;
+    padding-top: 72px;
+    background-position: 50% 0;
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+
+    &:not(:nth-child(3n)) {
+      ::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: calc(var(--grid-column-gap) / 2 * -1);
+        width: 1px;
+        height: 100%;
+        background-image: url("../assets/img/svg/divider.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--cost {
+      background-image: url("../assets/img/bg/ic-contract.svg");
+    }
+
+    &--workers {
+      background-image: url("../assets/img/bg/ic-helmet.svg");
+    }
+
+    &--control {
+      background-image: url("../assets/img/bg/ic-camera.svg");
+    }
+  }
+
+  &__heading {
+    margin-bottom: 8px;
+  }
+}
