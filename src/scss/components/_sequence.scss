@@ -1,21 +1,21 @@
 .sequence {
-  padding: 60px 120px;
+  padding: 60px 0 120px;
 
   &__title {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
 }
 
 .action-list {
   position: relative;
   display: flex;
-  // flex-direction: row;
+  flex-wrap: wrap;
   column-gap: 30px;
 
   &__item {
     display: flex;
-    flex: 1;
+    flex: 1 1 0;
     flex-direction: column;
 
     &:not(:last-child)::after {
@@ -33,16 +33,17 @@
   }
 
   &__number {
-    justify-self: start;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 84px;
     height: 84px;
+    margin-bottom: 4px;
     border-radius: 50%;
     background: transparent;
     background-position: center;
     background-repeat: no-repeat;
+    transform: translateX(-15px);
 
     &:hover {
       box-shadow: 0 0 0 16px rgba($color: #FF5A30, $alpha: 6%);
@@ -55,8 +56,7 @@
   }
 
   &__header {
-    margin-bottom: 8px;
-    // margin-left: 15px;
+    margin-bottom: 9px;
   }
 
   &__descr {

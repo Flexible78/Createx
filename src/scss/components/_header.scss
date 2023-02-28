@@ -14,10 +14,10 @@
   }
 
   &--secondary {
-    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     background-color: transparent;
   }
 }
@@ -33,6 +33,12 @@
     gap: 40px;
     justify-content: center;
     list-style: none;
+  }
+
+  &__item:focus-within {
+    outline: 1px solid var(--color-primary);
+    outline-offset: 3px;
+    transition: all 0.18s linear;
   }
 
   &__link {
@@ -53,6 +59,12 @@
   display: flex;
   column-gap: 36px;
   align-items: center;
+
+  a:focus-within {
+    outline: 1px solid var(--color-primary);
+    outline-offset: 3px;
+    transition: all 0.18s linear;
+  }
 
   &__item {
     display: flex;

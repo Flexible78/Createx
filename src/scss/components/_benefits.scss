@@ -1,6 +1,5 @@
 .benefits {
-  padding-top: 133px;
-  padding-bottom: 76px;
+  padding-top: 80px;
   background: var(--color-grey--900);
 
   &__section-title {
@@ -18,10 +17,14 @@
 
   &__btn {
     position: relative;
-    top: 100px;
+    top: 26px;
     display: block;
     margin: 0 auto;
     padding: 0 112px;
     cursor: pointer;
+  }
+
+  &__features-list {
+    margin-bottom: 74px;
   }
 }

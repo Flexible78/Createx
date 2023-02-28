@@ -616,22 +616,28 @@ main {
 }
 
 .btn {
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  transition: all .16s ease;
   --btn-fill-text-color: var(--color-white);
   --btn-fill-bg-color: var(--color-primary);
   --btn-fill-bg-color-state: var(--color-primary-state);
   --btn-outline-border-primary-color: var(--color-primary-state);
   --btn-outline-border-white-color: var(--color-white);
-  border-radius: 4px;
-  font-weight: 700;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  transition: all .3s ease;
 }
 
 .btn--fill {
   border: none;
   color: var(--btn-fill-text-color);
   background-color: var(--btn-fill-bg-color);
+}
+
+.btn--fill:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 1.5px;
+  transition: outline .16s linear;
 }
 
 .btn--fill:hover {
@@ -648,9 +654,19 @@ main {
   background: none;
 }
 
+.btn--outline:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4.5px;
+}
+
 .btn--outline--primary {
   border-color: var(--btn-outline-border-primary-color);
   color: var(--btn-fill-bg-color);
+}
+
+.btn--outline--primary:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4.5px;
 }
 
 .btn--outline--primary:hover {
@@ -668,6 +684,11 @@ main {
   color: var(--btn-outline-border-white-color);
 }
 
+.btn--outline--white:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4.5px;
+}
+
 .btn--outline--white:hover {
   border-color: var(--color-primary);
   background-color: var(--color-primary);
@@ -682,6 +703,11 @@ main {
   padding: 0 40px;
   font-size: 16px;
   line-height: 3.25;
+}
+
+.btn--large:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4.5px;
 }
 
 .btn--large--p44 {
@@ -1357,7 +1383,6 @@ main {
 }
 
 .go-to-top__icon:hover {
-  transform: rotate(-90deg);
   transition: all .28s ease-in-out;
 }
 
@@ -1515,7 +1540,7 @@ main {
 }
 
 .serv-offer-features-list__heading {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .header {
@@ -1535,10 +1560,10 @@ main {
 }
 
 .header--secondary {
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   background-color: rgba(0,0,0,0);
 }
 
@@ -1552,6 +1577,12 @@ main {
   gap: 40px;
   justify-content: center;
   list-style: none;
+}
+
+.menu__item:focus-within {
+  outline: 1px solid var(--color-primary);
+  outline-offset: 3px;
+  transition: all .18s linear;
 }
 
 .menu__link {
@@ -1572,6 +1603,12 @@ main {
   -moz-column-gap: 36px;
        column-gap: 36px;
   align-items: center;
+}
+
+.connections a:focus-within {
+  outline: 1px solid var(--color-primary);
+  outline-offset: 3px;
+  transition: all .18s linear;
 }
 
 .connections__item {
@@ -1899,6 +1936,12 @@ main {
        column-gap: 16px;
 }
 
+.social-list a:focus-within {
+  outline: 1px solid var(--color-white);
+  outline-offset: 3px;
+  transition: all .11s linear;
+}
+
 .social-list__item {
   transition: all .15s ease-in-out;
 }
@@ -1989,6 +2032,12 @@ main {
 .address-list__item {
   margin-right: 4px;
   transition: all .15s ease-in-out;
+}
+
+.address-list__item:nth-child(2n):focus-within {
+  outline: 1px solid var(--color-primary);
+  outline-offset: 3px;
+  transition: all .18s linear;
 }
 
 .address-list__item:hover {
@@ -2137,7 +2186,7 @@ main {
 }
 
 .design-offer {
-  padding: 120px 180px;
+  padding: 120px 0 180px;
 }
 
 .design-offer__container {
@@ -2194,24 +2243,25 @@ main {
 }
 
 .sequence {
-  padding: 60px 120px;
+  padding: 60px 0 120px;
 }
 
 .sequence__title {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 48px;
 }
 
 .action-list {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
 
 .action-list__item {
   display: flex;
-  flex: 1;
+  flex: 1 1 0;
   flex-direction: column;
 }
 
@@ -2229,16 +2279,17 @@ main {
 }
 
 .action-list__number {
-  justify-self: start;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 84px;
   height: 84px;
+  margin-bottom: 4px;
   border-radius: 50%;
   background: rgba(0,0,0,0);
   background-position: center;
   background-repeat: no-repeat;
+  transform: translateX(-15px);
 }
 
 .action-list__number:hover {
@@ -2251,12 +2302,11 @@ main {
 }
 
 .action-list__header {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .benefits {
-  padding-top: 133px;
-  padding-bottom: 76px;
+  padding-top: 80px;
   background: var(--color-grey--900);
 }
 
@@ -2275,9 +2325,13 @@ main {
 
 .benefits__btn {
   position: relative;
-  top: 100px;
+  top: 26px;
   display: block;
   margin: 0 auto;
   padding: 0 112px;
   cursor: pointer;
+}
+
+.benefits__features-list {
+  margin-bottom: 74px;
 }
