@@ -1,6 +1,6 @@
 .go-to-top {
   position: absolute;
-  right: 346px;
+  right: 345px;
   bottom: 83px;
   display: flex;
   column-gap: 16px;
@@ -8,21 +8,19 @@
   justify-content: center;
   width: min-content;
 
-  &__link {
-    &:focus {
-      outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 
-    &:focus-visible {
-      outline: 3px solid var(--color-white);
-      outline-offset: 5px;
-      border-radius: 1px;
-    }
+  &:focus-visible {
+    outline: 3px solid var(--color-white);
+    outline-offset: 5px;
+    border-radius: 1px;
+  }
 
-    &:hover {
-      text-decoration: underline;
-      color: var(--color-white);
-    }
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-white);
   }
 
   &__title {

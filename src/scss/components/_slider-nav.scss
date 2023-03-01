@@ -22,8 +22,12 @@
 
   &:focus-visible {
     outline: 3px solid var(--color-grey--900);
-    background-color: var(--color-primary);
     outline-offset: -1px;
+    background-color: var(--color-primary);
+
+    .slider-btn__icon {
+      fill: var(--color-white);
+    }
   }
 
   &__icon {

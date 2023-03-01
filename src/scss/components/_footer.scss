@@ -218,9 +218,9 @@
 .copyright {
   grid-column: 10 span;
   padding-top: 8px;
+  color: var(--color-white);
 
   &__item {
-    color: var(--color-white);
 
     &--icon {
       padding-left: 20px;
@@ -236,15 +236,15 @@
 
       &:focus-visible {
         outline: 2px solid var(--color-white);
-        outline-offset: 4px;
+        outline-offset: 2px;
         border-radius: 0.4px;
       }
 
       &:hover {
         text-decoration: underline;
         color: var(--color-white);
+        cursor: pointer;
       }
-
     }
   }
 }

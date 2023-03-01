@@ -1050,8 +1050,12 @@ main {
 
 .slider-btn:focus-visible {
   outline: 3px solid var(--color-grey--900);
-  background-color: var(--color-primary);
   outline-offset: -1px;
+  background-color: var(--color-primary);
+}
+
+.slider-btn:focus-visible .slider-btn__icon {
+  fill: var(--color-white);
 }
 
 .slider-btn__icon {
@@ -1438,7 +1442,7 @@ main {
 
 .go-to-top {
   position: absolute;
-  right: 346px;
+  right: 345px;
   bottom: 83px;
   display: flex;
   -moz-column-gap: 16px;
@@ -1449,17 +1453,17 @@ main {
   width: min-content;
 }
 
-.go-to-top__link:focus {
+.go-to-top:focus {
   outline: none;
 }
 
-.go-to-top__link:focus-visible {
+.go-to-top:focus-visible {
   outline: 3px solid var(--color-white);
   outline-offset: 5px;
   border-radius: 1px;
 }
 
-.go-to-top__link:hover {
+.go-to-top:hover {
   text-decoration: underline;
   color: var(--color-white);
 }
@@ -1953,7 +1957,7 @@ main {
 }
 
 .clients__partners-list {
-  margin-bottom: 180px;
+  margin-bottom: 173px;
 }
 
 .clients__title {
@@ -2292,9 +2296,6 @@ main {
 .copyright {
   grid-column: 10 span;
   padding-top: 8px;
-}
-
-.copyright__item {
   color: var(--color-white);
 }
 
@@ -2313,13 +2314,14 @@ main {
 
 .copyright__item--icon:focus-visible {
   outline: 2px solid var(--color-white);
-  outline-offset: 4px;
+  outline-offset: 2px;
   border-radius: .4px;
 }
 
 .copyright__item--icon:hover {
   text-decoration: underline;
   color: var(--color-white);
+  cursor: pointer;
 }
 
 .promo-services {
