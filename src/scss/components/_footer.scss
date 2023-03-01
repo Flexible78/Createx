@@ -165,8 +165,6 @@
     margin-right: 4px;
     transition: all 0.15s ease-in-out;
 
-
-
     &--strong {
       color: var(--color-white);
     }
@@ -230,6 +228,23 @@
       background-position: left;
       background-size: 16px 16px;
       background-repeat: no-repeat;
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-white);
+        outline-offset: 4px;
+        border-radius: 0.4px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        color: var(--color-white);
+      }
+
     }
   }
 }

@@ -1449,12 +1449,27 @@ main {
   width: min-content;
 }
 
+.go-to-top__link:focus {
+  outline: none;
+}
+
+.go-to-top__link:focus-visible {
+  outline: 3px solid var(--color-white);
+  outline-offset: 5px;
+  border-radius: 1px;
+}
+
+.go-to-top__link:hover {
+  text-decoration: underline;
+  color: var(--color-white);
+}
+
 .go-to-top__title {
   text-transform: uppercase;
   color: var(--color-white);
 }
 
-.go-to-top__link {
+.go-to-top__arrow {
   width: 40px;
   height: 40px;
   border: none;
@@ -1466,14 +1481,10 @@ main {
 .go-to-top__icon {
   width: 40px;
   height: 40px;
+  border-radius: 4px;
   padding: 15px 12px 16px 12px;
   fill: var(--color-white);
-  border-radius: 4px;
   background-color: var(--color-primary);
-}
-
-.go-to-top__icon:hover {
-  transition: all .28s ease-in-out;
 }
 
 .application-form__title {
@@ -2293,6 +2304,22 @@ main {
   background-position: left;
   background-size: 16px 16px;
   background-repeat: no-repeat;
+}
+
+.copyright__item--icon:focus {
+  outline: none;
+  border: none;
+}
+
+.copyright__item--icon:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 4px;
+  border-radius: .4px;
+}
+
+.copyright__item--icon:hover {
+  text-decoration: underline;
+  color: var(--color-white);
 }
 
 .promo-services {
