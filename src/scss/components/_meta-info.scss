@@ -1,9 +1,9 @@
 .meta-info {
-  --meta-col-gap: 24px;
-
   display: flex;
+
   column-gap: var(--meta-col-gap);
   align-items: center;
+  --meta-col-gap: 24px;
 
   &__item {
     position: relative;
@@ -27,6 +27,15 @@
   &__link {
     transition: color 0.18s ease-in-out;
 
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-grey--900);
+      outline-offset: 3px;
+    }
+
     &:hover {
       color: var(--color-primary);
     }
@@ -37,6 +46,15 @@
       background-position: left;
       background-size: 16px 16px;
       background-repeat: no-repeat;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-grey--900);
+        outline-offset: 3px;
+      }
     }
   }
 }

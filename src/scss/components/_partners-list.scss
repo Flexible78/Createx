@@ -1,14 +1,24 @@
 .partners-list {
-  --grid-column-gap: 102px;
-
   display: grid;
+
   grid-template-columns: repeat(6, 1fr);
   column-gap: var(--grid-column-gap);
   justify-content: stretch;
+  --grid-column-gap: 102px;
 
   &__item {
     width: 120px;
     height: 64px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--color-grey--900);
+      outline-offset: 2.3px;
+      border-radius: 1px;
+    }
   }
 
   &__logo {

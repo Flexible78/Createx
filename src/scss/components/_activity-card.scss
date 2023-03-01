@@ -12,6 +12,15 @@
   background-color: var(--color-white);
   transition: 0.3s all linear;
 
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--color-grey--900);
+    outline-offset: 1px;
+  }
+
   &__bg {
     position: absolute;
     top: 0;
@@ -50,6 +59,22 @@
   &__title {
     z-index: 5;
     transition: all 0.17s ease-in-out;
+  }
+
+  &:focus  {
+    text-decoration: none;
+
+    .activity-card__bg {
+      opacity: 1;
+    }
+
+    .activity-card__icon {
+      fill: var(--color-white);
+    }
+
+    .activity-card__title {
+      color: var(--color-white);
+    }
   }
 
   &:hover {

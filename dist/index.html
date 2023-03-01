@@ -12,17 +12,27 @@
 <body class="home-page">
    <div class="page__wrapper">
       <header class="header">
-               <div class="container header__container">
-                  <a class="logo" href="#home">
-                     <img class="logo__img" src="../assets/img/svg/logo.svg" alt="logo" />
-                  </a>
-                  <nav class="menu header__menu">
-                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="#about">About Us</a></li>
-                        <li class="menu__item"><a class="menu__link" href="services.html">Services</a></li>
-            <li class="menu__item"><a class="menu__link" href="#work">Work</a></li>
-            <li class="menu__item"><a class="menu__link" href="#news">News</a></li>
-            <li class="menu__item"><a class="menu__link" href="#contacts">Contacts</a></li>
+   <div class="container header__container">
+      <a class="logo" href="index.html" alt="Logo">
+         <img class="logo__img" src="../assets/img/svg/logo.svg" alt="logo"/>
+      </a>
+      <nav class="menu header__menu">
+         <ul class="menu__list">
+            <li class="menu__item">
+               <a class="menu__link" href="#about">About Us</a>
+            </li>
+            <li class="menu__item">
+               <a class="menu__link" href="services.html">Services</a>
+            </li>
+            <li class="menu__item">
+               <a class="menu__link" href="#work">Work</a>
+            </li>
+            <li class="menu__item">
+               <a class="menu__link" href="#news">News</a>
+            </li>
+            <li class="menu__item">
+               <a class="menu__link" href="#contacts">Contacts</a>
+            </li>
          </ul>
       </nav>
       <div class="connections">
@@ -30,9 +40,10 @@
             <span class="connections__descr connections__descr--title">Call us</span
             ><span class="connections__descr">(405) 555-0128</span>
          </a>
-         <a class="connections__item connections__item--email">
-            <span class="connections__descr connections__descr--title">Talk to us</span
-            ><span class="connections__descr">hello@createx.com</span>
+         <a class="connections__item connections__item--email" href="mailto:
+            hello@createx.com?subject=Mail from Createx website">
+         <span class="connections__descr connections__descr--title">Talk to us</span
+         ><span class="connections__descr">hello@createx.com</span>
          </a>
       </div>
    </div>
@@ -97,35 +108,42 @@
          Our mission is to set the highest standards for construction sphere.
       </p>
       <ul class="features-list mission__features-list">
-         <li class="features-list__item features-list__item--quality">
-            <h3
-               class="block-heading block-heading--center block-heading--small features-list__heading">
-               Quality
-            </h3>
-            <p class="text-descr text-descr--center">
-               Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud
-               aliquip sunt.
-            </p>
+         <li>
+            <a class="features-list__item features-list__item--safety" href="#">
+               <h3
+                  class="block-heading block-heading--center block-heading--small features-list__heading">
+                  Quality
+               </h3>
+               <p class="text-descr text-descr--center">
+                  Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud
+                  aliquip sunt.
+               </p>
+            </a>
          </li>
-         <li class="features-list__item features-list__item--safety">
-            <h3
-               class="block-heading block-heading--center block-heading--small features-list__heading">
-               Safety
-            </h3>
-            <p class="text-descr text-descr--center">
-               Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim
-               empor est ea.
-            </p>
+         <li>
+            <a class="features-list__item features-list__item--safety" href="#">
+               <h3
+                  class="block-heading block-heading--center block-heading--small features-list__heading">
+                  Safety
+               </h3>
+               <p class="text-descr text-descr--center">
+                  Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing.
+                  Minim
+                  empor est ea.
+               </p>
+            </a>
          </li>
-         <li class="features-list__item features-list__item--comfort">
-            <h3
-               class="block-heading block-heading--center block-heading--small features-list__heading">
-               Comfort
-            </h3>
-            <p class="text-descr text-descr--center">
-               Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco
-               proident ea ad.
-            </p>
+         <li>
+            <a class="features-list__item features-list__item--safety" href="#">
+               <h3
+                  class="block-heading block-heading--center block-heading--small features-list__heading">
+                  Comfort
+               </h3>
+               <p class="text-descr text-descr--center">
+                  Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco
+                  proident ea ad.
+               </p>
+            </a>
          </li>
       </ul>
       <form class="mission__form" action="#" name="callBackForm" id="callBackForm">
@@ -135,40 +153,40 @@
          <fieldset class="mission__form-actions">
             <label class="form-field mission__form-field" for="userName">
                <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
-                  >Name</span
+               >Name</span
                >
                <input
                   class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
                   name="userName"
                   id="userName"
                   placeholder="Your name"
-                  type="text" />
+                  type="text"/>
             </label>
             <label class="form-field mission__form-field" for="userPhone">
                <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
-                  >Phone</span
+               >Phone</span
                >
                <input
                   class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
                   name="userPhone"
                   id="userPhone"
                   placeholder="Your phone"
-                  type="tel" />
+                  type="tel"/>
             </label>
             <label
                class="form-field mission__form-field mission__form-field--message"
                for="userMessage">
                <span class="text-descr text-descr--small text-descr--grey-800 form-field__caption"
-                  >Message</span
+               >Message</span
                >
                <input
                   class="input form-field__input form-field__input--message text-descr text-descr--grey-800 text-descr--small"
                   name="userMessage"
                   id="userMessage"
                   placeholder="Your message"
-                  type="text" />
+                  type="text"/>
             </label>
-            <input class="btn btn--fill btn--regular" type="submit" value="Send" />
+            <input class="btn btn--fill btn--regular" type="submit" value="Send"/>
          </fieldset>
       </form>
    </div>
@@ -199,7 +217,7 @@
          <li class="activities-list__item">
             <a class="activity-card our-service__activity-card" href="#">
                <div class="activity-card__bg">
-                  <img src="../assets/img/bg/bg-project.jpg" alt="">
+                  <img src="../assets/img/bg/bg-project.jpg" alt="Project development">
                </div>
                <svg class="activity-card__icon">
                   <use href="../assets/img/svg/svg-sprite.svg#ic-painting-icon"></use>
@@ -326,41 +344,53 @@
    <div class="container">
       <h2 class="section-title section-title--center clients__title">Supported by 12+ partners</h2>
       <ul class="partners-list clients__partners-list">
-         <li class="partners-list__item">
-            <img
-               class="partners-list__logo"
-               src="../assets/img/content/partners-list/in-depth.png"
-               alt="in-depth" />
+         <li>
+            <a href="#" class="partners-list__item">
+               <img
+                  class="partners-list__logo"
+                  src="../assets/img/content/partners-list/in-depth.png"
+                  alt="in-depth"/>
+            </a>
          </li>
-         <li class="partners-list__item">
+         <li>
+            <a href="#" class="partners-list__item">
             <img
                class="partners-list__logo"
                src="../assets/img/content/partners-list/higher-fit.png"
                alt="higher-fit" />
+            </a>
          </li>
-         <li class="partners-list__item">
+         <li>
+            <a href="#" class="partners-list__item">
             <img
                class="partners-list__logo"
                src="../assets/img/content/partners-list/sent-cons.png"
                alt="sentinal-consulting" />
+            </a>
          </li>
-         <li class="partners-list__item">
+         <li>
+            <a href="#" class="partners-list__item">
             <img
                class="partners-list__logo"
                src="../assets/img/content/partners-list/happy-home.png"
                alt="happy-home" />
+            </a>
          </li>
-         <li class="partners-list__item">
+         <li>
+            <a href="#" class="partners-list__item">
             <img
                class="partners-list__logo"
                src="../assets/img/content/partners-list/for-sale.png"
                alt="for-sale" />
+            </a>
          </li>
-         <li class="partners-list__item">
+         <li>
+            <a href="#" class="partners-list__item">
             <img
                class="partners-list__logo"
                src="../assets/img/content/partners-list/suns-real.png"
                alt="suns-real" />
+            </a>
          </li>
       </ul>
       <div class="feedback-block clients__feedback-block">
@@ -633,40 +663,40 @@
       <footer class="footer home-page__footer">
    <div class="container footer__container">
       <div class="footer__about footer-about">
-         <a href="#" class="footer-about__logo">
-            <img class="footer-about__img" src="assets/img/svg/footer-logo.svg" alt="Createx logotype" />
+         <a class="footer-about__logo" href="index.html">
+            <img class="footer-about__img" src="assets/img/svg/footer-logo.svg" alt="Createx logotype"/>
          </a>
          <ul class="social-list footer-about__social-list">
             <li class="social-list__item">
-               <a class="social-list__link" href="#">
+               <a class="social-list__link" href="https://web.whatsapp.com/">
                   <svg class="social-list__icon">
                      <use href="./assets/img/svg/svg-sprite.svg#ic-whatsapp"></use>
                   </svg>
                </a>
             </li>
             <li class="social-list__item">
-               <a class="social-list__link" href="#">
+               <a class="social-list__link" href="https://www.facebook.com/messanger">
                   <svg class="social-list__icon">
                      <use href="./assets/img/svg/svg-sprite.svg#ic-messanger"></use>
                   </svg>
                </a>
             </li>
             <li class="social-list__item">
-               <a class="social-list__link" href="#">
+               <a class="social-list__link" href="https://www.facebook.com/">
                   <svg class="social-list__icon">
                      <use href="./assets/img/svg/svg-sprite.svg#ic-facebook"></use>
                   </svg>
                </a>
             </li>
             <li class="social-list__item">
-               <a class="social-list__link" href="#">
+               <a class="social-list__link" href="https://www.twitter.com/">
                   <svg class="social-list__icon">
                      <use href="./assets/img/svg/svg-sprite.svg#ic-twitter"></use>
                   </svg>
                </a>
             </li>
             <li class="social-list__item">
-               <a class="social-list__link" href="#">
+               <a class="social-list__link" href="https://www.youtube.com/">
                   <svg class="social-list__icon">
                      <use href="./assets/img/svg/svg-sprite.svg#ic-youtube"></use>
                   </svg>
@@ -674,13 +704,16 @@
             </li>
          </ul>
          <p class="footer-about__text text-descr text-descr--small">
-            Createx Construction Bureau has been successfully operating in&nbsp;the USA construction market since 2000.
-            We&nbsp;are proud to&nbsp;offer you quality construction and exemplary service. Our mission
+            Createx Construction Bureau has been successfully operating in&nbsp;the USA construction
+            market since 2000.
+            We&nbsp;are proud to&nbsp;offer you quality construction and exemplary service. Our
+            mission
             is&nbsp;to&nbsp;set the highest standards for construction sphere.
          </p>
       </div>
 
-      <form class="footer__form footer-form" name="footerSubcribeForm" id="footerSubcribeForm" action="#">
+      <form class="footer__form footer-form" name="footerSubcribeForm" id="footerSubcribeForm"
+            action="#">
          <h3 class="footer-form__heading block-heading block-heading--middle">Let&rsquo;s stay in&nbsp;touch</h3>
          <fieldset class="footer-form-group footer-form__group">
             <label class="footer-form-group__form-field" for="userEmail">
@@ -689,21 +722,23 @@
                   id="userEmail"
                   name="userEmail"
                   placeholder="Your email address "
-                  type="email" />
+                  type="email"/>
             </label>
             <input
                class="footer-form-group__btn btn btn--fill btn--small btn--small--fz14"
                value="Subscribe"
-               type="submit" />
+               type="submit"/>
          </fieldset>
          <p class="footer-form-group__text-descr text-descr text-descr--small text-descr--small--extra">
-            *Subscribe to&nbsp;our newsletter to&nbsp;receive communications and early updates from Createx Construction
+            *Subscribe to&nbsp;our newsletter to&nbsp;receive communications and early updates from
+            Createx Construction
             Bureau.
          </p>
       </form>
 
       <div class="footer-address">
-         <h3 class="footer-address__heading block-heading block-heading--extra block-heading--extra--low-heigh">
+         <h3
+            class="footer-address__heading block-heading block-heading--extra block-heading--extra--low-heigh">
             Head office
          </h3>
          <address class="address-list footer-address__list">
@@ -712,7 +747,8 @@
                8502 Preston Rd. Inglewood, New York
             </p>
             <a class="address-list__item" href="tel:4055550128">
-               <span class="address-list__item address-list__item--strong">Call:</span>(405) 555-0128
+               <span class="address-list__item address-list__item--strong">Call:</span>(405)
+               555-0128
             </a>
             <a class="address-list__item" href="mailto:hello@createx.com">
                <span class="address-list__item address-list__item--strong">Email:</span>hello@createx.com
@@ -722,7 +758,8 @@
 
       <nav class="footer-nav footer__nav">
          <div class="footer-nav__column">
-            <h4 class="footer-nav__heading block-heading block-heading--extra block-heading--extra-low-heigh">
+            <h4
+               class="footer-nav__heading block-heading block-heading--extra block-heading--extra-low-heigh">
                Who we&nbsp;are
             </h4>
             <ul class="footer-nav__list">
@@ -738,7 +775,8 @@
             </ul>
          </div>
          <div class="footer-nav__column">
-            <h4 class="footer-nav__heading block-heading block-heading--extra block-heading--extra-low-heigh">
+            <h4
+               class="footer-nav__heading block-heading block-heading--extra block-heading--extra-low-heigh">
                Our experience
             </h4>
             <ul class="footer-nav__list">

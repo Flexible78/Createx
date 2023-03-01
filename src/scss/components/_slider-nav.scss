@@ -16,6 +16,16 @@
   background-color: transparent;
   transition: all 0.18s ease-in-out;
 
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--color-grey--900);
+    background-color: var(--color-primary);
+    outline-offset: -1px;
+  }
+
   &__icon {
     width: 24px;
     height: 24px;

@@ -104,23 +104,23 @@ a {
   color: inherit;
   background-color: transparent;
 
-  &:not([href], [tabindex]) {
-    font-weight: inherit;
-    color: inherit;
-  }
-
-  &:not([tabindex]):focus {
-    outline: 0;
-  }
-
-  &:not([class]) {
-    text-decoration-skip-ink: auto;
-  }
-
-  &:not([href], [tabindex]):focus,
-  &:not([href], [tabindex]):hover {
-    color: inherit;
-  }
+  // &:not([href], [tabindex]) {
+  //   font-weight: inherit;
+  //   color: inherit;
+  // }
+  //
+  // &:not([tabindex]):focus {
+  //   outline: 0;
+  // }
+  //
+  // &:not([class]) {
+  //   text-decoration-skip-ink: auto;
+  // }
+  //
+  // &:not([href], [tabindex]):focus,
+  // &:not([href], [tabindex]):hover {
+  //   color: inherit;
+  // }
 }
 
 code,

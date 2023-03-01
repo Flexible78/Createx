@@ -34,7 +34,7 @@
     }
 
     &:hover {
-      box-shadow: 0 0 3px 4px rgba($color:#fff, $alpha: 12%);
+      box-shadow: 0 0 3px 4px rgba($color: #fff, $alpha: 12%);
     }
 
     &--play {
@@ -46,8 +46,17 @@
       background-color: var(--color-primary);
       transform: translate(-50%, -50%);
 
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 3px dashed var(--color-grey--900);
+        outline-offset: -17px;
+      }
+
       &:hover {
-        box-shadow: 0 0 0 16px rgba($color:#ff5a30, $alpha: 12%);
+        box-shadow: 0 0 0 16px rgba($color: #ff5a30, $alpha: 12%);
       }
     }
 
@@ -58,6 +67,15 @@
       height: 40px;
       border: 1px solid rgba(#000, 0.12);
       background-color: rgba(#fff, 0.12);
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 5pt dashed var(--color-white);
+        outline-offset: 4px;
+      }
     }
   }
 

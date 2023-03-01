@@ -28,6 +28,16 @@
 
   &__header {
     margin-bottom: 12px;
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--color-grey--900);
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
 
     &::after {
       content: "";

@@ -11,15 +11,22 @@
   }
 }
 
+.footer-about__logo {
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--color-white);
+    outline-offset: 5px;
+    border-radius: 1px;
+  }
+}
+
 .social-list {
   display: flex;
   column-gap: 16px;
-
-  a:focus-within {
-    outline: 1px solid var(--color-white);
-    outline-offset: 3px;
-    transition: all 0.11s linear;
-  }
 
   &__item {
     transition: all 0.15s ease-in-out;
@@ -32,6 +39,17 @@
   &__link {
     width: 24px;
     height: 24px;
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--color-white);
+      outline-offset: 5px;
+      border-radius: 1px;
+    }
   }
 
   &__icon {
@@ -82,11 +100,32 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     padding-bottom: 7px;
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--bg-color-grey--200);
+      outline-offset: -1px;
+    }
   }
 
   &__btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-white);
+      outline-offset: 2.5px;
+      border-radius: 1px;
+    }
   }
 }
 
@@ -106,20 +145,27 @@
   flex-direction: column;
   row-gap: 7px;
 
+  a:focus {
+    outline: none;
+    border: none;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--color-white);
+    outline-offset: 5px;
+    border-radius: 1px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: var(--color-white);
+  }
+
   &__item {
     margin-right: 4px;
     transition: all 0.15s ease-in-out;
 
-    &:nth-child(2n):focus-within {
-      outline: 1px solid var(--color-primary);
-      outline-offset: 3px;
-      transition: all 0.18s linear;
-    }
 
-    &:hover {
-      text-decoration: underline;
-      color: var(--color-white);
-    }
 
     &--strong {
       color: var(--color-white);
@@ -133,6 +179,24 @@
   column-gap: 124px;
   justify-content: flex-start;
   padding-left: 54px;
+
+  &__link {
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-white);
+      outline-offset: 4px;
+      border-radius: 0.4px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--color-white);
+    }
+  }
 
   &__column {
     display: flex;

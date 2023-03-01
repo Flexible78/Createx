@@ -23,6 +23,19 @@
         background-image: url(@img/svg/checkbox/checked.svg);
         background-repeat: no-repeat;
       }
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+
+      &:focus-visible {
+        margin-top: 8px;
+        outline: 3px solid var(--color-primary-state);
+        outline-offset: 9.7px;
+        border-radius: 4px;
+        transform: translateX(-19px);
+      }
     }
 
     &--text {
