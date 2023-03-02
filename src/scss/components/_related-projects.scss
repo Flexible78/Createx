@@ -1,0 +1,23 @@
+.related-projects {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  &__header {
+    position: relative;
+    margin-bottom: 60px;
+    padding-right: 124px;
+  }
+
+  &__title {
+    max-width: 705px;
+  }
+
+  &__slider-nav {
+    position: absolute;
+    right: -13px;
+    bottom: -13px;
+  }
+
+  &__more-info {
+    padding-top: 80px;
+  }
+}

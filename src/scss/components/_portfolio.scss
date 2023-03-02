@@ -1,5 +1,4 @@
 .portfolio {
-
   &__header {
     position: relative;
     margin-bottom: 60px;
@@ -16,29 +15,36 @@
     bottom: -13px;
   }
 
-  &__project-slider {
-    &__btn {
-      display: grid;
-      justify-content: center;
-      padding-top: 28px;
-      padding-bottom: 24px;
-    }
-  }
-
   &__more-info {
     padding-top: 80px;
   }
 }
 
-.portfolio-projects {
-  &__btn {
-    display: grid;
-    justify-content: center;
-    padding-top: 28px;
-    padding-bottom: 24px;
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 24px;
+
+  &:hover {
+    transform: translateY(-69px);
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
   }
 
-  &__descr {
-    transform: translateY(3px);
+  &__img {
+    margin-bottom: 16px;
+  }
+
+  &__heading {
+    margin-bottom: 4px;
+  }
+
+  &__btn {
+  }
+
+  &__text-descr {
+    margin-bottom: 24px;
   }
 }

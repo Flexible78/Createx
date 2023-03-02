@@ -979,25 +979,19 @@ main {
   color: var(--color-white);
 }
 
-.projects-slider {
-  --grid-column-gap: 30px;
+.portfolio-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: var(--grid-column-gap);
        column-gap: var(--grid-column-gap);
   justify-items: center;
   background-color: var(--color-white);
+  --grid-column-gap: 30px;
+  overflow: hidden;
+  max-height: 440px;
 }
 
-.projects-slider__item {
-  max-width: 390px;
-}
-
-.projects-slider__img {
-  padding-bottom: 16px;
-}
-
-.projects-slider__btn {
+.portfolio-list__btn {
   position: absolute;
   top: 50%;
   right: 100px;
@@ -1005,23 +999,11 @@ main {
   left: 50%;
 }
 
-.projects-slider__btn--play {
+.portfolio-list__btn--play {
   top: 50%;
   right: 100px;
   bottom: 100px;
   left: 50%;
-}
-
-.projects-slider--finger {
-  height: 345px;
-}
-
-.projects-slider--cubes {
-  height: 277px;
-}
-
-.projects-slider--pencil {
-  height: 345px;
 }
 
 .slider-nav {
@@ -1923,26 +1905,34 @@ main {
   bottom: -13px;
 }
 
-.portfolio__project-slider__btn {
-  display: grid;
-  justify-content: center;
-  padding-top: 28px;
-  padding-bottom: 24px;
-}
-
 .portfolio__more-info {
   padding-top: 80px;
 }
 
-.portfolio-projects__btn {
-  display: grid;
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding-top: 28px;
   padding-bottom: 24px;
 }
 
-.portfolio-projects__descr {
-  transform: translateY(3px);
+.portfolio-card:hover {
+  transform: translateY(-69px);
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+.portfolio-card__img {
+  margin-bottom: 16px;
+}
+
+.portfolio-card__heading {
+  margin-bottom: 4px;
+}
+
+.portfolio-card__text-descr {
+  margin-bottom: 24px;
 }
 
 .clients {
@@ -2586,4 +2576,29 @@ main {
   outline: 3px solid var(--color-white);
   outline-offset: 22px;
   border-radius: 4px;
+}
+
+.related-projects {
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+
+.related-projects__header {
+  position: relative;
+  margin-bottom: 60px;
+  padding-right: 124px;
+}
+
+.related-projects__title {
+  max-width: 705px;
+}
+
+.related-projects__slider-nav {
+  position: absolute;
+  right: -13px;
+  bottom: -13px;
+}
+
+.related-projects__more-info {
+  padding-top: 80px;
 }
