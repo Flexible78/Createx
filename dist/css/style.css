@@ -2602,3 +2602,16 @@ main {
 .related-projects__more-info {
   padding-top: 80px;
 }
+
+.pricing {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.pricing__title {
+  margin-bottom: 24px;
+}
+
+.pricing__text-descr {
+  margin-bottom: 60px;
+}
