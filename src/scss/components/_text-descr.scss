@@ -1,10 +1,10 @@
 .page-descr {
-  --page--descr-color: var(--color-grey--700);
-
   font-weight: 400;
+
   font-size: 20px;
   line-height: 1.5;
   color: var(--page--descr-color);
+  --page--descr-color: var(--color-grey--700);
 
   &--home {
     color: var(--color-white);
@@ -34,6 +34,10 @@
   font-size: 16px;
   line-height: 1.6;
   color: var(--color-grey--700);
+
+  &--w700 {
+    font-weight: 700;
+  }
 
   &--center {
     text-align: center;

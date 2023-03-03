@@ -492,6 +492,10 @@ main {
   --block-title-main-color: var(--color-grey--900);
 }
 
+.block-heading--uppercase {
+  text-transform: uppercase;
+}
+
 .block-heading--center {
   text-align: center;
 }
@@ -506,6 +510,10 @@ main {
 
 .block-heading--small {
   font-size: 20px;
+}
+
+.block-heading--fz18 {
+  font-size: 18px;
 }
 
 .block-heading--extra {
@@ -526,11 +534,11 @@ main {
 }
 
 .page-descr {
-  --page--descr-color: var(--color-grey--700);
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   color: var(--page--descr-color);
+  --page--descr-color: var(--color-grey--700);
 }
 
 .page-descr--home {
@@ -560,6 +568,10 @@ main {
   font-size: 16px;
   line-height: 1.6;
   color: var(--color-grey--700);
+}
+
+.text-descr--w700 {
+  font-weight: 700;
 }
 
 .text-descr--center {
@@ -2475,7 +2487,7 @@ main {
 }
 
 .sequence {
-  padding: 60px 0 120px;
+  padding-bottom: 120px;
 }
 
 .sequence__title {
@@ -2606,6 +2618,7 @@ main {
 .pricing {
   padding-top: 80px;
   padding-bottom: 120px;
+  background: var(--bg-color-grey--200);
 }
 
 .pricing__title {
@@ -2614,4 +2627,18 @@ main {
 
 .pricing__text-descr {
   margin-bottom: 60px;
+}
+
+.pricing-table__item-title {
+  padding: 70px 422px 24px 24px;
+}
+
+.pricing-table__heading {
+  padding: 0px 42px 0px 24px;
+}
+
+.pricing-table__mark {
+  width: 24px;
+  height: 16px;
+  fill: var(--color-primary);
 }

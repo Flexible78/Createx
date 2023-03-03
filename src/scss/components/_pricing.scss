@@ -1,6 +1,7 @@
 .pricing {
   padding-top: 80px;
   padding-bottom: 120px;
+  background: var(--bg-color-grey--200);
 
   &__title {
     margin-bottom: 24px;
@@ -10,5 +11,20 @@
     margin-bottom: 60px;
   }
 }
+
 .pricing-table {
+
+  &__item-title {
+    padding: 70px 422px 24px 24px;
+  }
+
+  &__heading {
+    padding: 0px 42px 0px 24px;
+  }
+
+  &__mark {
+    width: 24px;
+    height: 16px;
+    fill: var(--color-primary);
+  }
 }

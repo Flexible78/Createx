@@ -1,5 +1,5 @@
 .sequence {
-  padding: 60px 0 120px;
+  padding-bottom: 120px;
 
   &__title {
     position: relative;
@@ -57,9 +57,5 @@
 
   &__header {
     margin-bottom: 9px;
-  }
-
-  &__descr {
-    // margin-left: 15px;
   }
 }
