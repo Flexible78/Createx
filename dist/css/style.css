@@ -2633,16 +2633,10 @@ table {
   width: 100%;
   border: 1px solid var(--color-grey--300);
   border-radius: 4px;
-  box-shadow: 4px rgba(154,156,165,.08);
 }
 
 .pricing-table th {
   background: var(--color-white);
-}
-
-.pricing-table th:not:first-child {
-  width: 245px;
-  background: #1e212c;
 }
 
 .pricing-table__item {
@@ -2662,11 +2656,15 @@ table {
 }
 
 .pricing-table__heading {
-  padding: 0px 42px 0px 24px;
+  padding: 9px 42px 0 42px;
 }
 
 .pricing-table__text-descr {
   padding-left: 76px;
+}
+
+.pricing-table td:not(:first-child) {
+  padding-left: 111px;
 }
 
 .pricing-table__mark {
