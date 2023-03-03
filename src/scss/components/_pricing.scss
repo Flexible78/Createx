@@ -42,4 +42,10 @@
     height: 16px;
     fill: var(--color-primary);
   }
+
+  &__footer {
+    tr {
+      background: var(--color-white);
+    }
+  }
 }

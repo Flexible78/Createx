@@ -2658,3 +2658,7 @@ main {
   height: 16px;
   fill: var(--color-primary);
 }
+
+.pricing-table__footer tr {
+  background: var(--color-white);
+}
