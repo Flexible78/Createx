@@ -2629,6 +2629,12 @@ main {
   margin-bottom: 60px;
 }
 
+table {
+  border: 1px solid var(--color-grey--300);
+  border-radius: 4px;
+  box-shadow: 4px rgba(154,156,165,.08);
+}
+
 .pricing-table th {
   background: var(--color-white);
 }
