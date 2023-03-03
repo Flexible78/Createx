@@ -2659,6 +2659,6 @@ main {
   fill: var(--color-primary);
 }
 
-.pricing-table__footer tr {
+.pricing-table__footer td {
   background: var(--color-white);
 }
