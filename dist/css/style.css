@@ -2629,6 +2629,18 @@ main {
   margin-bottom: 60px;
 }
 
+.pricing-table th {
+  background: var(--color-white);
+}
+
+.pricing-table tr:nth-child(odd) {
+  background: var(--bg-color-grey--200);
+}
+
+.pricing-table tr:nth-child(even) {
+  background: var(--color-white);
+}
+
 .pricing-table__item-title {
   padding: 70px 422px 24px 24px;
 }

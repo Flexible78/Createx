@@ -13,6 +13,17 @@
 }
 
 .pricing-table {
+  th {
+    background: var(--color-white);
+  }
+
+  tr:nth-child(odd) {
+    background: var(--bg-color-grey--200);
+  }
+
+  tr:nth-child(even) {
+    background: var(--color-white);
+  }
 
   &__item-title {
     padding: 70px 422px 24px 24px;
