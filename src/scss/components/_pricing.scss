@@ -17,6 +17,10 @@
     background: var(--color-white);
   }
 
+  &__item {
+    padding: 16px 0px 16px 24px;
+  }
+
   tr:nth-child(odd) {
     background: var(--bg-color-grey--200);
   }

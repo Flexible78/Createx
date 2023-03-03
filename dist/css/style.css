@@ -2633,6 +2633,10 @@ main {
   background: var(--color-white);
 }
 
+.pricing-table__item {
+  padding: 16px 0px 16px 24px;
+}
+
 .pricing-table tr:nth-child(odd) {
   background: var(--bg-color-grey--200);
 }
