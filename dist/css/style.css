@@ -2640,6 +2640,11 @@ table {
   background: var(--color-white);
 }
 
+.pricing-table th:not:first-child {
+  width: 245px;
+  background: #1e212c;
+}
+
 .pricing-table__item {
   padding: 16px 0px 16px 24px;
 }
