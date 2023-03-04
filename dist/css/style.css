@@ -2629,25 +2629,30 @@ main {
   margin-bottom: 60px;
 }
 
-table {
+.pricing-table table {
   width: 100%;
   border: 1px solid var(--color-grey--300);
   border-radius: 4px;
 }
 
-.pricing-table th {
+.pricing-table thead th {
   background: var(--color-white);
+}
+
+.pricing-table thead th:not(:first-child) {
+  width: 250px;
+  text-align: center;
 }
 
 .pricing-table__item {
   padding: 16px 0px 16px 24px;
 }
 
-.pricing-table tr:nth-child(odd) {
+.pricing-table tbody tr:nth-child(odd) {
   background: var(--bg-color-grey--200);
 }
 
-.pricing-table tr:nth-child(even) {
+.pricing-table tbody tr:nth-child(even) {
   background: var(--color-white);
 }
 
@@ -2659,12 +2664,12 @@ table {
   padding: 9px 42px 0 42px;
 }
 
-.pricing-table__text-descr {
-  padding-left: 76px;
+.pricing-table tr:nth-child(10) {
+  padding: 32px 42px;
 }
 
 .pricing-table td:not(:first-child) {
-  padding-left: 111px;
+  text-align: center;
 }
 
 .pricing-table__mark {
@@ -2674,7 +2679,29 @@ table {
 }
 
 .pricing-table__footer td {
-  padding: 32px 100px 32px 0px;
+  padding: 32px 0px 32px;
   text-align: center;
   background: var(--color-white);
+}
+
+.pricing-table__footer td:focus {
+  outline: none;
+}
+
+.pricing-table__footer td:focus-visible {
+  outline: 3px solid var(--color-grey--900);
+  outline-offset: 1px;
+}
+
+.serv-offer-clients {
+  padding-bottom: 116px;
+  background-color: var(--bg-color-grey--200);
+}
+
+.serv-offer-clients__partners-list {
+  margin-bottom: 121x;
+}
+
+.serv-offer-clients__title {
+  margin-bottom: 60.1px;
 }

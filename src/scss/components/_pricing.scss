@@ -12,48 +12,87 @@
   }
 }
 
-table {
-  width: 100%;
-  border: 1px solid var(--color-grey--300);
-  border-radius: 4px;
-  // box-shadow: 4px rgba(154, 156, 165, 0.08);
-}
-
 .pricing-table {
-  th {
-    background: var(--color-white);
+
+  table {
+    width: 100%;
+    border: 1px solid var(--color-grey--300);
+    border-radius: 4px;
+    // box-shadow: 4px rgba(154, 156, 165, 0.08);
   }
+
+  thead {
+    th {
+      background: var(--color-white);
+    }
+
+    th:not(:first-child) {
+      width: 250px;
+      text-align: center;
+    }
+  }
+
   &__item {
     padding: 16px 0px 16px 24px;
   }
-  tr:nth-child(odd) {
-    background: var(--bg-color-grey--200);
+
+  tbody {
+    tr:nth-child(odd) {
+      background: var(--bg-color-grey--200);
+    }
+
+    tr:nth-child(even) {
+      background: var(--color-white);
+    }
   }
-  tr:nth-child(even) {
-    background: var(--color-white);
-  }
+
   &__item-title {
     padding: 70px 422px 24px 24px;
   }
+
   &__heading {
     padding: 9px 42px 0 42px;
   }
+
   &__text-descr {
-    padding-left: 76px;
   }
+
   td:not(:first-child) {
-    padding-left: 111px;
+    // padding-left: 111px;
   }
+
+  tr:nth-child(10) {
+    padding: 32px 42px;
+  }
+
+  td:not(:first-child) {
+    text-align: center;
+  }
+
   &__mark {
     width: 24px;
     height: 16px;
     fill: var(--color-primary);
   }
+
   &__footer {
+
     td {
-      padding: 32px 100px 32px 0px;
+      padding: 32px 0px 32px;
       text-align: center;
       background: var(--color-white);
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 3px solid var(--color-grey--900);
+        outline-offset: 1px;
+      }
     }
+  }
+
+  &__btn {
+
   }
 }
