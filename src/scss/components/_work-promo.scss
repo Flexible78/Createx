@@ -1,6 +1,7 @@
-.promo-services {
-  padding: 152px 0 179px;
-  background-image: url("@img/bg/bg-serv-page.png");
+
+.work-promo {
+  padding: 152px 0 116px;
+  background-image: url("@img/bg/bg-work.png");
   background-position: 100% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -20,4 +21,21 @@
     padding-top: 40px;
     padding-bottom: 24px;
   }
+
+		&__content {
+		}
+
+		&__breadcrumb {
+		}
+
+		&__title {
+		}
+
+		&__descr {
+		}
+}
+.breadcrumb-list {
+
+		&__item {
+		}
 }

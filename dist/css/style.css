@@ -534,11 +534,11 @@ main {
 }
 
 .page-descr {
+  --page--descr-color: var(--color-grey--700);
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   color: var(--page--descr-color);
-  --page--descr-color: var(--color-grey--700);
 }
 
 .page-descr--home {
@@ -909,15 +909,6 @@ main {
   transition: .3s all linear;
 }
 
-.activity-card:focus {
-  outline: none;
-}
-
-.activity-card:focus-visible {
-  outline: 3px solid var(--color-grey--900);
-  outline-offset: 1px;
-}
-
 .activity-card__bg {
   position: absolute;
   top: 0;
@@ -960,10 +951,24 @@ main {
 }
 
 .activity-card:focus {
+  outline: none;
+}
+
+.activity-card:focus-visible {
+  outline: 3px solid var(--color-grey--900);
+  outline-offset: 1px;
+}
+
+.activity-card:focus {
   text-decoration: none;
 }
 
 .activity-card:focus .activity-card__bg {
+  opacity: 1;
+}
+
+.activity-card:focus .activity-card__bg--primary {
+  background: var(--color-primary);
   opacity: 1;
 }
 
@@ -980,6 +985,11 @@ main {
 }
 
 .activity-card:hover .activity-card__bg {
+  opacity: 1;
+}
+
+.activity-card:hover .activity-card__bg--primary {
+  background: var(--color-primary);
   opacity: 1;
 }
 
@@ -1666,6 +1676,52 @@ main {
   margin-bottom: 10px;
 }
 
+.work-promo {
+  padding: 152px 0 116px;
+  background-image: url("../assets/img/bg/bg-work.png");
+  background-position: 100% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color-grey--200);
+}
+
+.work-promo__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.work-promo__content {
+  grid-column: 6 span;
+}
+
+.work-promo__title {
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+.work-portfolio__activities-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 77px;
+}
+
+.work-portfolio__activity-card {
+  row-gap: 24px;
+  border: 1px solid #e5e8ed;
+  padding: 89px 20px 90px;
+}
+
+.work-portfolio__activity-card .activity-card__icon {
+  transition: all .1s ease;
+}
+
+.work-portfolio__activity-card .activity-card__title {
+  transition: all .3s ease;
+}
+
 .header {
   padding: 22px 0;
   background-color: var(--color-white);
@@ -1931,8 +1987,8 @@ main {
 
 .portfolio-card:hover {
   transform: translateY(-69px);
-  cursor: pointer;
   transition: .3s all ease-in-out;
+  cursor: pointer;
 }
 
 .portfolio-card__img {
@@ -1945,6 +2001,12 @@ main {
 
 .portfolio-card__text-descr {
   margin-bottom: 24px;
+}
+
+.portfolio-card__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .clients {

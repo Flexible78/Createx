@@ -29,8 +29,8 @@
 
   &:hover {
     transform: translateY(-69px);
-    cursor: pointer;
     transition: 0.3s all ease-in-out;
+    cursor: pointer;
   }
 
   &__img {
@@ -43,5 +43,11 @@
 
   &__text-descr {
     margin-bottom: 24px;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
