@@ -28,6 +28,21 @@
 
   &__header {
     margin-bottom: 12px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      margin: -75px 0 0;
+      border-radius: 100%;
+      background-image: url("@img/svg/plus.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
     &:focus {
       outline: none;
       border: none;
@@ -38,28 +53,14 @@
       outline-offset: 2px;
       border-radius: 1px;
     }
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0px;
-      width: 24px;
-      height: 24px;
-      margin: -75px 0 0 0;
-      border-radius: 100%;
-      background-image: url("@img/svg/plus.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      cursor: pointer;
-    }
+  &__descr {
+    margin-bottom: 24px;
   }
 
   &__item[open] &__header::after {
     background-image: url("@img/svg/minus.svg");
     background-repeat: no-repeat;
-  }
-
-  &__descr {
-    margin-bottom: 24px;
   }
 }

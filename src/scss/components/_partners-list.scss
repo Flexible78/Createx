@@ -1,10 +1,10 @@
 .partners-list {
-  display: grid;
+  --grid-column-gap: 102px;
 
+  display: grid;
   grid-template-columns: repeat(6, 1fr);
   column-gap: var(--grid-column-gap);
   justify-content: stretch;
-  --grid-column-gap: 102px;
 
   &__item {
     width: 120px;

@@ -1,12 +1,12 @@
 .page-title {
-  font-weight: 700;
+  --page--title-color: var(--color-grey--900);
 
+  font-weight: 700;
   font-size: 72px;
   line-height: 1.3;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--page--title-color);
-  --page--title-color: var(--color-grey--900);
 
   &--home {
     color: var(--color-white);
@@ -44,12 +44,12 @@
 }
 
 .block-heading {
-  font-weight: 700;
+  --block-title-main-color: var(--color-grey--900);
 
+  font-weight: 700;
   font-size: 32px;
   line-height: 1.5;
   color: var(--block-title-main-color);
-  --block-title-main-color: var(--color-grey--900);
 
   &--uppercase {
     text-transform: uppercase;
@@ -90,5 +90,9 @@
 
   &--home {
     color: var(--color-white);
+  }
+
+  &--grey-600 {
+    color: var(--color-grey--700);
   }
 }

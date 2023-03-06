@@ -2,7 +2,6 @@
   display: flex;
 
   &__item {
-
     &:not(:last-child)::after {
       content: "/";
       padding: 0 7px;
@@ -16,7 +15,6 @@
   }
 
   &__link {
-
     &:focus {
       outline: none;
       border: none;

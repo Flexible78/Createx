@@ -12,16 +12,6 @@
     background-size: 48px 48px;
     background-repeat: no-repeat;
 
-    &:focus {
-      outline: none;
-    }
-
-    &:focus-visible {
-      outline: 3px solid var(--color-grey--900);
-      outline-offset: 22px;
-      border-radius: 4px;
-    }
-
     &:not(:nth-child(3n)) {
       ::after {
         content: "";
@@ -35,6 +25,16 @@
         background-size: cover;
         background-repeat: no-repeat;
       }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--color-grey--900);
+      outline-offset: 22px;
+      border-radius: 4px;
     }
 
     &--quality {

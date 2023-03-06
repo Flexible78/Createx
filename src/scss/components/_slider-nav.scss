@@ -16,6 +16,12 @@
   background-color: transparent;
   transition: all 0.18s ease-in-out;
 
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-grey--800);
+  }
+
   &:focus {
     outline: none;
   }
@@ -28,12 +34,6 @@
     .slider-btn__icon {
       fill: var(--color-white);
     }
-  }
-
-  &__icon {
-    width: 24px;
-    height: 24px;
-    fill: var(--color-grey--800);
   }
 
   &--primary {

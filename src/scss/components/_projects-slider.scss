@@ -1,13 +1,13 @@
 .portfolio-list {
-  display: grid;
+  --grid-column-gap: 30px;
 
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: var(--grid-column-gap);
   justify-items: center;
-  background-color: var(--color-white);
-  --grid-column-gap: 30px;
   overflow: hidden;
   max-height: 440px;
+  background-color: var(--color-white);
 
   &__btn {
     position: absolute;

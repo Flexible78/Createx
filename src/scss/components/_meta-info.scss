@@ -1,9 +1,9 @@
 .meta-info {
-  display: flex;
+  --meta-col-gap: 24px;
 
+  display: flex;
   column-gap: var(--meta-col-gap);
   align-items: center;
-  --meta-col-gap: 24px;
 
   &__item {
     position: relative;

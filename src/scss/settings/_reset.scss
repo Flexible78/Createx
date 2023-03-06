@@ -28,7 +28,19 @@ section {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    "Arial",
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   font-size: 1rem;
@@ -52,9 +64,7 @@ abbr[data-original-title],
 abbr[title] {
   border-bottom: 0;
   text-decoration: underline dotted;
-  text-decoration: underline dotted;
   cursor: help;
-  text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
@@ -103,31 +113,20 @@ a {
   text-decoration: none;
   color: inherit;
   background-color: transparent;
-
-  // &:not([href], [tabindex]) {
-  //   font-weight: inherit;
-  //   color: inherit;
-  // }
-  //
-  // &:not([tabindex]):focus {
-  //   outline: 0;
-  // }
-  //
-  // &:not([class]) {
-  //   text-decoration-skip-ink: auto;
-  // }
-  //
-  // &:not([href], [tabindex]):focus,
-  // &:not([href], [tabindex]):hover {
-  //   color: inherit;
-  // }
 }
 
 code,
 kbd,
 pre,
 samp {
-  font-family: "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+  font-family:
+    "SFMono-Regular",
+    "Menlo",
+    "Monaco",
+    "Consolas",
+    "Liberation Mono",
+    "Courier New",
+    monospace;
   font-size: 1em;
 }
 
@@ -227,16 +226,11 @@ select {
 }
 
 select {
-  word-wrap: normal;
-}
-
-select {
-  appearance: none;
-  appearance: none;
   appearance: none;
   outline: none;
   border: none;
   font: inherit;
+  word-wrap: normal;
   background-color: transparent;
 }
 
@@ -244,7 +238,6 @@ select {
 [type="reset"],
 [type="submit"],
 button {
-  appearance: button;
   appearance: button;
 }
 
@@ -273,7 +266,6 @@ input[type="date"],
 input[type="datetime-local"],
 input[type="month"],
 input[type="time"] {
-  appearance: listbox;
   appearance: listbox;
 }
 
@@ -308,7 +300,6 @@ progress {
 
 [type="search"] {
   appearance: none;
-  appearance: none;
   outline-offset: -2px;
 }
 
@@ -323,11 +314,6 @@ progress {
 
 output {
   display: inline-block;
-}
-
-summary {
-  display: list-item;
-  cursor: pointer;
 }
 
 template {
@@ -350,6 +336,7 @@ h6 {
 
 summary {
   display: block;
+  cursor: pointer;
 }
 
 summary::-webkit-details-marker {
