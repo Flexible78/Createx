@@ -25,6 +25,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  max-height: 451px;
   padding-bottom: 24px;
 
   &__img {

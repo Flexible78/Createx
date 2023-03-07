@@ -2,11 +2,11 @@
   --grid-column-gap: 30px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto, 1fr);
   column-gap: var(--grid-column-gap);
   justify-items: center;
-  overflow: hidden;
-  max-height: 440px;
+  // overflow: hidden;
+  // max-height: 440px;
   background-color: var(--color-white);
 
   &__btn {
@@ -22,5 +22,12 @@
       bottom: 100px;
       left: 50%;
     }
+  }
+
+  &--work {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  justify-items: center;
   }
 }
