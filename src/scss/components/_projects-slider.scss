@@ -1,13 +1,8 @@
 .portfolio-list {
-  --grid-column-gap: 30px;
-
   display: grid;
-  grid-template-columns: repeat(auto, 1fr);
-  column-gap: var(--grid-column-gap);
-  justify-items: center;
-  // overflow: hidden;
-  // max-height: 440px;
-  background-color: var(--color-white);
+  grid-template-columns: repeat(auto-fill, 390px);
+  gap: 30px;
+  justify-content: center;
 
   &__btn {
     position: absolute;
@@ -28,6 +23,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-  justify-items: center;
+    justify-items: center;
   }
 }
