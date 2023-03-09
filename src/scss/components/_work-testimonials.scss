@@ -1,0 +1,10 @@
+.work-testimonials {
+    padding-top: 80px;
+    background-color: var(--bg-color-grey--200);
+
+  &__feedback-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+  }
+}

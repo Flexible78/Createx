@@ -1745,10 +1745,6 @@ main {
   transition: all .3s ease;
 }
 
-ul {
-  margin-bottom: 30px;
-}
-
 .load-more {
   display: flex;
   -moz-column-gap: 16px;
@@ -1770,11 +1766,15 @@ ul {
 .portfolio-card__top {
   overflow: hidden;
   height: 354px;
+  margin-bottom: -71px;
 }
 
 .portfolio-card__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
-  margin-bottom: -90px;
+  height: 97px;
 }
 
 .portfolio-card__img {
@@ -1791,23 +1791,14 @@ ul {
   margin-bottom: 24px;
 }
 
-.portfolio-card__bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .portfolio-card:hover__top {
+  margin-top: 0;
   overflow: hidden;
-  height: 284px;
-  margin-bottom: -70px;
-  transition: .3s all ease-in-out;
-  cursor: pointer;
+  margin-bottom: 0;
 }
 
 .portfolio-card:hover__bottom {
   height: 167px;
-  margin-bottom: 0px;
 }
 
 .header {
@@ -2856,4 +2847,29 @@ ul {
 
 .serv-offer-clients__title {
   margin-bottom: 60.1px;
+}
+
+.work-testimonials {
+  padding-top: 80px;
+  background-color: var(--bg-color-grey--200);
+}
+
+.work-testimonials__feedback-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: end;
+}
+
+.work-clients {
+  padding-top: 80px;
+  background-color: var(--color-white);
+}
+
+.work-clients__partners-list {
+  margin-bottom: 112px;
+}
+
+.work-clients__title {
+  margin-bottom: 60.1px;
+  padding-top: 100px;
 }

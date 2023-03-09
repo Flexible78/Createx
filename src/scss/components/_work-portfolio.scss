@@ -25,9 +25,9 @@
   }
 }
 
-ul {
-  margin-bottom: 30px;
-}
+// ul {
+//   margin-bottom: 30px;
+// }
 
 .load-more {
   display: flex;
@@ -48,18 +48,23 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  // overflow: hidden;
   height: 451px;
+  // width: 390px;
   padding-bottom: 24px;
 
   &__top {
     overflow: hidden;
     height: 354px;
+    margin-bottom: -71px;
   }
 
   &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
-    // height: 36px;
-    margin-bottom: -90px;
+    height: 97px;
   }
 
   &__img {
@@ -75,25 +80,25 @@ ul {
   &__text-descr {
     margin-bottom: 24px;
   }
+}
 
-  &__bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.portfolio-card:hover {
+  // overflow: hidden;
+  // height: 451px;
+
+  &__top {
+    // transition: 0.3s all ease-in-out;
+    // cursor: pointer;
+    margin-top: 0;
+
+    overflow: hidden;
+
+
+    margin-bottom: 0;
   }
 
-  &:hover {
-    &__top {
-      overflow: hidden;
-      height: 284px;
-      margin-bottom: -70px;
-      transition: 0.3s all ease-in-out;
-      cursor: pointer;
-    }
-
-    &__bottom {
-      height: 167px;
-      margin-bottom: 0px;
-    }
+  &__bottom {
+    height: 167px;
+    // margin-bottom: 0;
   }
 }
