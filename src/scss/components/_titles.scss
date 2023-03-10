@@ -51,7 +51,7 @@
   line-height: 1.5;
   color: var(--block-title-main-color);
 
-  &--uppercase {
+  & {
     text-transform: uppercase;
   }
 
@@ -73,6 +73,12 @@
 
   &--fz18 {
     font-size: 18px;
+  }
+
+  &--fz64 {
+    font-size: 64px;
+    line-height: 1.2;
+    letter-spacing: 1px;
   }
 
   &--extra {
