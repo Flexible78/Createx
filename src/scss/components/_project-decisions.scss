@@ -1,0 +1,31 @@
+.project-decisions {
+  padding-top: 81px;
+  background-color: var(--bg-color-grey--200);
+
+  &__container {
+    display: flex;
+    column-gap: 135px;
+  }
+
+  &__logo-wrapper {
+    margin-bottom: -60px;
+  }
+
+  &__title {
+    margin-bottom: 63px;
+  }
+}
+
+.decisions-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  &__item {
+    padding-left: 36px;
+    background-image: url("@img/svg/check-primary.svg");
+    background-position: left center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
+}
