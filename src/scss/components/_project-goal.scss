@@ -1,9 +1,15 @@
 .project-goal {
   padding-top: 80px;
-  padding-bottom: 161px;
+  padding-bottom: 119px;
 
   &__title {
     margin-bottom: 40px;
+  }
+
+  &__descr {
+    p:first-child {
+      margin-bottom: 28px;
+    }
   }
 }
 
@@ -11,32 +17,24 @@
   display: flex;
   flex-wrap: nowrap;
   gap: 135px;
+  align-items: flex-start;
 
   &__content {
-    flex: 1 1 0;
+    align-items: start;
+    max-width: 600px;
   }
 
   &__info {
     flex: 1 1 0;
-  }
-
-  &__heading {
-    &--item {
-    }
-  }
-
-  &__information {
-    // flex: 1;
-
-    &--item {
-    }
   }
 }
 
 .project-goal-infoblock {
   display: flex;
   column-gap: 32px;
+  justify-content: center;
   border-radius: 4px;
+  padding-bottom: 42.4px;
   box-shadow: 0 80px 80px -20px rgb(154 156 165 / 8%), 0 30px 24px -10px rgb(154 156 165 / 5%), 0 12px 10px -6px rgb(154 156 165 / 4%), 0 4px 4px -4px rgb(30 33 44 / 3%);
   background-color: var(--color-white);
 
