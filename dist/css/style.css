@@ -3010,3 +3010,28 @@ main {
   background-size: 20px 20px;
   background-repeat: no-repeat;
 }
+
+.similar-projects {
+  padding-top: 180px;
+  padding-bottom: 120px;
+}
+
+.similar-projects__header {
+  position: relative;
+  margin-bottom: 60px;
+  padding-right: 124px;
+}
+
+.similar-projects__title {
+  max-width: 705px;
+}
+
+.similar-projects__slider-nav {
+  position: absolute;
+  right: -13px;
+  bottom: -13px;
+}
+
+.similar-projects__more-info {
+  padding-top: 80px;
+}
