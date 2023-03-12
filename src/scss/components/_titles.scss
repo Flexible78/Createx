@@ -36,6 +36,10 @@
     color: var(--color-grey--400);
   }
 
+  &--primary {
+    color: var(--color-primary);
+  }
+
   &--lato-900 {
     font-family: "Lato";
     font-weight: 900;
