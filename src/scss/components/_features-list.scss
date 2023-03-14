@@ -2,9 +2,11 @@
   --grid-column-gap: 186px;
   --card-width: 285px;
   --card-pt: 72px;
+  --divider-exist: block;
+  --outline-card-color:var(--color-grey--900);
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(285px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(240px, auto));
   column-gap: var(--grid-column-gap);
   row-gap: 50px;
   justify-content: center;
@@ -19,6 +21,7 @@
         position: absolute;
         top: 0;
         right: calc(var(--grid-column-gap) / 2 * -1);
+        display: var(--divider-exist);
         width: 1px;
         height: 100%;
         background-image: url("../assets/img/svg/divider.svg");
@@ -42,7 +45,7 @@
     }
 
     &:focus-visible {
-      outline: 3px solid var(--color-grey--900);
+      outline: 3px solid var(--outline-card-color);
       outline-offset: 22px;
       border-radius: 4px;
     }
@@ -62,6 +65,37 @@
     &--comfort {
       background-image: url("../assets/img/bg/slippers.svg");
     }
+
+    &--clients {
+      background-image: url("../assets/img/bg/like-grey.svg");
+    }
+
+    &--apartments {
+      background-image: url("../assets/img/bg/painting-grey.svg");
+    }
+
+    &--specialists {
+      background-image: url("../assets/img/bg/helmet-grey.svg");
+    }
+
+    &--finishing-work {
+      --card-width: 251px;
+
+      position: relative;
+      background-image: url("../assets/img/bg/pantone-grey.svg");
+    }
+
+    &--cost {
+      background-image: url("../assets/img/bg/ic-contract.svg");
+    }
+
+    &--workers {
+      background-image: url("../assets/img/bg/ic-helmet.svg");
+    }
+
+    &--control {
+      background-image: url("../assets/img/bg/ic-camera.svg");
+    }
   }
 
   &__heading {
@@ -72,38 +106,16 @@
 .features-list--page-about {
   --grid-column-gap: 86px;
   --card-width: 240px;
-  --card-pt: 64px;
+  --card-pt: 70px;
+  --divider-exist: none;
+}
 
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: var(--grid-column-gap);
+.math-pow {
+  position: relative;
+  top: -6px;
+  font-size: 45px;
+}
 
-  &__item::after {
-    display: none;
-  }
-
-  &__link--page-about {
-    width: var(--card-width);
-    padding-top: var(--card-pt);
-    background-position: top center;
-    background-size: 48px 48px;
-    background-repeat: no-repeat;
-    transition: transform 0.2s ease-in-out;
-
-    &--quality {
-      background-image: url("../assets/img/bg/like-grey.svg");
-    }
-
-    &--renovated {
-      background-image: url("../assets/img/bg/painting-grey.svg");
-    }
-
-    &--qualified {
-      background-image: url("../assets/img/bg/helmet-grey.svg");
-    }
-
-    &--finishing {
-      background-image: url("../assets/img/bg/pantone-grey.svg");
-    }
-  }
+.features-list--page-serv-offer {
+  --outline-card-color: var(--color-white);
 }

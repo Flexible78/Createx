@@ -26,17 +26,9 @@
 }
 
 .serv-offer-features-list {
-  margin-bottom: 74px;
+  margin-bottom: 76px;
 
-  &__item {
-    &:focus {
-      outline: none;
-    }
-
-    &:focus-visible {
-      outline: 3px solid var(--color-white);
-      outline-offset: 22px;
-      border-radius: 4px;
-    }
+  &__heading {
+    margin-bottom: 10px;
   }
 }

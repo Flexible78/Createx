@@ -1,0 +1,47 @@
+.about-mission {
+  padding: 120px;
+  background: var(--bg-color-grey--200);
+
+  &__section-title {
+    margin-bottom: 24px;
+  }
+
+  &__section-descr {
+    margin-bottom: 60px;
+  }
+
+  &__features-list {
+    margin-bottom: 25px;
+  }
+
+  &__form {
+    position: relative;
+    top: 95px;
+    border-radius: 4px;
+    padding: 48px 60px;
+    box-shadow:
+      0 80px 80px -20px rgb(154 156 165 / 8%),
+      0 30px 24px -10px rgb(154 156 165 / 5%),
+      0 12px 10px -6px rgb(154 156 165 / 4%),
+      0 4px 4px -4px rgb(30 33 44 / 3%);
+    background: #fff;
+  }
+
+  &__form-actions {
+    display: flex;
+    column-gap: 24px;
+    align-items: flex-end;
+  }
+
+  &__form-title {
+    margin-bottom: 32px;
+  }
+
+  &__form-field {
+    flex-basis: 260px;
+
+    &--message {
+      flex-grow: 1;
+    }
+  }
+}
