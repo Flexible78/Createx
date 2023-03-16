@@ -3,12 +3,6 @@
   padding-bottom: 60px;
   background-color: var(--color-white);
 
-  &__container {
-  }
-
-  &__content {
-  }
-
   &__breadcrumb {
     margin-bottom: 38.6px;
   }
@@ -22,7 +16,9 @@
   }
 }
 
-.project-slider {
+.projects-slider {
+  position: relative;
+
   &__img {
     width: 100%;
     height: 100%;
@@ -46,10 +42,6 @@
       }
     }
   }
-}
-
-.project-slider-btn {
-  position: relative;
 
   &--prev {
     position: absolute;
