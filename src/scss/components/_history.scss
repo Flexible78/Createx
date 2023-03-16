@@ -54,6 +54,22 @@
       background-color: var(--color-grey--600);
       transform: translateY(17px);
     }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--color-grey--900);
+      outline-offset: 1px;
+    }
+  }
+
+  &__item:hover,
+  &__item::before:hover {
+    color: var(--color-primary);
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
   }
 }
 

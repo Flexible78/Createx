@@ -3175,6 +3175,22 @@ main {
   transform: translateY(17px);
 }
 
+.history-list__item:focus {
+  outline: none;
+}
+
+.history-list__item:focus-visible {
+  outline: 3px solid var(--color-grey--900);
+  outline-offset: 1px;
+}
+
+.history-list__item:hover,
+.history-list__item::before:hover {
+  color: var(--color-primary);
+  transition: .2s all ease-in-out;
+  cursor: pointer;
+}
+
 .history-slider-block {
   position: relative;
   grid-column: 5/span 8;
