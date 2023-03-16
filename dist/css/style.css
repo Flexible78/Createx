@@ -845,6 +845,7 @@ main {
   --card-pt: 72px;
   --divider-exist: block;
   --outline-card-color: var(--color-grey--900);
+  --background-features-list-color: var(--color-white);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, auto));
   -moz-column-gap: var(--grid-column-gap);
@@ -1716,31 +1717,6 @@ main {
   outline: 3px solid var(--color-grey--900);
   outline-offset: 2px;
   border-radius: 1px;
-}
-
-.work-promo {
-  padding: 152px 0 179px;
-  background-image: url("../assets/img/bg/bg-work.png");
-  background-position: 100% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: var(--bg-color-grey--200);
-}
-
-.work-promo__container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-}
-
-.work-promo__content {
-  grid-column: 6 span;
-}
-
-.work-promo__title {
-  padding-top: 40px;
-  padding-bottom: 24px;
 }
 
 .work-portfolio {
@@ -3079,7 +3055,8 @@ main {
 }
 
 .ceo-section {
-  padding: 120px;
+  padding-top: 117px;
+  padding-bottom: 129px;
 }
 
 .ceo-section__img-wrapper {
@@ -3139,8 +3116,86 @@ main {
   padding-left: 58px;
 }
 
+.history {
+  padding-top: 74.8px;
+  padding-bottom: 102px;
+  background-color: var(--bg-color-grey--200);
+}
+
+.history__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.history__title {
+  grid-column: 12 span;
+  margin-bottom: 30px;
+}
+
+.history-list {
+  position: relative;
+  display: flex;
+  grid-column: 3 span;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-left: 40px;
+}
+
+.history-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1%;
+  width: 1px;
+  height: 538px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--color-grey--600);
+  opacity: .5;
+}
+
+.history-list__item::before {
+  content: "";
+  position: absolute;
+  left: -0.2%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--bg-color-grey--200);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--color-grey--600);
+  transform: translateY(17px);
+}
+
+.history-slider-block {
+  position: relative;
+  grid-column: 5/span 8;
+}
+
+.history-slider-block__img {
+  margin-bottom: 36px;
+}
+
+.history-slider-block--prev {
+  position: absolute;
+  top: -96.4px;
+  right: 36.5px;
+}
+
+.history-slider-block--next {
+  position: absolute;
+  top: -96.4px;
+  right: -12px;
+}
+
 .about-mission {
-  padding: 120px;
+  padding: 81px;
   background: var(--bg-color-grey--200);
 }
 

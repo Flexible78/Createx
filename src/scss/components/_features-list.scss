@@ -3,7 +3,8 @@
   --card-width: 285px;
   --card-pt: 72px;
   --divider-exist: block;
-  --outline-card-color:var(--color-grey--900);
+  --outline-card-color: var(--color-grey--900);
+  --background-features-list-color: var(--color-white);
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, auto));
