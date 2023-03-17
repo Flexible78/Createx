@@ -2,7 +2,6 @@
   padding-top: 174px;
   padding-bottom: 180px;
 
-
   &__title {
     margin-bottom: 24px;
   }
@@ -73,5 +72,19 @@
     height: 100%;
     color: var(--color-white);
     object-fit: cover;
+  }
+
+  &__link {
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--color-grey--900);
+      outline-offset: 3px;
+      border-radius: 1px;
+      transform: scale(1.1);
+    }
   }
 }

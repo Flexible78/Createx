@@ -3300,6 +3300,18 @@ main {
      object-fit: cover;
 }
 
+.team-social-list__link:focus {
+  outline: none;
+  border: none;
+}
+
+.team-social-list__link:focus-visible {
+  outline: 3px solid var(--color-grey--900);
+  outline-offset: 3px;
+  border-radius: 1px;
+  transform: scale(1.1);
+}
+
 .about-mission {
   padding: 81px;
   background: var(--bg-color-grey--200);
