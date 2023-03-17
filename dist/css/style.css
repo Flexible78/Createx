@@ -3184,8 +3184,7 @@ main {
   outline-offset: 1px;
 }
 
-.history-list__item:hover,
-.history-list__item::before:hover {
+.history-list__item:hover {
   color: var(--color-primary);
   transition: .2s all ease-in-out;
   cursor: pointer;
@@ -3210,6 +3209,83 @@ main {
   position: absolute;
   top: -96.4px;
   right: -12px;
+}
+
+.team {
+  padding-top: 174px;
+}
+
+.team__title {
+  margin-bottom: 24px;
+}
+
+.team__descr {
+  margin-bottom: 60px;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 60px;
+}
+
+.team-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 416px;
+  max-width: 285px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.team-card__bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  align-items: center;
+}
+
+.team-card__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team-card__social {
+  position: absolute;
+  top: 247px;
+  left: 0;
+}
+
+.team-card:hover {
+  cursor: pointer;
+}
+
+.team-card:hover .team-social-list {
+  display: flex;
+}
+
+.team-social-list {
+  display: none;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  border-radius: 0 0 4px 4px;
+  padding: 20px 100px 20px 101px;
+  background-color: var(--color-primary);
+  opacity: .7;
+}
+
+.team-social-list__icon {
+  width: 100%;
+  height: 100%;
+  color: var(--color-white);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-mission {
@@ -3263,12 +3339,7 @@ main {
 
 .about-clients {
   padding-top: 118px;
-  padding-bottom: 180px;
   background-color: var(--color-white);
-}
-
-.about-clients__partners-list {
-  margin-bottom: 112px;
 }
 
 .about-clients__descr {
