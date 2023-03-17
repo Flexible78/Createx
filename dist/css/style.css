@@ -611,6 +611,14 @@ main {
   color: var(--color-white);
 }
 
+.text-descr--primary {
+  color: var(--color-primary);
+}
+
+.text-descr--underline {
+  text-decoration: underline;
+}
+
 .btn {
   --btn-fill-text-color: var(--color-white);
   --btn-fill-bg-color: var(--color-primary);
@@ -3119,9 +3127,10 @@ main {
 }
 
 .history {
+  --bg-color: var(--bg-color-grey--200);
   padding-top: 74.8px;
   padding-bottom: 102px;
-  background-color: var(--bg-color-grey--200);
+  background-color: var(--bg-color);
 }
 
 .history__container {
@@ -3132,7 +3141,7 @@ main {
 }
 
 .history__title {
-  grid-column: 12 span;
+  grid-column: 10 span;
   margin-bottom: 30px;
 }
 
@@ -3142,7 +3151,6 @@ main {
   grid-column: 3 span;
   flex-direction: column;
   row-gap: 20px;
-  padding-left: 40px;
 }
 
 .history-list::before {
@@ -3151,7 +3159,7 @@ main {
   top: 0;
   left: 1%;
   width: 1px;
-  height: 538px;
+  height: 100%;
   border-radius: 50%;
   background-position: center;
   background-size: cover;
@@ -3160,19 +3168,25 @@ main {
   opacity: .5;
 }
 
+.history-list__item {
+  position: relative;
+  padding-left: 40px;
+}
+
 .history-list__item::before {
   content: "";
   position: absolute;
+  top: 50%;
   left: -0.2%;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--bg-color-grey--200);
+  box-shadow: 0 0 0 4px var(--bg-color);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--color-grey--600);
-  transform: translateY(17px);
+  background-color: currentcolor;
+  transform: translateY(-50%);
 }
 
 .history-list__item:focus {
@@ -3199,20 +3213,15 @@ main {
   margin-bottom: 36px;
 }
 
-.history-slider-block--prev {
+.history-slider-block__slider-nav {
   position: absolute;
-  top: -96.4px;
-  right: 36.5px;
-}
-
-.history-slider-block--next {
-  position: absolute;
-  top: -96.4px;
+  top: -95px;
   right: -12px;
 }
 
 .team {
   padding-top: 174px;
+  padding-bottom: 180px;
 }
 
 .team__title {
@@ -3229,6 +3238,7 @@ main {
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 60px;
+  margin-bottom: 80px;
 }
 
 .team-card {
@@ -3268,17 +3278,18 @@ main {
 }
 
 .team-card:hover .team-social-list {
-  display: flex;
+  opacity: .7;
 }
 
 .team-social-list {
-  display: none;
+  display: flex;
   -moz-column-gap: 12px;
        column-gap: 12px;
   border-radius: 0 0 4px 4px;
   padding: 20px 100px 20px 101px;
   background-color: var(--color-primary);
-  opacity: .7;
+  opacity: 0;
+  transition: opacity .38s ease;
 }
 
 .team-social-list__icon {

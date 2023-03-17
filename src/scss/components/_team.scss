@@ -1,5 +1,7 @@
 .team {
   padding-top: 174px;
+  padding-bottom: 180px;
+
 
   &__title {
     margin-bottom: 24px;
@@ -15,6 +17,7 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 30px;
   row-gap: 60px;
+  margin-bottom: 80px;
 }
 
 .team-card {
@@ -51,18 +54,19 @@
     cursor: pointer;
 
     .team-social-list {
-      display: flex;
+      opacity: 0.7;
     }
   }
 }
 
 .team-social-list {
-  display: none;
+  display: flex;
   column-gap: 12px;
   border-radius: 0 0 4px 4px;
   padding: 20px 100px 20px 101px;
   background-color: var(--color-primary);
-  opacity: 0.7;
+  opacity: 0;
+  transition: opacity 0.38s  ease;
 
   &__icon {
     width: 100%;
