@@ -3405,3 +3405,27 @@ main {
 .about-clients__title {
   margin-bottom: 24px;
 }
+
+.promo-vacancies {
+  padding: 152px 0 146px;
+  background-image: url("../assets/img/bg/vacancies.png");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color-grey--200);
+}
+
+.promo-vacancies__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.promo-vacancies__content {
+  grid-column: 7 span;
+}
+
+.promo-vacancies__title {
+  padding-top: 40px;
+  padding-bottom: 24px;
+}

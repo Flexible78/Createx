@@ -43,14 +43,13 @@
   &__item {
     position: relative;
     padding-left: 40px;
-
-    
   }
 
   &__btn {
     border: none;
     padding: 0;
     background: none;
+
     &::before {
       content: "";
       position: absolute;
