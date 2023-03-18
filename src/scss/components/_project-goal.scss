@@ -35,7 +35,11 @@
   justify-content: center;
   border-radius: 4px;
   padding-bottom: 42.4px;
-  box-shadow: 0 80px 80px -20px rgb(154 156 165 / 8%), 0 30px 24px -10px rgb(154 156 165 / 5%), 0 12px 10px -6px rgb(154 156 165 / 4%), 0 4px 4px -4px rgb(30 33 44 / 3%);
+  box-shadow:
+    0 80px 80px -20px rgb(154 156 165 / 8%),
+    0 30px 24px -10px rgb(154 156 165 / 5%),
+    0 12px 10px -6px rgb(154 156 165 / 4%),
+    0 4px 4px -4px rgb(30 33 44 / 3%);
   background-color: var(--color-white);
 
   &__heading {
