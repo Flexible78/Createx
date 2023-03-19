@@ -56,5 +56,39 @@
         outline-offset: 3px;
       }
     }
+
+    &--city {
+      padding-left: 24px;
+      background-image: url("@img/bg/gps-grey.svg");
+      background-position: left;
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-grey--900);
+        outline-offset: 3px;
+      }
+    }
+
+    &--clock {
+      padding-left: 24px;
+      background-image: url("@img/bg/clock-grey.svg");
+      background-position: left;
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-grey--900);
+        outline-offset: 3px;
+      }
+    }
   }
 }
