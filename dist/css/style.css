@@ -946,6 +946,18 @@ main {
   background-image: url("../assets/img/bg/ic-camera.svg");
 }
 
+.features-list__link--brain {
+  background-image: url("../assets/img/bg/ic-brain.svg");
+}
+
+.features-list__link--success {
+  background-image: url("../assets/img/bg/ic-success.svg");
+}
+
+.features-list__link--budget {
+  background-image: url("../assets/img/bg/ic-budget.svg");
+}
+
 .features-list__heading {
   margin-bottom: 8px;
 }
@@ -3526,4 +3538,20 @@ main {
 
 .vacancy-card:hover {
   box-shadow: 0 80px 80px -20px rgba(154,156,165,.08),0 30px 24px -10px rgba(154,156,165,.05),0 12px 10px -6px rgba(154,156,165,.04),0 4px 4px -4px rgba(30,33,44,.03);
+}
+
+.employee-benefits {
+  padding: 60.5px 120px;
+}
+
+.employee-benefits__title {
+  margin-bottom: 24px;
+}
+
+.employee-benefits__descr {
+  margin-bottom: 60px;
+}
+
+.employee-benefits__features-list {
+  margin-bottom: 121px;
 }
