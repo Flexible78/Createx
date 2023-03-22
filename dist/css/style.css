@@ -741,6 +741,10 @@ main {
   line-height: 3.1428;
 }
 
+.btn--regular--p175 {
+  padding: 0 175px;
+}
+
 .btn--small {
   padding: 0 24px;
   font-size: 12px;
@@ -1468,7 +1472,8 @@ main {
 
 .meta-info__link--city:focus-visible {
   outline: 2px solid var(--color-grey--900);
-  outline-offset: 3px;
+  outline-offset: 2px;
+  border-radius: 1px;
 }
 
 .meta-info__link--clock {
@@ -1749,30 +1754,30 @@ main {
   background-repeat: no-repeat;
 }
 
-.breadcrumb-list {
+.breadcrumbs {
   display: flex;
 }
 
-.breadcrumb-list__item:not(:last-child)::after {
+.breadcrumbs__item:not(:last-child)::after {
   content: "/";
   padding: 0 7px;
 }
 
-.breadcrumb-list__item:hover {
-  color: var(--color-grey--600);
-  transition: all .2s ease-in-out;
-  cursor: pointer;
-}
-
-.breadcrumb-list__link:focus {
+.breadcrumbs__link:focus {
   outline: none;
   border: none;
 }
 
-.breadcrumb-list__link:focus-visible {
+.breadcrumbs__link:focus-visible {
   outline: 3px solid var(--color-grey--900);
   outline-offset: 2px;
   border-radius: 1px;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--color-grey--600);
+  transition: all .2s ease-in-out;
+  cursor: pointer;
 }
 
 .work-portfolio {
@@ -2920,7 +2925,7 @@ main {
   background-color: var(--color-white);
 }
 
-.promo-projects__breadcrumb {
+.promo-projects__breadcrumbs {
   margin-bottom: 38.6px;
 }
 
@@ -3492,7 +3497,7 @@ main {
 }
 
 .current-vacancies__cv-send-block {
-  grid-column: 9/13;
+  grid-column: 4 span;
 }
 
 .current-vacancies__list {
@@ -3525,7 +3530,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 705px;
   height: 124px;
   border: 1px solid var(--color-grey--300);
   border-radius: 4px;
@@ -3554,4 +3558,59 @@ main {
 
 .employee-benefits__features-list {
   margin-bottom: 121px;
+}
+
+.subscribe-form {
+  position: relative;
+  width: 486px;
+  border: 1px solid;
+  border-color: var(--color-grey--300);
+  border-radius: 4px;
+  padding: 48px;
+  box-shadow: 0 60px 80px -20px rgba(30,33,44,.16),0 26px 24px -10px rgba(30,33,44,.1),0 12px 10px -6px rgba(30,33,44,.08),0 4px 4px -4px rgba(30,33,44,.05);
+  background-color: #fff;
+}
+
+.subscribe-form__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.subscribe-form__title {
+  margin-bottom: 24px;
+}
+
+.subscribe-form__field {
+  margin-bottom: 20px;
+}
+
+.subscribe-form__btn {
+  padding: 0 175px;
+}
+
+.subscribe-form__content {
+  margin-bottom: 40px;
+}
+
+.subscribe-form__input {
+  border: 1px solid var(--color-grey--400);
+  border-radius: 4px;
+  padding: 11px 16px 12px;
+  background-color: var(--bg-color-grey--200);
+}
+
+.subscribe-form__input:focus {
+  outline: none;
+  border: none;
+}
+
+.subscribe-form__input:focus-visible {
+  margin-top: 8px;
+  outline: 3px solid var(--color-primary-state);
+  outline-offset: 9.7px;
+  border-radius: 4px;
+  transform: translateX(-19px);
 }

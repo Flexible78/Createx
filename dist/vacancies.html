@@ -53,23 +53,66 @@
          <section class="promo-vacancies">
   <div class="container promo-vacancies__container">
     <div class="promo-vacancies__content">
-      <ul class="promo-vacancies__breadcrumb breadcrumb-list">
-        <li class="breadcrumb-list__item text-descr text-descr--small text-descr--grey-800">
-          <a href="index.html">Homepage</a>
+      <ul class="promo-vacancies__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link text-descr text-descr--small text-descr--grey-800" href="index.html">Homepage</a>
         </li>
-        <li class="breadcrumb-list__item text-descr text-descr--small text-descr--grey-800">
-          <a href="about-us.html">About Us</a>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link text-descr text-descr--small text-descr--grey-800" href="about-us.html"
+            >About Us</a
+          >
         </li>
-        <li class="breadcrumb-list__item text-descr text-descr--small text-descr--grey-800">
-          <a href="#"> Available Positions</a>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link text-descr text-descr--small text-descr--grey-600" href="#">
+            Available Positions</a
+          >
         </li>
       </ul>
 
       <h1 class="promo-vacancies__title page-title">Available Positions</h1>
-      <p class="page-descr promo-vacancies__descr">
-        Build your career with Createx Construction Bureau.
-      </p>
+      <p class="page-descr promo-vacancies__descr">Build your career with Createx Construction Bureau.</p>
     </div>
+    <section class="subscribe">
+  <div class="container subscribe__container">
+    <form class="subscribe-form" action="#" name="callBackForm" id="callBackForm">
+      <h2 class="subscribe__title subscribe-form__title block-heading block-heading--center block-heading--regular">
+        Subscribe to&nbsp;our newsletter
+      </h2>
+
+      <fieldset class="subscribe-form__actions">
+        <div class="subscribe-form__content">
+          <label class="form-field subscribe-form__field" for="userName">
+            <span class="subscribe-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
+              >Name*</span
+            >
+            <img class="subscribe-form__close" src="assets/img/svg/Cross.svg">
+            <input
+              class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
+              name="userName"
+              id="userName"
+              required
+              placeholder="Your name"
+              type="text" />
+          </label>
+          <label class="form-field subscribe-form__field" for="userEmail">
+            <span class="subscribe-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
+              >Email</span
+            >
+            <input
+              class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
+              name="userEmail"
+              id="userEmail"
+              placeholder="Your working email"
+              type="email" />
+          </label>
+        </div>
+
+        <input class="subscribe-form__btn form-field__btn btn btn--fill btn--regular" type="submit" value="Send" />
+      </fieldset>
+    </form>
+  </div>
+</section>
+
   </div>
 </section>
 
@@ -175,11 +218,9 @@
         Send your CV&nbsp;or subscribe to&nbsp;our newsletter to receive information about new vacancies.
       </p>
       <div class="cv-send-block__btns">
-        <input
-          class="cv-send-block__subscribe btn btn--outline btn--outline--primary btn--large btn--large--p44"
-          value="Subscribe"
-          type="submit" />
-        <a class="btn btn--fill btn--large btn--large--p54" href="services-page.html">send&nbsp;cv</a>
+        <a
+          class="cv-send-block__subscribe btn btn--outline btn--outline--primary btn--large btn--large--p44" href="subscribe-modal.html" >Subscribe</a>
+        <a class="btn btn--fill btn--large btn--large--p54" href="cv-modal.html">send&nbsp;cv</a>
       </div>
     </div>
   </div>
@@ -445,4 +486,5 @@
 </footer>
 
    </div>
+   <script src="./js/modal.js"></script>
 </body>

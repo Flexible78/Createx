@@ -1,16 +1,10 @@
-.breadcrumb-list {
+.breadcrumbs {
   display: flex;
 
   &__item {
     &:not(:last-child)::after {
       content: "/";
       padding: 0 7px;
-    }
-
-    &:hover {
-      color: var(--color-grey--600);
-      transition: all 0.2s ease-in-out;
-      cursor: pointer;
     }
   }
 
@@ -24,6 +18,12 @@
       outline: 3px solid var(--color-grey--900);
       outline-offset: 2px;
       border-radius: 1px;
+    }
+
+    &:hover {
+      color: var(--color-grey--600);
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
     }
   }
 }
