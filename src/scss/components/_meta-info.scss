@@ -25,6 +25,9 @@
   }
 
   &__link {
+    display: flex;
+    align-items: center;
+    column-gap:8px;
     transition: color 0.18s ease-in-out;
 
     &:focus {
@@ -39,23 +42,28 @@
     &:hover {
       color: var(--color-primary);
     }
-
-    &--comment {
-      padding-left: 24px;
-      background-image: url("@img/bg/chat-grey.svg");
-      background-position: left;
-      background-size: 16px 16px;
-      background-repeat: no-repeat;
-
+    &--icon {
+      width: 16px;
+      height: 16px;
+      fill: currentcolor;
+      object-fit: cover;
+  
       &:focus {
         outline: none;
       }
-
+  
       &:focus-visible {
         outline: 2px solid var(--color-grey--900);
         outline-offset: 3px;
       }
     }
+
+    // &--comment {
+    //   padding-left: 24px;
+    //   background-image: url("@img/bg/chat-grey.svg");
+    //   background-position: left;
+    //   background-size: 16px 16px;
+    //   background-repeat: no-repeat;
 
     &--city {
       padding-left: 24px;
