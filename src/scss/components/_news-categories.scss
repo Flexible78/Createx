@@ -1,0 +1,35 @@
+.categories {
+  padding: 120px 180px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__nav-list {
+  }
+}
+
+.categories-nav {
+  display: flex;
+
+  // justify-content: space-around;
+  align-items: center;
+
+  // justify-content: center;
+
+  &__item {
+
+    // width: calc(100% / 6);
+    // margin: 0 auto;
+  }
+
+  &__btn {
+    display: flex;
+    flex: 0 0 205px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 11px;
+    text-align: center;
+  }
+}
