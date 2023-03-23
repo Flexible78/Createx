@@ -1,34 +1,57 @@
 .news-article {
+  --content-pt: 24px;
+  --content-pr: 24px;
+  --content-pb: 25px;
+  --content-pl: 24px;
+  --heading-offset-down: 13px;
+  --descr-display: block;
+  --logo-height: 306px;
+
   overflow: hidden;
   max-width: 705px;
   border-radius: 4px;
-  box-shadow:
-    0 80px 80px -20px rgb(154 156 165 / 8%),
-    0 30px 24px -10px rgb(154 156 165 / 5%),
-    0 12px 10px -6px rgb(154 156 165 / 4%),
-    0 4px 4px -4px rgb(30 33 44 / 3%);
+  box-shadow: var(--main-shadow);
   background-color: var(--color-white);
 
-  &__img {
-    width: 100%;
-    height: 360px;
-    border-radius: 4px 4px 0 0;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
+  &__small {
+    --heading-offset-down: 8px;
+    --descr-display: none;
+    --content-pt: 16px;
+    --content-pb: 24px;
+    --logo-height: 156px;
   }
 
-  &__text {
-    padding: 24px 24px 25px;
+  &__large {
+    --content-pb: 25px;
+    --logo-height: 360px;
+  }
+
+  &__logo {
+    width: 100%;
+    height: var(--logo-height);
+  }
+
+  &__logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__content {
+    padding:
+      var(--content-pt)
+      var(--content-pr)
+      var(--content-pb)
+      var(--content-pl);
   }
 
   &__heading {
-    margin-bottom: 12px;
-    transition: color 0.18s ease-in-out;
+    margin-bottom: var(--heading-offset-down);
+    transition:
+      color 0.18s ease-in-out,
+      outline 0.05s linear;
+    cursor: pointer;
 
     &:focus {
       outline: none;
@@ -44,29 +67,8 @@
     }
   }
 
-  &__text-descr {
-    overflow-y: hidden;
-    max-height: 55px;
+  &__descr {
+    display: var(--descr-display);
     margin-top: 16px;
-  }
-
-  &--small {
-    max-width: 495px;
-
-    .news-article__img {
-      height: 156px;
-    }
-
-    .news-article__text {
-      padding: 16px 24px 24px;
-    }
-
-    .news-article__heading {
-      margin-bottom: 8px;
-    }
-
-    .news-article__text-descr {
-      display: none;
-    }
   }
 }

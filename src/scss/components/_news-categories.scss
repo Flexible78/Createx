@@ -4,11 +4,15 @@
   &__title {
     margin-bottom: 40px;
   }
+  &__news-list {
+    row-gap: 55px;
+  }
 }
 
 .categories-nav {
   display: flex;
   align-items: center;
+  margin-bottom: 57.5px;
 
   &__item {
     flex: 0 0 205px;
