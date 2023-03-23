@@ -10,6 +10,11 @@
     gap: 30px;
   }
 
+  &__list-more-item {
+    grid-column: 6 span;
+    grid-row: 2 span;
+  }
+
   &__list-item {
     grid-column: 5 span;
 

@@ -2192,6 +2192,11 @@ main {
   gap: 30px;
 }
 
+.news__list-more-item {
+  grid-column: 6 span;
+  grid-row: 2 span;
+}
+
 .news__list-item {
   grid-column: 5 span;
 }
