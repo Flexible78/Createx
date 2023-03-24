@@ -3738,3 +3738,7 @@ main {
 .pagination-nav__link:active {
   color: var(--color-primary);
 }
+
+.pagination-nav__item--next-btn {
+  margin-left: 3px;
+}
