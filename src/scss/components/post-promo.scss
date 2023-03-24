@@ -1,0 +1,50 @@
+.promo-post {
+  padding: 152px 0 179px;
+  background-color: var(--bg-color-grey--200);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &__meta {
+    grid-column: 5 span;
+  }
+
+  &__title {
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+}
+
+.post-social-list {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__icon {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+  }
+
+  &__link {
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--color-grey--900);
+      outline-offset: 3px;
+      border-radius: 1px;
+      transform: scale(1.1);
+    }
+
+    &:hover {
+      transform: scale(1.23);
+      transition: 0.2s all ease-in-out;
+    }
+  }
+}
