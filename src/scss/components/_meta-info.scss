@@ -24,6 +24,9 @@
     position: relative;
     &--with-icon {
       display: flex;
+      column-gap: 8px;
+      align-items: center;
+      transition: color 0.18s ease-in-out;
       
     }
     &:focus {
@@ -43,9 +46,9 @@
 
   &__link {
     // display: flex;
-    // column-gap: 8px;
-    // align-items: center;
-    // transition: color 0.18s ease-in-out;
+    column-gap: 8px;
+    align-items: center;
+    transition: color 0.18s ease-in-out;
 
    
 

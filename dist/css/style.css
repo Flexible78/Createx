@@ -1426,6 +1426,10 @@ main {
 
 .meta-info__item--with-icon {
   display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  align-items: center;
+  transition: color .18s ease-in-out;
 }
 
 .meta-info__item:focus {
@@ -1439,6 +1443,13 @@ main {
 
 .meta-info__item:hover {
   color: var(--color-primary);
+}
+
+.meta-info__link {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  align-items: center;
+  transition: color .18s ease-in-out;
 }
 
 .meta-info__icon {
