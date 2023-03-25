@@ -6,6 +6,7 @@
   align-items: center;
 
   &__item {
+    position: relative;
 
     &:not(:last-child) {
       &::after {
@@ -21,14 +22,7 @@
         transform: translateY(-50%);
       }
     }
-    position: relative;
-    &--with-icon {
-      display: flex;
-      column-gap: 8px;
-      align-items: center;
-      transition: color 0.18s ease-in-out;
-      
-    }
+
     &:focus {
       outline: none;
     }
@@ -41,72 +35,68 @@
     &:hover {
       color: var(--color-primary);
     }
-    
-  }
 
-  &__link {
-    // display: flex;
-    column-gap: 8px;
-    align-items: center;
-    transition: color 0.18s ease-in-out;
-
-   
-
-    
-  }
-    &__icon {
-      width: 16px;
-      height: 16px;
-      fill: currentcolor;
-      object-fit: cover;
-
-      &:focus {
-        outline: none;
-      }
-
-      &:focus-visible {
-        outline: 2px solid var(--color-grey--900);
-        outline-offset: 3px;
-      }
-
-      &--large {
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    &--city {
-      padding-left: 24px;
-      background-image: url("@img/bg/gps-grey.svg");
-      background-position: left;
-      background-size: 16px 16px;
-      background-repeat: no-repeat;
-
-      &:focus {
-        outline: none;
-      }
-
-      &:focus-visible {
-        outline: 2px solid var(--color-grey--900);
-        outline-offset: 2px;
-        border-radius: 1px;
-      }
-    }
-
-    &--clock {
-      padding-left: 24px;
-      background-image: url("@img/bg/clock-grey.svg");
-      background-position: left;
-      background-size: 16px 16px;
-      background-repeat: no-repeat;
-
-      &:focus {
-        outline: none;
-      }
-
-      &:focus-visible {
-        outline: 2px solid var(--color-grey--900);
-        outline-offset: 3px;
-      }
+    &--with-icon {
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+      transition: color 0.18s ease-in-out;
     }
   }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: currentcolor;
+    object-fit: cover;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-grey--900);
+      outline-offset: 3px;
+    }
+
+    &--large {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &--city {
+    padding-left: 24px;
+    background-image: url("@img/bg/gps-grey.svg");
+    background-position: left;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-grey--900);
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
+  }
+
+  &--clock {
+    padding-left: 24px;
+    background-image: url("@img/bg/clock-grey.svg");
+    background-position: left;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-grey--900);
+      outline-offset: 3px;
+    }
+  }
+}
