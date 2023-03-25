@@ -1424,28 +1424,24 @@ main {
   transform: translateY(-50%);
 }
 
-.meta-info__link {
+.meta-info__item--with-icon {
   display: flex;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
-  align-items: center;
-  transition: color .18s ease-in-out;
 }
 
-.meta-info__link:focus {
+.meta-info__item:focus {
   outline: none;
 }
 
-.meta-info__link:focus-visible {
+.meta-info__item:focus-visible {
   outline: 2px solid var(--color-grey--900);
   outline-offset: 3px;
 }
 
-.meta-info__link:hover {
+.meta-info__item:hover {
   color: var(--color-primary);
 }
 
-.meta-info__link--icon {
+.meta-info__icon {
   width: 16px;
   height: 16px;
   fill: currentcolor;
@@ -1453,21 +1449,21 @@ main {
      object-fit: cover;
 }
 
-.meta-info__link--icon:focus {
+.meta-info__icon:focus {
   outline: none;
 }
 
-.meta-info__link--icon:focus-visible {
+.meta-info__icon:focus-visible {
   outline: 2px solid var(--color-grey--900);
   outline-offset: 3px;
 }
 
-.meta-info__link--icon--large {
+.meta-info__icon--large {
   width: 20px;
   height: 20px;
 }
 
-.meta-info__link--city {
+.meta-info--city {
   padding-left: 24px;
   background-image: url("../assets/img/bg/gps-grey.svg");
   background-position: left;
@@ -1475,17 +1471,17 @@ main {
   background-repeat: no-repeat;
 }
 
-.meta-info__link--city:focus {
+.meta-info--city:focus {
   outline: none;
 }
 
-.meta-info__link--city:focus-visible {
+.meta-info--city:focus-visible {
   outline: 2px solid var(--color-grey--900);
   outline-offset: 2px;
   border-radius: 1px;
 }
 
-.meta-info__link--clock {
+.meta-info--clock {
   padding-left: 24px;
   background-image: url("../assets/img/bg/clock-grey.svg");
   background-position: left;
@@ -1493,11 +1489,11 @@ main {
   background-repeat: no-repeat;
 }
 
-.meta-info__link--clock:focus {
+.meta-info--clock:focus {
   outline: none;
 }
 
-.meta-info__link--clock:focus-visible {
+.meta-info--clock:focus-visible {
   outline: 2px solid var(--color-grey--900);
   outline-offset: 3px;
 }
@@ -3745,7 +3741,7 @@ main {
 .pagination__link--icon {
   width: 24px;
   height: 24px;
-  padding: 3px 0 0 3px;
+  margin: 3px 0 0 3px;
   fill: currentcolor;
 }
 
@@ -3754,19 +3750,22 @@ main {
   background-color: var(--bg-color-grey--200);
 }
 
+.promo-post__breadcrumbs {
+  margin-bottom: 40px;
+}
+
 .promo-post__inner {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
 
 .promo-post__meta {
-  padding-left: 9px;
   grid-column: 5 span;
+  padding-left: 9px;
 }
 
 .promo-post__title {
-  padding-top: 40px;
-  padding-bottom: 48px;
+  margin-bottom: 44px;
 }
 
 .post-social-list {

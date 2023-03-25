@@ -2,19 +2,22 @@
   padding: 152px 0 179px;
   background-color: var(--bg-color-grey--200);
 
+  &__breadcrumbs {
+    margin-bottom: 40px;
+  }
+
   &__inner {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
 
   &__meta {
-    padding-left: 9px;
     grid-column: 5 span;
+    padding-left: 9px;
   }
 
   &__title {
-    padding-top: 40px;
-    padding-bottom: 48px;
+    margin-bottom: 44px;
   }
 }
 

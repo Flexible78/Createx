@@ -6,7 +6,6 @@
   align-items: center;
 
   &__item {
-    position: relative;
 
     &:not(:last-child) {
       &::after {
@@ -22,14 +21,11 @@
         transform: translateY(-50%);
       }
     }
-  }
-
-  &__link {
-    display: flex;
-    column-gap: 8px;
-    align-items: center;
-    transition: color 0.18s ease-in-out;
-
+    position: relative;
+    &--with-icon {
+      display: flex;
+      
+    }
     &:focus {
       outline: none;
     }
@@ -42,8 +38,20 @@
     &:hover {
       color: var(--color-primary);
     }
+    
+  }
 
-    &--icon {
+  &__link {
+    // display: flex;
+    // column-gap: 8px;
+    // align-items: center;
+    // transition: color 0.18s ease-in-out;
+
+   
+
+    
+  }
+    &__icon {
       width: 16px;
       height: 16px;
       fill: currentcolor;
@@ -99,4 +107,3 @@
       }
     }
   }
-}
