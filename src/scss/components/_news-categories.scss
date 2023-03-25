@@ -55,20 +55,19 @@
   }
 }
 
-.pagination-nav {
+.pagination {
   display: flex;
   column-gap: 20px;
   align-items: center;
   justify-content: center;
   margin-bottom: 47px;
-  padding-top: 47px;
+  padding-top: 56px;
 
   &__link {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.6;
-    color: var(--grey-800);
-    transform: translateX(12px);
+    color: var(--color-grey--800);
 
     &:focus {
       outline: none;
@@ -84,17 +83,14 @@
     }
 
     &:hover {
-      color: var(--color-grey--600);
-    }
-
-    &:active {
       color: var(--color-primary);
     }
-  }
 
-  &__item {
-    &--next-btn {
-      margin-left: 3px;
+    &--icon {
+      width: 24px;
+      height: 24px;
+      padding: 3px 0 0 3px;
+      fill: currentcolor;
     }
   }
 }
