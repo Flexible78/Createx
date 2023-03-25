@@ -26,8 +26,8 @@
 
   &__link {
     display: flex;
+    column-gap: 8px;
     align-items: center;
-    column-gap:8px;
     transition: color 0.18s ease-in-out;
 
     &:focus {
@@ -42,23 +42,25 @@
     &:hover {
       color: var(--color-primary);
     }
+
     &--icon {
       width: 16px;
       height: 16px;
       fill: currentcolor;
       object-fit: cover;
 
-      &--large {
-        width: 20px;
-        height: 20px;
-      }
       &:focus {
         outline: none;
       }
-  
+
       &:focus-visible {
         outline: 2px solid var(--color-grey--900);
         outline-offset: 3px;
+      }
+
+      &--large {
+        width: 20px;
+        height: 20px;
       }
     }
 

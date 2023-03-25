@@ -1426,9 +1426,9 @@ main {
 
 .meta-info__link {
   display: flex;
-  align-items: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
+  align-items: center;
   transition: color .18s ease-in-out;
 }
 
@@ -1453,11 +1453,6 @@ main {
      object-fit: cover;
 }
 
-.meta-info__link--icon--large {
-  width: 20px;
-  height: 20px;
-}
-
 .meta-info__link--icon:focus {
   outline: none;
 }
@@ -1465,6 +1460,11 @@ main {
 .meta-info__link--icon:focus-visible {
   outline: 2px solid var(--color-grey--900);
   outline-offset: 3px;
+}
+
+.meta-info__link--icon--large {
+  width: 20px;
+  height: 20px;
 }
 
 .meta-info__link--city {
@@ -3760,6 +3760,7 @@ main {
 }
 
 .promo-post__meta {
+  padding-left: 9px;
   grid-column: 5 span;
 }
 
