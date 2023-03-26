@@ -16,10 +16,6 @@
   &__content {
     grid-column: 3 / 11;
     justify-items: start;
-
-    p:nth-child(3) {
-      // margin-bottom: 48px;
-    }
   }
 }
 
@@ -44,8 +40,8 @@
   }
 
   &__social {
-    margin-top: 63px;
     display: flex;
     column-gap: 12px;
+    margin-top: 63px;
   }
 }
