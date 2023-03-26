@@ -97,6 +97,11 @@ address {
   line-height: inherit;
 }
 
+blockquote {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 dt {
   font-weight: 700;
 }
@@ -3835,10 +3840,29 @@ main {
   justify-items: start;
 }
 
-.post-article .quote-block__large-descr {
+.quote-block__large-descr {
   margin-bottom: 24px;
 }
 
-.post-article .quote-block__regular-descr {
-  margin-bottom: 34px;
+.quote-block__decisions-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.quote-block__inner {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 27px;
+}
+
+.quote-block__social {
+  margin-top: 63px;
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
 }
