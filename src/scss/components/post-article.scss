@@ -1,0 +1,38 @@
+.post-article {
+  padding: 80px 180px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+  }
+
+  &__img-wrapper {
+    grid-column: 1 / -1;
+    margin-top: -201px;
+    margin-bottom: 80px;
+  }
+
+  &__content {
+    grid-column: 3 / 11;
+    justify-items: start;
+  }
+
+  &__img {
+  }
+
+  .post-article {
+    &__content {
+    }
+  }
+
+  .quote-block {
+    &__large-descr {
+      margin-bottom: 24px;
+    }
+
+    &__regular-descr {
+      margin-bottom: 34px;
+    }
+  }
+}

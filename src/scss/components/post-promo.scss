@@ -1,5 +1,5 @@
 .promo-post {
-  padding: 152px 0 179px;
+  padding: 152px 0 122px;
   background-color: var(--bg-color-grey--200);
 
   &__breadcrumbs {
@@ -9,6 +9,7 @@
   &__inner {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 77px;
   }
 
   &__meta {
@@ -50,5 +51,8 @@
       transform: scale(1.23);
       transition: 0.2s all ease-in-out;
     }
+  }
+  &__img-wrapper {
+    margin-bottom: -180px;
   }
 }
