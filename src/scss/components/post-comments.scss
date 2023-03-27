@@ -1,5 +1,5 @@
 .comments {
-  padding: 80px 120px;
+  padding: 0 120px;
 
   &__inner {
     display: grid;
@@ -8,10 +8,47 @@
   }
 
   &__content {
+    display: flex;
     grid-column: 3 / 11;
+    flex-direction: column;
+    row-gap: 60px;
     justify-items: start;
   }
 
   &__title {
+    margin-bottom: 60px;
+  }
+}
+
+.comments-card {
+  display: flex;
+  column-gap: 30px;
+
+  &__author {
+    flex: 0 0 150px;
+  }
+
+  &__author-name {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    margin-bottom: 17px;
+
+    &--nickname {
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+  }
+}
+
+.reply-block {
+  display: flex;
+  column-gap: 8px;
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-grey--700);
   }
 }
