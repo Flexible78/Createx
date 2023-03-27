@@ -1,0 +1,17 @@
+.comments {
+  padding: 80px 120px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+  }
+
+  &__content {
+    grid-column: 3 / 11;
+    justify-items: start;
+  }
+
+  &__title {
+  }
+}
