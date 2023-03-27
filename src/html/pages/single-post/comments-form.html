@@ -1,0 +1,54 @@
+<section class="comment-section">
+  <div class="container comment-section__container">
+    <form class="comment-form comment-section__form" action="#" name="callBackForm" id="callBackForm">
+       <h2
+          class="comment-form__title section-title section-title--center">
+          Leave your comment
+       </h2>
+
+       <fieldset class="comment-form__actions">
+          <label class="comment-form__name form-field comment-form__field" for="userName">
+             <span class="comment-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
+             >Name*</span>
+             <input
+                class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
+                name="userName"
+                id="userName"
+                required
+                placeholder="Your name"
+                type="text"/>
+          </label>
+
+          <label class="comment-form__mail form-field comment-form__field" for="userEmail">
+             <span class="comment-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
+             >Email*</span>
+             <input
+                class="input form-field__input text-descr text-descr--grey-800 text-descr--small"
+                name="userEmail"
+                id="userEmail"
+                placeholder="Your working email"
+                type="email"/>
+          </label>
+
+          <label
+             class="form-field comment-form__field comment-form__field--message"
+             for="userComment">
+             <span class="comment-form__caption text-descr text-descr--small text-descr--grey-800 form-field__caption"
+             >Your comment*</span>
+             <input
+                class="comment-form__input comment-form__input--message input form-field__input form-field__input--message text-descr text-descr--grey-800 text-descr--small"
+                name="userMessage"
+                id="userMessage"
+                required
+                placeholder="Type comment here"
+                type="text"/>
+          </label>
+
+          
+          <input class="comment-form__btn form-field__btn btn btn--fill btn--large" type="submit" value="Post comment"/>
+       </fieldset>
+
+    </form>
+
+  </div>
+</section>

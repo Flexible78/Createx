@@ -3931,3 +3931,53 @@ main {
   height: 16px;
   fill: var(--color-grey--700);
 }
+
+.comment-section {
+  padding: 120px 180px;
+}
+
+.comment-section__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.comment-section .comment-form {
+  grid-column: 3/11;
+  justify-items: center;
+}
+
+.comment-section .comment-form__title {
+  margin-bottom: 48px;
+}
+
+.comment-section .comment-form__actions {
+  display: grid;
+  grid-gap: 37px 30px;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.comment-section .comment-form__field {
+  padding: 13px 0 13px 16px;
+}
+
+.comment-section .comment-form__field--message {
+  grid-column: 1/-1;
+  margin-bottom: 48px;
+}
+
+.comment-section .comment-form__btn {
+  grid-column: 3/7;
+  justify-items: center;
+}
+
+.comment-section .comment-form__name,
+.comment-section .comment-form__mail {
+  grid-column: span 4;
+  justify-items: center;
+}
+
+.form-field__input--message {
+  padding: 13px 0 61px 16px;
+}
