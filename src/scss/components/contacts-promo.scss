@@ -1,0 +1,23 @@
+.promo-contacts {
+  padding: 152px 0 179px;
+  background-image: url("@img/bg/bg-contacts.png");
+  background-position: 100% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color-grey--200);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+  }
+
+  &__content {
+    grid-column: 6 span;
+  }
+
+  &__title {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+}

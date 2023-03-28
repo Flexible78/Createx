@@ -3981,3 +3981,118 @@ main {
 .form-field__input--message {
   padding: 13px 0 61px 16px;
 }
+
+.promo-contacts {
+  padding: 152px 0 179px;
+  background-image: url("../assets/img/bg/bg-contacts.png");
+  background-position: 100% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color-grey--200);
+}
+
+.promo-contacts__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.promo-contacts__content {
+  grid-column: 6 span;
+}
+
+.promo-contacts__title {
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+.contact-form {
+  padding: 121px 120px;
+}
+
+.contact-form__title {
+  margin-bottom: 24px;
+}
+
+.contact-form__descr {
+  margin-bottom: 60px;
+}
+
+.contact-form__content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.contact-form__img-wrapper {
+  grid-column: 5 span;
+  overflow: hidden;
+  width: 495px;
+  height: 586px;
+  margin-bottom: 24.9px;
+  border-radius: 4px;
+}
+
+.contact-form__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.contact-form__application-form {
+  grid-column: 7/12;
+}
+
+.application-form__title {
+  margin-bottom: 24px;
+}
+
+.application-form__actions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.application-form__check-option {
+  padding-left: 27px;
+}
+
+.application-form__check-option--input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.application-form__check-option--input:checked+.application-form__check-option--text {
+  background-image: url("../assets/img/svg/checkbox/checked.svg");
+  background-repeat: no-repeat;
+}
+
+.application-form__check-option--input:focus {
+  outline: none;
+  border: none;
+}
+
+.application-form__check-option--input:focus-visible {
+  margin-top: 8px;
+  outline: 3px solid var(--color-primary-state);
+  outline-offset: 9.7px;
+  border-radius: 4px;
+  transform: translateX(-19px);
+}
+
+.application-form__check-option--text {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: -27px;
+  background-image: url("../assets/img/svg/checkbox/plate.svg");
+  background-repeat: no-repeat;
+  background-color: var(--color-white);
+}
