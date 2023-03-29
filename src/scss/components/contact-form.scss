@@ -31,60 +31,34 @@
     object-position: center;
   }
 
-  &__application-form {
+  &__field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    cursor: pointer;
+  }
+
+  &__application {
     grid-column: 7 / 12;
   }
 }
 
-.application-form {
-  // display: grid;
-  // grid-template-columns: repeat(6, 1fr);
-  // column-gap: 30px;
-
-  &__title {
-    margin-bottom: 24px;
-  }
-
+.contact-form-block {
   &__actions {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(285px, auto));
+    gap: 24px 30px;
   }
 
-  &__check-option {
+  &__message {
+    grid-column: 1 / -1;
+    margin-bottom: 17.5px;
+  }
+
+  &__checkbox {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(292px, auto));
+    gap: 30px;
     padding-left: 27px;
-
-    &--input {
-      appearance: none;
-      position: absolute;
-
-      &:checked + .application-form__check-option--text {
-        background-image: url("@img/svg/checkbox/checked.svg");
-        background-repeat: no-repeat;
-      }
-
-      &:focus {
-        outline: none;
-        border: none;
-      }
-
-      &:focus-visible {
-        margin-top: 8px;
-        outline: 3px solid var(--color-primary-state);
-        outline-offset: 9.7px;
-        border-radius: 4px;
-        transform: translateX(-19px);
-      }
-    }
-
-    &--text {
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      margin-left: -27px;
-      background-image: url("@img/svg/checkbox/plate.svg");
-      background-repeat: no-repeat;
-      background-color: var(--color-white);
-    }
   }
 }

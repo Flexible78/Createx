@@ -3,16 +3,16 @@
     <h2 class="contact-form__title section-title section-title--center">Contact us</h2>
 
     <p class="contact-form__descr text-descr text-descr--large text-descr--center">
-      Please complete the form. Detailed information will help us to make a tuned offer.
+      Please complete the form. Detailed information will help&nbsp;us to&nbsp;make a&nbsp;tuned offer.
     </p>
     <div class="contact-form__content">
       <div class="contact-form__img-wrapper">
         <img class="contact-form__img" src="@img/content/contacts/contact-woman.jpg" alt="Contact woman" />
       </div>
-      <div class="contact-form__application-form contact-form-block">
-        <form class="application-form contact-form" action="#" name="callBackForm" id="callBackForm">
-          <fieldset class="application-form__actions">
-            <label class="contact-form__field" for="userName">
+      <div class="contact-form__application">
+        <form class="application-form contact-form-block" action="#" name="callBackForm" id="callBackForm">
+          <fieldset class="contact-form-block__actions">
+            <label class="contact-form__field contact-form-block__field" for="userName">
               <span class="form-field form-field__caption form-field__caption--large">Name*</span>
               <input
                 class="form-field__input form-field__input--large form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
@@ -24,7 +24,9 @@
             </label>
 
             <label class="contact-form__field" for="userName">
-              <span class="form-field form-field__caption form-field__caption--large">Name*</span>
+              <span class="form-field form-field__caption form-field__caption--large"
+                >I&nbsp;am interested&nbsp;in</span
+              >
               <input
                 class="form-field__input form-field__input--large form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
                 name="userName"
@@ -46,7 +48,7 @@
             </label>
 
             <label class="contact-form__field" for="userName">
-              <span class="form-field form-field__caption form-field__caption--large">Name*</span>
+              <span class="form-field form-field__caption form-field__caption--large">Location*</span>
               <input
                 class="form-field__input form-field__input--large form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
                 name="userName"
@@ -67,7 +69,7 @@
             </label>
 
             <label class="contact-form__field" for="userName">
-              <span class="form-field form-field__caption form-field__caption--large">Name*</span>
+              <span class="form-field form-field__caption form-field__caption--large">Preferred contact method</span>
               <input
                 class="form-field__input form-field__input--large form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
                 name="userName"
@@ -77,7 +79,7 @@
                 type="text" />
             </label>
 
-            <label class="contact-form__field contact-form__field--message" for="userMessage">
+            <label class="contact-form__field contact-form-block__message" for="userMessage">
               <span class="form-field form-field__caption form-field__caption--large">Message*</span>
               <input
                 class="form-field__input form-field__input--contact form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
@@ -88,17 +90,23 @@
                 type="text" />
             </label>
 
-            <label class="form-field form-field__caption form-field__caption--large" for="agreeBox">
+            <div class="contact-form-block__checkbox">
+              <label
+                class="contact-form-block__text form-field form-field__caption form-field__caption--large"
+                for="agreeBox">
+                <input
+                  class="application-form__check-option--input text-descr text-descr--small text-descr--grey-600--agree"
+                  type="checkbox"
+                  id="agreeBox"
+                  name="agreeBox" />
+                <span class="contact-form-block__checkbox--text application-form__check-option--text"></span>
+                I&nbsp;agree to&nbsp;receive communications from Createx Construction Bureau.
+              </label>
               <input
-                class="application-form__check-option--input text-descr text-descr--small text-descr--grey-600--agree"
-                type="checkbox"
-                id="agreeBox"
-                name="agreeBox" />
-              <span class="application-form__check-option--text"></span>
-              I&nbsp;agree to&nbsp;receive communications from Createx Construction Bureau.
-            </label>
-
-            <input class="btn form-field__btn btn btn--fill btn--regular" type="submit" value="Send request" />
+                class="contact-form-block__btn btn form-field__btn btn btn--fill btn--large btn--large--p42"
+                type="submit"
+                value="Send request" />
+            </div>
           </fieldset>
         </form>
       </div>

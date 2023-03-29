@@ -737,6 +737,10 @@ main {
   padding: 0 44px;
 }
 
+.btn--large--p42 {
+  padding: 0 42.5px;
+}
+
 .btn--large--p54 {
   padding: 0 54px;
 }
@@ -4031,7 +4035,7 @@ main {
 }
 
 .promo-contacts {
-  padding: 152px 0 179px;
+  padding: 152px 0 206.3px;
   background-image: url("../assets/img/bg/bg-contacts.png");
   background-position: 100% 50%;
   background-size: contain;
@@ -4092,55 +4096,31 @@ main {
      object-position: center;
 }
 
-.contact-form__application-form {
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  cursor: pointer;
+}
+
+.contact-form__application {
   grid-column: 7/12;
 }
 
-.application-form__title {
-  margin-bottom: 24px;
+.contact-form-block__actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(285px, auto));
+  gap: 24px 30px;
 }
 
-.application-form__actions {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
+.contact-form-block__message {
+  grid-column: 1/-1;
+  margin-bottom: 17.5px;
 }
 
-.application-form__check-option {
+.contact-form-block__checkbox {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(292px, auto));
+  gap: 30px;
   padding-left: 27px;
-}
-
-.application-form__check-option--input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: absolute;
-}
-
-.application-form__check-option--input:checked+.application-form__check-option--text {
-  background-image: url("../assets/img/svg/checkbox/checked.svg");
-  background-repeat: no-repeat;
-}
-
-.application-form__check-option--input:focus {
-  outline: none;
-  border: none;
-}
-
-.application-form__check-option--input:focus-visible {
-  margin-top: 8px;
-  outline: 3px solid var(--color-primary-state);
-  outline-offset: 9.7px;
-  border-radius: 4px;
-  transform: translateX(-19px);
-}
-
-.application-form__check-option--text {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  margin-left: -27px;
-  background-image: url("../assets/img/svg/checkbox/plate.svg");
-  background-repeat: no-repeat;
-  background-color: var(--color-white);
 }
