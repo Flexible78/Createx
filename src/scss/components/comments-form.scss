@@ -12,27 +12,28 @@
     justify-items: center;
 
     &__title {
-      margin-bottom: 48px;
+      margin-bottom: 38px;
     }
 
     &__actions {
       display: grid;
-      grid-gap: 37px 30px;
       grid-template-columns: repeat(8, 1fr);
+      column-gap: 30px;
     }
 
     &__field {
-      padding: 13px 0 13px 16px;
+      padding: 11px 0;
 
       &--message {
         grid-column: 1 / -1;
-        margin-bottom: 48px;
+        margin-bottom: 36px;
       }
     }
 
     &__btn {
       grid-column: 3 / 7;
       justify-items: center;
+      margin-bottom: 60px;
     }
 
     &__name,
@@ -64,18 +65,7 @@
   }
 }
 
-.section-title {
-  &--center {
-  }
-}
-
 .form-field {
   &__caption {
-  }
-
-  &__input {
-    &--message {
-      padding: 13px 0 61px 16px;
-    }
   }
 }

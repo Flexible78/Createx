@@ -1518,8 +1518,58 @@ main {
   cursor: pointer;
 }
 
+.form-field__caption--large {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-grey--800);
+}
+
+.form-field__caption--regular {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form-field__caption--small {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.form-field__caption--grey-600 {
+  color: var(--color-grey--600);
+}
+
 .form-field__input {
   width: 100%;
+  border: 1px solid var(--color-grey--400);
+  border-radius: 4px;
+  background: var(--bg-color-grey--200);
+}
+
+.form-field__input--large {
+  padding: 13px 16px;
+}
+
+.form-field__input--regular {
+  padding: 11px 16px 12px;
+}
+
+.form-field__input--small {
+  padding: 9px 12px;
+}
+
+.form-field__input--message {
+  padding: 11px 16px 34px;
+}
+
+.form-field__input--comment {
+  padding: 13px 16px 61px;
+}
+
+.form-field__input--contact {
+  padding: 13px 16px 89px;
 }
 
 .form-field__btn {
@@ -3949,37 +3999,35 @@ main {
 }
 
 .comment-section .comment-form__title {
-  margin-bottom: 48px;
+  margin-bottom: 38px;
 }
 
 .comment-section .comment-form__actions {
   display: grid;
-  grid-gap: 37px 30px;
   grid-template-columns: repeat(8, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .comment-section .comment-form__field {
-  padding: 13px 0 13px 16px;
+  padding: 11px 0;
 }
 
 .comment-section .comment-form__field--message {
   grid-column: 1/-1;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .comment-section .comment-form__btn {
   grid-column: 3/7;
   justify-items: center;
+  margin-bottom: 60px;
 }
 
 .comment-section .comment-form__name,
 .comment-section .comment-form__mail {
   grid-column: span 4;
   justify-items: center;
-}
-
-.form-field__input--message {
-  padding: 13px 0 61px 16px;
 }
 
 .promo-contacts {

@@ -4,8 +4,58 @@
   row-gap: 8px;
   cursor: pointer;
 
+  &__caption {
+    &--large {
+      font-family: "Ubuntu";
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--color-grey--800);
+    }
+
+    &--regular {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    &--small {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    &--grey-600 {
+      color: var(--color-grey--600);
+    }
+  }
+
   &__input {
     width: 100%;
+    border: 1px solid var(--color-grey--400);
+    border-radius: 4px;
+    background: var(--bg-color-grey--200);
+
+    &--large {
+      padding: 13px 16px;
+    }
+
+    &--regular {
+      padding: 11px 16px 12px;
+    }
+
+    &--small {
+      padding: 9px 12px;
+    }
+
+    &--message {
+      padding: 11px 16px 34px;
+    }
+    &--comment {
+      padding: 13px 16px 61px;
+    }
+    &--contact {
+      padding: 13px 16px 89px;
+    }
   }
 
   &__btn {
