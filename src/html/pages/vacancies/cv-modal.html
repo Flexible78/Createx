@@ -1,0 +1,65 @@
+<section class="cv-section">
+  <div class="container cv-section__container">
+    <form class="cv-form" action="#" name="callBackForm" id="callBackForm">
+      <h2 class="cv-section__title subscribe-form__title block-heading block-heading--center block-heading--regular">Send your&nbsp;CV</h2>
+      <img class="subscribe-form__close" src="assets/img/svg/Cross.svg">
+
+      <fieldset class="application-form__actions">
+        <label class="form-field application-form__field" for="userName">
+          <span class="application-form__caption form-field form-field__caption form-field__caption--regular">Name*</span>
+          <input
+            class="form-field__input form-field__input--regular form-field form-field__caption form-field__caption--regular form-field__caption--grey-600"
+            name="userName"
+            id="userName"
+            required
+            placeholder="Your name"
+            type="text" />
+        </label>
+
+        <label class="cv-form__field" for="userName">
+          <span class="form-field form-field__caption form-field__caption--large">Location*</span>
+          <select
+            class="form-field__input contact-form__select form-field__input--large form-field form-field__caption form-field__caption--large"
+            name="Location[]">
+            <option value="1">New York</option>
+            <option value="2">New Jersey</option>
+            <option value="3">San Francisco</option>
+          </select>
+        </label>
+
+        <label class="form-field application-form__field" for="userPhone">
+          <span class="application-form__caption form-field form-field__caption form-field__caption--regular">Phone*</span>
+          <input
+            class="form-field__input form-field__input--regular form-field form-field__caption form-field__caption--regular form-field__caption--grey-600"
+            name="userPhone"
+            id="userPhone"
+            required
+            placeholder="Your phone number"
+            type="tel" />
+        </label>
+        <label class="form-field application-form__field" for="userEmail">
+          <span class="application-form__caption form-field form-field__caption form-field__caption--regular">Email</span>
+          <input
+            class="form-field__input form-field__input--regular form-field form-field__caption form-field__caption--regular form-field__caption--grey-600"
+            name="userEmail"
+            id="userEmail"
+            placeholder="Your working email"
+            type="email" />
+        </label>
+
+        <label class="form-field application-form__field application-form__field--message" for="userMessage">
+          <span class="application-form__caption form-field form-field__caption form-field__caption--regular">Message*</span>
+          <textarea
+            class="contacts__input contacts__input--message form-field__input form-field__input--message form-field form-field__caption form-field__caption--regular form-field__caption--grey-600"
+            name="userMessage"
+            id="userMessage"
+            required
+            wrap="soft"
+            placeholder="Your message"></textarea>
+        </label>
+
+        <input class="cv-form__btn form-field__btn btn btn--fill btn--regular" type="submit" value="Send" />
+      </fieldset>
+    </form>
+  </div>
+</section>

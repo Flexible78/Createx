@@ -3693,6 +3693,61 @@ main {
   transform: translateX(-19px);
 }
 
+.cv-form {
+  position: relative;
+  width: 486px;
+  border: 1px solid;
+  border-color: var(--color-grey--300);
+  border-radius: 4px;
+  padding: 48px;
+  box-shadow: 0 60px 80px -20px rgba(30,33,44,.16),0 26px 24px -10px rgba(30,33,44,.1),0 12px 10px -6px rgba(30,33,44,.08),0 4px 4px -4px rgba(30,33,44,.05);
+  background-color: #fff;
+}
+
+.cv-form__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.cv-form__title {
+  margin-bottom: 24px;
+}
+
+.cv-form__field {
+  margin-bottom: 20px;
+}
+
+.cv-form__btn {
+  padding: 0 175px;
+}
+
+.cv-form__content {
+  margin-bottom: 40px;
+}
+
+.cv-form__input {
+  border: 1px solid var(--color-grey--400);
+  border-radius: 4px;
+  padding: 11px 16px 12px;
+  background-color: var(--bg-color-grey--200);
+}
+
+.cv-form__input:focus {
+  outline: none;
+  border: none;
+}
+
+.cv-form__input:focus-visible {
+  margin-top: 8px;
+  outline: 3px solid var(--color-primary-state);
+  outline-offset: 9.7px;
+  border-radius: 4px;
+  transform: translateX(-19px);
+}
+
 .promo-news {
   padding: 152px 0 237px;
   background-image: url("../assets/img/bg/bg-news.png");
@@ -4214,14 +4269,30 @@ main {
 }
 
 .offices-addresses {
+  --grid-column-gap: 240px;
   display: flex;
-  -moz-column-gap: 240px;
-       column-gap: 240px;
+  -moz-column-gap: var(--grid-column-gap);
+       column-gap: var(--grid-column-gap);
   margin-bottom: 120px;
 }
 
 .address-card {
+  position: relative;
   max-width: 250px;
+}
+
+.address-card:not(:nth-child(3n)) ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc(var(--grid-column-gap)/2*-1);
+  display: var(--divider-exist);
+  width: 1px;
+  height: 100%;
+  background-image: url("../assets/img/svg/divider.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .address-card__city {

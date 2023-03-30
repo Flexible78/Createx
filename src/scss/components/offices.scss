@@ -16,13 +16,32 @@
 }
 
 .offices-addresses {
+  --grid-column-gap: 240px;
+
   display: flex;
-  column-gap: 240px;
+  column-gap: var(--grid-column-gap);
   margin-bottom: 120px;
 }
 
 .address-card {
+  position: relative;
   max-width: 250px;
+
+  &:not(:nth-child(3n)) {
+    ::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: calc(var(--grid-column-gap) / 2 * -1);
+      display: var(--divider-exist);
+      width: 1px;
+      height: 100%;
+      background-image: url("../assets/img/svg/divider.svg");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 
   &__city {
     margin-bottom: 24px;
