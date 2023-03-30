@@ -99,13 +99,14 @@
               <span class="form-field form-field__caption form-field__caption--large"
                 >I&nbsp;am interested&nbsp;in</span
               >
-              <input
-                class="form-field__input form-field__input--large form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
-                name="userName"
-                id="userName"
-                required
-                placeholder="Your name"
-                type="text" />
+              <select
+                class="form-field__input contact-form__select form-field__input--large form-field form-field__caption form-field__caption--large"
+                name="Interests[]">
+                <option value="1">Interior Design</option>
+                <option value="2">Project Development</option>
+                <option value="3">Repairs</option>
+                <option value="4">Construction</option>
+              </select>
             </label>
 
             <label class="contact-form__field" for="userPhone">
@@ -121,13 +122,13 @@
 
             <label class="contact-form__field" for="userName">
               <span class="form-field form-field__caption form-field__caption--large">Location*</span>
-              <input
-                class="form-field__input form-field__input--large form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
-                name="userName"
-                id="userName"
-                required
-                placeholder="Your name"
-                type="text" />
+              <select
+                class="form-field__input contact-form__select form-field__input--large form-field form-field__caption form-field__caption--large"
+                name="Location[]">
+                <option value="1">New York</option>
+                <option value="2">New Jersey</option>
+                <option value="3">San Francisco</option>
+              </select>
             </label>
 
             <label class="contact-form__field" for="userEmail">
@@ -140,38 +141,57 @@
                 type="email" />
             </label>
 
-            <label class="contact-form__field" for="userName">
+            <div class="contact-form__field">
               <span class="form-field form-field__caption form-field__caption--large">Preferred contact method</span>
-              <input
-                class="form-field__input form-field__input--large form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
-                name="userName"
-                id="userName"
-                required
-                placeholder="Your name"
-                type="text" />
-            </label>
+              <div class="radio-btns-block">
+                <label class="radio-btn" for="radio-btn-basic1">
+                  <input class="radio-btn-basic" id="radio-btn-basic1" name="contact" type="radio" value="phone"/>
+                  <span class="radio-btn__icon">
+                    <span class="radio-btn__dot"></span>
+                  </span>
+                  <span class="radio-btn__text">Phone</span>
+                </label>
+
+                <label class="radio-btn" for="radio-btn-basic2">
+                  <input class="radio-btn-basic" id="radio-btn-basic2" name="contact" type="radio" value="email"/>
+                  <span class="radio-btn__icon">
+                    <span class="radio-btn__dot"></span>
+                  </span>
+                  <span class="radio-btn__text">Email</span>
+                </label>
+
+                <label class="radio-btn" for="radio-btn-basic3">
+                  <input class="radio-btn-basic" id="radio-btn-basic3" name="contact" type="radio" value="viber"/>
+                  <span class="radio-btn__icon">
+                    <span class="radio-btn__dot"></span>
+                  </span>
+                  <span class="radio-btn__text">Viber</span>
+                </label>
+              </div>
+            </div>
 
             <label class="contact-form__field contact-form-block__message" for="userMessage">
               <span class="form-field form-field__caption form-field__caption--large">Message*</span>
-              <input
+              <textarea
                 class="form-field__input form-field__input--contact form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
                 name="userMessage"
                 id="userMessage"
                 required
+                wrap="soft"
                 placeholder="Your message"
-                type="text" />
+                type="text"></textarea>
             </label>
 
-            <div class="contact-form-block__checkbox">
+            <div class="contact-form-block__checkbox application-form__check-option">
               <label
-                class="contact-form-block__text form-field form-field__caption form-field__caption--large"
+                class="contact-form-block__check-option form-field form-field__caption form-field__caption--large"
                 for="agreeBox">
                 <input
-                  class="application-form__check-option--input text-descr text-descr--small text-descr--grey-600--agree"
+                  class="application-form__check application-form__check-option--input form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
                   type="checkbox"
                   id="agreeBox"
                   name="agreeBox" />
-                <span class="contact-form-block__checkbox--text application-form__check-option--text"></span>
+                <span class="application-form__check application-form__check-option--text"></span>
                 I&nbsp;agree to&nbsp;receive communications from Createx Construction Bureau.
               </label>
               <input

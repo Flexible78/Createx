@@ -41,6 +41,14 @@
   &__application {
     grid-column: 7 / 12;
   }
+
+  &__select {
+    padding-right: 8px;
+    background-image: url("@img/svg/down-arrow.svg");
+    background-position: right 1em center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
 }
 
 .contact-form-block {
@@ -57,8 +65,84 @@
 
   &__checkbox {
     display: grid;
-    grid-template-columns: repeat(2, minmax(292px, auto));
-    gap: 30px;
-    padding-left: 27px;
+    grid-template-columns: repeat(2, minmax(314px, auto));
   }
 }
+
+.radio-btn-basic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.radio-btns-block {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  align-items: center;
+  justify-content: start;
+}
+
+.radio-btn {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+  &__icon {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: solid 1px var(--color-grey--500);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__dot {
+    position: absolute;
+    top: 3px;
+    left: 40px;
+    width: 8px;
+    height: 8px;
+    margin-left: -37px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    opacity: 0;
+  }
+
+  input[type="radio"]:checked + .radio-btn__icon {
+    border-color: var(--color-primary);
+
+    .radio-btn__dot {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    margin-left: 28px;
+    padding-top: 13px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-grey--800);
+  }
+}
+
+//   &:focus {
+//     outline: none;
+//     border: none;
+//   }
+
+//   &:focus-visible {
+//     margin-top: 8px;
+//     outline: 3px solid var(--color-primary-state);
+//     outline-offset: 9.7px;
+//     border-radius: 4px;
+//     transform: translateX(-19px);
+//   }
+// }

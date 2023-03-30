@@ -2,6 +2,7 @@
   --bg-color-grey--200: #f4f5f6;
   --color-grey--300: #e5e8ed;
   --color-grey--400: #d7dadd;
+  --color-grey--500: #b3b7bc;
   --color-grey--600: #9a9ca5;
   --color-grey--700: #787a80;
   --color-grey--800: #424551;
@@ -12,9 +13,7 @@
   --color-white--e5: #e5e5e5;
   --color-black: #000;
   --section-offset: 120px;
-  --main-shadow:
-    0 80px 80px -20px rgb(154 156 165 / 8%),
+  --main-shadow: 0 80px 80px -20px rgb(154 156 165 / 8%),
     0 30px 24px -10px rgb(154 156 165 / 5%),
-    0 12px 10px -6px rgb(154 156 165 / 4%),
-    0 4px 4px -4px rgb(30 33 44 / 3%);
+    0 12px 10px -6px rgb(154 156 165 / 4%), 0 4px 4px -4px rgb(30 33 44 / 3%);
 }

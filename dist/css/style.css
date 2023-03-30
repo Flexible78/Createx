@@ -387,6 +387,7 @@ dl {
   --bg-color-grey--200: #f4f5f6;
   --color-grey--300: #e5e8ed;
   --color-grey--400: #d7dadd;
+  --color-grey--500: #b3b7bc;
   --color-grey--600: #9a9ca5;
   --color-grey--700: #787a80;
   --color-grey--800: #424551;
@@ -1573,7 +1574,7 @@ main {
 }
 
 .form-field__input--contact {
-  padding: 13px 16px 89px;
+  padding: 13px 16px 63px;
 }
 
 .form-field__btn {
@@ -4107,6 +4108,14 @@ main {
   grid-column: 7/12;
 }
 
+.contact-form__select {
+  padding-right: 8px;
+  background-image: url("../assets/img/svg/down-arrow.svg");
+  background-position: right 1em center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
 .contact-form-block__actions {
   display: grid;
   grid-template-columns: repeat(2, minmax(285px, auto));
@@ -4120,7 +4129,70 @@ main {
 
 .contact-form-block__checkbox {
   display: grid;
-  grid-template-columns: repeat(2, minmax(292px, auto));
-  gap: 30px;
-  padding-left: 27px;
+  grid-template-columns: repeat(2, minmax(314px, auto));
+}
+
+.radio-btn-basic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.radio-btns-block {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  align-items: center;
+  justify-content: start;
+}
+
+.radio-btn {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.radio-btn__icon {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--color-grey--500);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.radio-btn__dot {
+  position: absolute;
+  top: 3px;
+  left: 40px;
+  width: 8px;
+  height: 8px;
+  margin-left: -37px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  opacity: 0;
+}
+
+.radio-btn input[type=radio]:checked+.radio-btn__icon {
+  border-color: var(--color-primary);
+}
+
+.radio-btn input[type=radio]:checked+.radio-btn__icon .radio-btn__dot {
+  opacity: 1;
+}
+
+.radio-btn__text {
+  margin-left: 28px;
+  padding-top: 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-grey--800);
 }
