@@ -4061,7 +4061,7 @@ main {
 }
 
 .contact-form {
-  padding: 121px 120px;
+  padding: 121px 0 96px;
 }
 
 .contact-form__title {
@@ -4124,7 +4124,7 @@ main {
 
 .contact-form-block__message {
   grid-column: 1/-1;
-  margin-bottom: 17.5px;
+  margin-bottom: 14.5px;
 }
 
 .contact-form-block__checkbox {
@@ -4153,8 +4153,7 @@ main {
 
 .radio-btn {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  display: flex;
 }
 
 .radio-btn__icon {
@@ -4195,4 +4194,99 @@ main {
   font-size: 16px;
   line-height: 1.6;
   color: var(--color-grey--800);
+}
+
+.offices {
+  padding: 80px 0 114px;
+  background: var(--bg-color-grey--200);
+}
+
+.offices__title {
+  margin-bottom: 24px;
+}
+
+.offices__descr {
+  margin-bottom: 60px;
+}
+
+.offices__social-title {
+  margin-bottom: 40px;
+}
+
+.offices-addresses {
+  display: flex;
+  -moz-column-gap: 240px;
+       column-gap: 240px;
+  margin-bottom: 120px;
+}
+
+.address-card {
+  max-width: 250px;
+}
+
+.address-card__city {
+  margin-bottom: 24px;
+}
+
+.address-card__descr {
+  margin-bottom: 6px;
+}
+
+.address-card__link {
+  margin-bottom: 20px;
+}
+
+.address-contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.address-contact__item {
+  display: flex;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+
+.offices-social-list {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  justify-content: center;
+}
+
+.offices-social-list__item {
+  transition: all .15s ease-in-out;
+}
+
+.offices-social-list__item:hover {
+  transform: scale(1.2);
+}
+
+.offices-social-list__link {
+  width: 32px;
+  height: 32px;
+}
+
+.offices-social-list__link:focus {
+  outline: none;
+  border: none;
+}
+
+.offices-social-list__link:focus-visible {
+  outline: 3px solid var(--color-black);
+  outline-offset: 5px;
+  border-radius: 1px;
+}
+
+.offices-social-list__icon {
+  width: 100%;
+  height: 100%;
+  fill: var(--color-grey--700);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.offices-social-list__icon:hover {
+  fill: var(--color-primary);
 }

@@ -1,5 +1,5 @@
 .contact-form {
-  padding: 121px 120px;
+  padding: 121px 0 96px;
 
   &__title {
     margin-bottom: 24px;
@@ -60,7 +60,7 @@
 
   &__message {
     grid-column: 1 / -1;
-    margin-bottom: 17.5px;
+    margin-bottom: 14.5px;
   }
 
   &__checkbox {
@@ -89,8 +89,7 @@
 
 .radio-btn {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  display: flex;
 
   &__icon {
     position: absolute;
@@ -132,17 +131,3 @@
     color: var(--color-grey--800);
   }
 }
-
-//   &:focus {
-//     outline: none;
-//     border: none;
-//   }
-
-//   &:focus-visible {
-//     margin-top: 8px;
-//     outline: 3px solid var(--color-primary-state);
-//     outline-offset: 9.7px;
-//     border-radius: 4px;
-//     transform: translateX(-19px);
-//   }
-// }
