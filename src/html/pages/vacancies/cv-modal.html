@@ -2,7 +2,7 @@
   <div class="container cv-section__container">
     <form class="cv-form" action="#" name="callBackForm" id="callBackForm">
       <h2 class="cv-section__title subscribe-form__title block-heading block-heading--center block-heading--regular">Send your&nbsp;CV</h2>
-      <img class="subscribe-form__close" src="assets/img/svg/Cross.svg">
+      <img class="subscribe-form__close" src="assets/img/svg/Cross.svg" />
 
       <fieldset class="application-form__actions">
         <label class="form-field application-form__field" for="userName">
@@ -17,10 +17,11 @@
         </label>
 
         <label class="cv-form__field" for="userName">
-          <span class="form-field form-field__caption form-field__caption--large">Location*</span>
+          <span class="form-field form-field__caption form-field__caption--regular">Location*</span>
           <select
-            class="form-field__input contact-form__select form-field__input--large form-field form-field__caption form-field__caption--large"
+            class="form-field__input contact-form__select form-field__input--regular form-field form-field__caption form-field__caption--regular"
             name="Location[]">
+            <option class="cv-form__select-none" value="none" hidden="">Choose your location</option>
             <option value="1">New York</option>
             <option value="2">New Jersey</option>
             <option value="3">San Francisco</option>
@@ -50,11 +51,17 @@
         <label class="form-field application-form__field application-form__field--message" for="userMessage">
           <span class="application-form__caption form-field form-field__caption form-field__caption--regular">Covering letter</span>
           <textarea
-            class="contacts__input contacts__input--message form-field__input form-field__input--letter form-field form-field__caption form-field__caption--regular form-field__caption--grey-600"
+            class="form-field__input form-field__input--letter form-field__input--letter form-field form-field__caption form-field__caption--regular form-field__caption--grey-600"
             name="userMessage"
             id="userMessage"
             required
             placeholder="Your covering letter"></textarea>
+        </label>
+
+        <label class="atachment-btn" for="atachment-file">
+          <input class="atachment-btn-basic" id="atachment-file" name="atachment-file" type="file" />
+          <span class="atachment-btn__icon"> </span>
+          <span class="atachment-btn__text">Attach your&nbsp;CV*</span>
         </label>
 
         <input class="cv-form__btn form-field__btn btn btn--fill btn--regular" type="submit" value="Send" />

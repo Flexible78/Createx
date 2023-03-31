@@ -1578,7 +1578,7 @@ main {
 }
 
 .form-field__input--letter {
-  padding: 11px 16px 54px;
+  padding: 11px 16px 30px;
 }
 
 .form-field__btn {
@@ -3700,10 +3700,9 @@ main {
 }
 
 .cv-form {
-  position: fixed;
+  position: absolute;
   top: 10%;
   left: 50%;
-  transform: transition(-50%, -50%);
   width: 486px;
   border: 1px solid;
   border-color: var(--color-grey--300);
@@ -3711,6 +3710,7 @@ main {
   padding: 48px;
   box-shadow: 0 60px 80px -20px rgba(30,33,44,.16),0 26px 24px -10px rgba(30,33,44,.1),0 12px 10px -6px rgba(30,33,44,.08),0 4px 4px -4px rgba(30,33,44,.05);
   background-color: #fff;
+  transform: transition(-50%, -50%);
 }
 
 .cv-form__close {
@@ -3722,11 +3722,16 @@ main {
 }
 
 .cv-form__title {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
-.cv-form__field {
-  margin-bottom: 20px;
+.cv-form__field option {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-grey--600);
 }
 
 .cv-form__btn {
@@ -3755,6 +3760,45 @@ main {
   outline-offset: 9.7px;
   border-radius: 4px;
   transform: translateX(-19px);
+}
+
+.atachment-btn-basic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.atachment-btn {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.atachment-btn__icon {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../assets/img/svg/Attach.svg");
+  cursor: pointer;
+}
+
+.atachment-btn__text {
+  margin-left: 36px;
+  padding-top: 13px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-grey--800);
 }
 
 .promo-news {
