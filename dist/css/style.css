@@ -1577,6 +1577,10 @@ main {
   padding: 13px 16px 63px;
 }
 
+.form-field__input--letter {
+  padding: 11px 16px 54px;
+}
+
 .form-field__btn {
   display: flex;
   margin: 0 auto;
@@ -3647,6 +3651,8 @@ main {
   padding: 48px;
   box-shadow: 0 60px 80px -20px rgba(30,33,44,.16),0 26px 24px -10px rgba(30,33,44,.1),0 12px 10px -6px rgba(30,33,44,.08),0 4px 4px -4px rgba(30,33,44,.05);
   background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .subscribe-form__close {
@@ -3694,7 +3700,10 @@ main {
 }
 
 .cv-form {
-  position: relative;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: transition(-50%, -50%);
   width: 486px;
   border: 1px solid;
   border-color: var(--color-grey--300);

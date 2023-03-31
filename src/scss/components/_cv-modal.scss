@@ -1,5 +1,8 @@
 .cv-form {
-  position: relative;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: transition(-50%, -50%);
   width: 486px;
   border: 1px solid;
   border-color: var(--color-grey--300);
