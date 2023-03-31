@@ -3725,51 +3725,17 @@ main {
   margin-bottom: 26px;
 }
 
-.cv-form__field option {
+.cv-form__btn {
+  padding: 0 175px;
+}
+
+.cv-form option {
   font-family: "Ubuntu";
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 1.5;
   color: var(--color-grey--600);
-}
-
-.cv-form__btn {
-  padding: 0 175px;
-}
-
-.cv-form__content {
-  margin-bottom: 40px;
-}
-
-.cv-form__input {
-  border: 1px solid var(--color-grey--400);
-  border-radius: 4px;
-  padding: 11px 16px 12px;
-  background-color: var(--bg-color-grey--200);
-}
-
-.cv-form__input:focus {
-  outline: none;
-  border: none;
-}
-
-.cv-form__input:focus-visible {
-  margin-top: 8px;
-  outline: 3px solid var(--color-primary-state);
-  outline-offset: 9.7px;
-  border-radius: 4px;
-  transform: translateX(-19px);
-}
-
-.atachment-btn-basic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 0;
-  height: 0;
-  opacity: 0;
 }
 
 .atachment-btn {
@@ -3799,6 +3765,16 @@ main {
   font-size: 14px;
   line-height: 1.5;
   color: var(--color-grey--800);
+}
+
+.atachment-btn-basic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 .promo-news {
