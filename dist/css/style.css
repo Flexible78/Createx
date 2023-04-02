@@ -1893,6 +1893,63 @@ main {
   padding-top: 61.65px;
 }
 
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: #7a52b3;
+}
+
+.navbar__wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hamb {
+  display: none;
+}
+
+.popup {
+  display: none;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.menu>li>a {
+  text-decoration: none;
+}
+
+.navbar__wrap .menu {
+  display: flex;
+}
+
+.navbar__wrap .menu>li {
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar__wrap .menu>li>a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: rgba(255,255,255,.7);
+}
+
+.navbar__wrap .menu>li>a:hover {
+  color: #fff;
+}
+
 .header {
   padding: 22px 0;
   background-color: var(--color-white);
@@ -3700,9 +3757,6 @@ main {
 }
 
 .cv-form {
-  position: absolute;
-  top: 10%;
-  left: 50%;
   width: 486px;
   border: 1px solid;
   border-color: var(--color-grey--300);
@@ -3775,6 +3829,81 @@ main {
   width: 0;
   height: 0;
   opacity: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30,33,44,.75);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility .7s ease-in-out,opacity .7s ease-in-out;
+}
+
+.modal__inner {
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 30px 15px;
+}
+
+.modal__content {
+  position: relative;
+  transform: perspective(550px) translateY(-100) rotateX(45deg) rotateY(30deg);
+  transition: transform .7s ease-in-out;
+}
+
+.modal__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 15;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+}
+
+.modal__close::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-grey--700);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.modal__close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-grey--700);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.modal--hidden {
+  opacity: o;
+  visibility: hidden;
+}
+
+.modal--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal--visible .modal__content {
+  transform: perspective(500px) translateX(0deg) rotateY(0deg);
 }
 
 .promo-news {
