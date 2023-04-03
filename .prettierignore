@@ -1,8 +1,12 @@
 .idea
 node_modules
 **/*.js
-src/index.html
-src/projects.html
-src/services.html
-src/work.html
-src/services-offer.html
+src/*.html
+.eslintignore
+.eslintrc
+.prettierrc.json
+.prettierignore
+.stylelintignore
+.stylelintrc.json
+package.json
+package-lock.json

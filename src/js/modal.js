@@ -1,4 +1,4 @@
-'uses strict';
+'use strict';
 
 const modal = document.querySelector('.modal');
 const modalOverlay = document.querySelector('.modal__inner');
@@ -15,7 +15,6 @@ function closeModal() {
   modal.classList.remove('modal--visible');
   document.body.style.overflowY = '';
 }
-
 modalOpenTrigger.forEach((element) => {
   element.addEventListener('click', openModal);
 });

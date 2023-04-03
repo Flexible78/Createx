@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html',{ "title":"Available Positions" })
+  @@include('html/head.html',{ "title":"Available Positions" })
 
-<body class="services-page">
-   <div class="page__wrapper">
+  <body class="services-page">
+    <div class="page__wrapper">
       @@include('html/header-secondary.html',{})
       <main class="main">
-         @@include('html/pages/vacancies/vacancies-promo.html',{})
-         @@include('html/pages/vacancies/current-vacancies.html',{})
-         @@include('html/pages/vacancies/employee-benefits.html',{})
-         @@include('html/contacts.html',{})
+        @@include('html/pages/vacancies/vacancies-promo.html',{})
+        @@include('html/pages/vacancies/current-vacancies.html',{})
+        @@include('html/pages/vacancies/employee-benefits.html',{})
+        @@include('html/contacts.html',{})
       </main>
       @@include('html/footer.html',{})
-   </div>
-   <script src="./js/modal.js"></script>
-</body>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal-subscribe.js"></script>
+  </body>
+</html>

@@ -4,5 +4,11 @@
 gulp
 node_modules
 gulpfile.js
-.prettierignore
+.eslintignore
+.eslintrc
 .prettierrc.json
+.prettierignore
+.stylelintignore
+.stylelintrc.json
+package.json
+package-lock.json

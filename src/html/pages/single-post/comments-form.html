@@ -1,6 +1,6 @@
 <section class="comment-section">
   <div class="container comment-section__container">
-    <form class="comment-form comment-section__form" action="#" name="callBackForm" id="callBackForm">
+    <form class="comment-form comment-section__form" id="callBackForm" name="callBackForm" action="#">
       <h2 class="comment-form__title section-title section-title--center">Leave your comment</h2>
 
       <fieldset class="comment-form__actions">
@@ -8,8 +8,8 @@
           <span class="comment-form__caption form-field form-field__caption form-field__caption--large">Name*</span>
           <input
             class="form-field__input form-field__input--large form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
-            name="userName"
             id="userName"
+            name="userName"
             required
             placeholder="Your name"
             type="text" />
@@ -19,20 +19,18 @@
           <span class="comment-form__caption form-field form-field__caption form-field__caption--large">Email*</span>
           <input
             class="form-field__input form-field__input--large form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
-            name="userEmail"
             id="userEmail"
+            name="userEmail"
             placeholder="Your working email"
             type="email" />
         </label>
 
-        <label class="form-field comment-form__field comment-form__field--message" for="userComment">
-          <span class="comment-form__caption form-field form-field__caption form-field__caption--large"
-            >Your comment*</span
-          >
+        <label class="form-field comment-form__field comment-form__field--message" for="usermessage">
+          <span class="comment-form__caption form-field form-field__caption form-field__caption--large">Your comment*</span>
           <input
             class="comment-form__input form-field__input form-field__input--comment form-field form-field__caption form-field__caption--large form-field__caption--grey-600"
-            name="userMessage"
             id="userMessage"
+            name="userMessage"
             required
             placeholder="Type comment here"
             type="text" />

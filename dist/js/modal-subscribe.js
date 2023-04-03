@@ -1,9 +1,9 @@
-'use strict';
+'uses strict';
 
-const modal = document.querySelector('.modal');
-const modalOverlay = document.querySelector('.modal__inner');
-const modalOpenTrigger = document.querySelectorAll('[data-open-modal-cv]');
-const modalCloseTrigger = document.querySelectorAll('[data-close-modal-cv]');
+const modal = document.querySelector('.modal-subscribe');
+const modalOverlay = document.querySelector('.modal-subscribe__inner');
+const modalSubscribeopenTrigger = document.querySelectorAll('[data-open-modal-subscribe]');
+const modalSubscribeсloseTrigger = document.querySelectorAll('[data-close-modal-subscribe]');
 
 function openModal() {
   modal.classList.add('modal--visible');
@@ -15,13 +15,14 @@ function closeModal() {
   modal.classList.remove('modal--visible');
   document.body.style.overflowY = '';
 }
-modalOpenTrigger.forEach((element) => {
+modalSubscribeopenTrigger.forEach((element) => {
   element.addEventListener('click', openModal);
 });
 
-modalCloseTrigger.forEach((element) => {
+modalSubscribeсloseTrigger.forEach((element) => {
   element.addEventListener('click', closeModal);
 });
+
 modal.addEventListener('click', (e) => {
   if (e.target === modalOverlay) {
     closeModal();

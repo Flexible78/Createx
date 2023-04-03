@@ -6,10 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix --color",
-    "stylelint": "stylelint '**/*{.css,.scss}'",
-    "stylelint:fix": "stylelint '**/*{.css,.scss}' --fix"
+    "lint:scss": "stylelint **/*.scss --fix",
+    "lint:html": "npx prettier --write **/*.html",
+    "lint:js": "eslint ./src --fix --color",
+    "lint": "npx prettier --write **/*.html && eslint ./src --fix --color && stylelint **/*.scss --fix"
   },
   "author": "",
   "license": "ISC",

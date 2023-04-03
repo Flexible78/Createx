@@ -3,3 +3,5 @@
 node_modules
 dist/css/style.min.css
 dist/css/style.css
+
+dist

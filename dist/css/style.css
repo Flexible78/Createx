@@ -780,7 +780,7 @@ main {
 .video-block::before {
   content: "";
   position: absolute;
-  top: o;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1524,7 +1524,7 @@ main {
 }
 
 .form-field__caption--large {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu",sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -1895,8 +1895,8 @@ main {
 
 .navbar {
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 75px;
   background: #7a52b3;
@@ -1917,13 +1917,13 @@ main {
 }
 
 .logo {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .menu>li>a {
@@ -2006,7 +2006,7 @@ main {
 }
 
 .menu__link {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu",sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
@@ -3756,6 +3756,81 @@ main {
   transform: translateX(-19px);
 }
 
+.modal-subscribe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30,33,44,.75);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility .2s ease-in-out,opacity .2s ease-in-out;
+}
+
+.modal-subscribe__inner {
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 30px 15px;
+}
+
+.modal-subscribe__content {
+  position: relative;
+  transform: perspective(550px) translateY(-100) rotateX(45deg) rotateY(30deg);
+  transition: transform .2s ease-in-out;
+}
+
+.modal-subscribe__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 15;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+}
+
+.modal-subscribe__close::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-grey--700);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.modal-subscribe__close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-grey--700);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.modal-subscribe--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-subscribe--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-subscribe--visible .modal-subscribe__content {
+  transform: perspective(550px) translateX(0) rotateY(0deg);
+}
+
 .cv-form {
   width: 486px;
   border: 1px solid;
@@ -3764,15 +3839,7 @@ main {
   padding: 48px;
   box-shadow: 0 60px 80px -20px rgba(30,33,44,.16),0 26px 24px -10px rgba(30,33,44,.1),0 12px 10px -6px rgba(30,33,44,.08),0 4px 4px -4px rgba(30,33,44,.05);
   background-color: #fff;
-  transform: transition(-50%, -50%);
-}
-
-.cv-form__close {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
+  transform: transition -50%,-50%;
 }
 
 .cv-form__title {
@@ -3841,7 +3908,7 @@ main {
   background-color: rgba(30,33,44,.75);
   opacity: 0;
   visibility: hidden;
-  transition: visibility .7s ease-in-out,opacity .7s ease-in-out;
+  transition: visibility .2s ease-in-out,opacity .2s ease-in-out;
 }
 
 .modal__inner {
@@ -3856,7 +3923,7 @@ main {
 .modal__content {
   position: relative;
   transform: perspective(550px) translateY(-100) rotateX(45deg) rotateY(30deg);
-  transition: transform .7s ease-in-out;
+  transition: transform .2s ease-in-out;
 }
 
 .modal__close {
@@ -3893,7 +3960,7 @@ main {
 }
 
 .modal--hidden {
-  opacity: o;
+  opacity: 0;
   visibility: hidden;
 }
 
@@ -3903,7 +3970,7 @@ main {
 }
 
 .modal--visible .modal__content {
-  transform: perspective(500px) translateX(0deg) rotateY(0deg);
+  transform: perspective(550px) translateX(0) rotateY(0deg);
 }
 
 .promo-news {
@@ -4123,7 +4190,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 4px;
-  margin-top: 24px 0;
+  margin-top: 24px;
 }
 
 .quote-block__inner {
