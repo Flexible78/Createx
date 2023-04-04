@@ -15,6 +15,14 @@
   &--marked {
     color: var(--color-primary);
   }
+
+  @media (max-width: 768px) {
+    font-size: 46px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 35px;
+  }
 }
 
 .section-title {

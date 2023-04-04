@@ -2145,7 +2145,8 @@ main {
 }
 
 .mission__form-field {
-  flex-basis: 260px;
+  flex-basis: auto;
+  min-width: 260px;
 }
 
 .mission__form-field--message {
@@ -4585,4 +4586,56 @@ main {
 
 .offices-social-list__icon:hover {
   fill: var(--color-primary);
+}
+
+@media (max-width: 1600px) {
+  .mission__form-actions {
+    flex-flow: column wrap;
+    row-gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1560px) {
+  .about-mission__form-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 46px;
+  }
+
+  .btn--large {
+    padding: 0 24px;
+    font-size: 14px;
+    line-height: 3.25;
+  }
+
+  .mission__form {
+    top: 36px;
+    padding: 0 0 40px;
+  }
+
+  .mission__form-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 35px;
+  }
+
+  .btn--large {
+    padding: 0 8px;
+    font-size: 10px;
+    line-height: 3.25;
+  }
+
+  .mission__form-title {
+    font-size: 16px;
+  }
 }

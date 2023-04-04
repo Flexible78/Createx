@@ -31,6 +31,10 @@
     display: flex;
     column-gap: 24px;
     align-items: flex-end;
+
+    @media (max-width: 1560px) {
+      flex-direction: column;
+    }
   }
 
   &__form-title {
