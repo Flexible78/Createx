@@ -3709,8 +3709,6 @@ main {
   padding: 48px;
   box-shadow: 0 60px 80px -20px rgba(30,33,44,.16),0 26px 24px -10px rgba(30,33,44,.1),0 12px 10px -6px rgba(30,33,44,.08),0 4px 4px -4px rgba(30,33,44,.05);
   background-color: #fff;
-  opacity: 0;
-  visibility: hidden;
 }
 
 .subscribe-form__close {
@@ -3781,7 +3779,7 @@ main {
 
 .modal-subscribe__content {
   position: relative;
-  transform: perspective(550px) translateY(-100) rotateX(45deg) rotateY(30deg);
+  transform: perspective(550px) translateY(-100px) rotateX(45deg) rotateY(30deg);
   transition: transform .2s ease-in-out;
 }
 
@@ -3923,7 +3921,7 @@ main {
 
 .modal__content {
   position: relative;
-  transform: perspective(550px) translateY(-100) rotateX(45deg) rotateY(30deg);
+  transform: perspective(550px) translateY(-100px) rotateX(45deg) rotateY(30deg);
   transition: transform .2s ease-in-out;
 }
 

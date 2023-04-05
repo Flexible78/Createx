@@ -2,10 +2,10 @@
 
 const modalSubcribe = document.querySelector('.modal-subscribe');
 const modalOverlaySubscribe = document.querySelector('.modal-subscribe__inner');
-const modalOpenSubcribeTrigger = document.querySelectorAll('[data-open-modal-cv]');
-const modalCloseSubcribeTrigger = document.querySelectorAll('[data-close-modal-cv]');
+const modalOpenSubcribeTrigger = document.querySelectorAll('[data-open-modal-subscribe]');
+const modalCloseSubcribeTrigger = document.querySelectorAll('[data-close-modal-subscribe]');
 
-function openModalS() {
+function openModal() {
   modalSubcribe.classList.add('modal-subscribe--visible');
   modalSubcribe.classList.remove('modal-subscribe--hidden');
   document.body.style.overflowY = 'hidden';
@@ -16,7 +16,7 @@ function closeModalS() {
   document.body.style.overflowY = '';
 }
 modalOpenSubcribeTrigger.forEach((element) => {
-  element.addEventListener('click', openModalS);
+  element.addEventListener('click', openModal);
 });
 
 modalCloseSubcribeTrigger.forEach((element) => {

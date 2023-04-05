@@ -11,8 +11,6 @@
     0 12px 10px -6px rgb(30 33 44 / 8%),
     0 4px 4px -4px rgb(30 33 44 / 5%);
   background-color: #fff;
-  opacity: 0;
-  visibility: hidden;
 
   &__close {
     position: absolute;
@@ -82,7 +80,7 @@
 
   &__content {
     position: relative;
-    transform: perspective(550px) translateY(-100) rotateX(45deg) rotateY(30deg);
+    transform: perspective(550px) translateY(-100px) rotateX(45deg) rotateY(30deg);
     transition: transform 0.2s ease-in-out;
   }
 
