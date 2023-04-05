@@ -4612,13 +4612,45 @@ main {
     line-height: 3.25;
   }
 
+  .more-info-block__title {
+    font-size: 20px;
+  }
+
+  .more-info-block__btn {
+    padding: 0 18px;
+    font-size: 13px;
+  }
+
+  .more-info-block__btn {
+    padding: 0 14px;
+    font-size: 12px;
+  }
+
+  .about__section-title {
+    font-size: 36px;
+  }
+
+  .mission__section-title {
+    font-size: 36px;
+  }
+
   .mission__form {
     top: 36px;
-    padding: 0 0 40px;
+    padding: 0 0 40 px;
   }
 
   .mission__form-title {
     font-size: 20px;
+  }
+
+  .our-service__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .more-info-block__title {
+    font-size: 16px;
   }
 }
 
@@ -4635,5 +4667,12 @@ main {
 
   .mission__form-title {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  .more-info-block {
+    flex-direction: column;
+    row-gap: 36px;
   }
 }

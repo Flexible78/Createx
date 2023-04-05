@@ -1,6 +1,10 @@
 .mission {
   &__section-title {
     margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
   }
 
   &__section-descr {
@@ -25,7 +29,7 @@
 
     @media (max-width: 768px) {
       top: 36px;
-      padding: 0 0 40px;
+      padding: 0 0 40 px;
     }
   }
 
