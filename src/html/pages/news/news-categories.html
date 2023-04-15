@@ -2,22 +2,34 @@
   <div class="container">
     <h2 class="categories__title section-title section-title section-title--center">Categories</h2>
     <ul class="categories__nav-list categories-nav">
-      <li class="categories-nav__item"><button class="categories-nav__btn">All News</button></li>
+      <li class="categories-nav__item">
+        <button class="categories-nav__btn" data-filter="all">All News</button>
+      </li>
 
-      <li class="categories-nav__item"><button class="categories-nav__btn">Company News</button></li>
+      <li class="categories-nav__item">
+        <button class="categories-nav__btn" data-filter="company">Company News</button>
+      </li>
 
-      <li class="categories-nav__item"><button class="categories-nav__btn">Innovation</button></li>
+      <li class="categories-nav__item">
+        <button class="categories-nav__btn" data-filter="innovation">Innovation</button>
+      </li>
 
-      <li class="categories-nav__item"><button class="categories-nav__btn">Industry News</button></li>
+      <li class="categories-nav__item">
+        <button class="categories-nav__btn" data-filter="industry">Industry News</button>
+      </li>
 
-      <li class="categories-nav__item"><button class="categories-nav__btn">Expert Tips</button></li>
+      <li class="categories-nav__item">
+        <button class="categories-nav__btn" data-filter="all" data-filter="expert">Expert Tips</button>
+      </li>
 
-      <li class="categories-nav__item"><button class="categories-nav__btn">Marketing</button></li>
+      <li class="categories-nav__item">
+        <button class="categories-nav__btn" data-filter="marketing">Marketing</button>
+      </li>
     </ul>
 
     <ul class="categories__news-list news-list">
       <li class="news-list__item">
-        <article class="news-article">
+        <article class="news-article" data-filter="industry">
           <div class="news-article__logo">
             <img class="news-article__logo-img" src="@img/content/news/man.jpg" alt="man with puncher" />
           </div>
@@ -27,7 +39,7 @@
             </a>
             <div class="meta-info text-descr text-descr--small text-descr--grey-700">
               <a class="meta-info__item" href="#">Industry News</a>
-              <time class="meta-info__item" datetime="2020-06-24 19:00"> June&nbsp;24, 2020 </time>
+              <time class="meta-info__item" datetime="2020-06-24 19:00"> June&nbsp;24, 2020</time>
               <a class="meta-info__item meta-info__item--with-icon" href="#">
                 <svg class="meta-info__icon">
                   <use href="@img/svg/svg-sprite.svg#ic-chat"></use>
@@ -44,7 +56,7 @@
       </li>
 
       <li class="news-list__item">
-        <article class="news-article">
+        <article class="news-article" data-filter="innovation">
           <div class="news-article__img">
             <img src="@img/content/more-news/yellow-helmet.jpg" alt="Yellow helmet" />
           </div>
@@ -52,7 +64,7 @@
             <a class="block-heading block-heading--small news-article__heading" href="#"> How Construction Can Help Itself </a>
             <div class="meta-info text-descr text-descr--small text-descr--grey-700">
               <a class="meta-info__item" href="#">Innovation</a>
-              <time class="meta-info__item" datetime="2020-06-12 19:00"> June&nbsp;12, 2020 </time>
+              <time class="meta-info__item" datetime="2020-06-12 19:00"> June&nbsp;12, 2020</time>
               <a class="meta-info__item meta-info__item--with-icon" href="#">
                 <svg class="meta-info__icon">
                   <use href="@img/svg/svg-sprite.svg#ic-chat"></use>
@@ -70,7 +82,7 @@
       </li>
 
       <li class="news-list__item">
-        <article class="news-article">
+        <article class="news-article" data-filter="expert">
           <div class="news-article__img">
             <img src="@img/content/more-news/excavator.jpg" alt="Excavator" />
           </div>
@@ -80,7 +92,7 @@
             </a>
             <div class="meta-info text-descr text-descr--small text-descr--grey-700">
               <a class="meta-info__item" href="#">Expert Tips</a>
-              <time class="meta-info__item" datetime="2020-05-16 19:00"> May&nbsp;16, 2020 </time>
+              <time class="meta-info__item" datetime="2020-05-16 19:00"> May&nbsp;16, 2020</time>
               <a class="meta-info__item meta-info__item--with-icon" href="#">
                 <svg class="meta-info__icon">
                   <use href="@img/svg/svg-sprite.svg#ic-chat"></use>
@@ -97,7 +109,7 @@
       </li>
 
       <li class="news-list__item">
-        <article class="news-article">
+        <article class="news-article" data-filter="expert">
           <div class="news-article__img">
             <img src="@img/content/more-news/tools.jpg" alt="Tools" />
           </div>
@@ -122,7 +134,7 @@
       </li>
 
       <li class="news-list__item">
-        <article class="news-article">
+        <article class="news-article" data-filter="industry">
           <div class="news-article__img">
             <img src="@img/content/more-news/worker-behind-the-building.jpg" alt="Worker behind the building" />
           </div>
@@ -147,7 +159,7 @@
       </li>
 
       <li class="news-list__item">
-        <article class="news-article">
+        <article class="news-article" data-filter="company">
           <div class="news-article__img">
             <img src="@img/content/more-news/tool-on-the-floor.jpg" alt="Tool on the floor" />
           </div>
@@ -174,19 +186,19 @@
 
     <ul class="pagination">
       <li class="pagination__item">
-        <a href="#" class="pagination__link">1</a>
+        <a class="pagination__link" href="#">1</a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link">2</a>
+        <a class="pagination__link" href="#">2</a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link">3</a>
+        <a class="pagination__link" href="#">3</a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link">4</a>
+        <a class="pagination__link" href="#">4</a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link pagination__link--icon">
+        <a class="pagination__link pagination__link--icon" href="#">
           <svg>
             <use href="../assets/img/svg/svg-sprite.svg#slider-btn-next"></use>
           </svg>

@@ -1,6 +1,14 @@
 .feedback-block {
   &__section-title {
     margin-bottom: 60px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 467px) {
+      font-size: 28px;
+    }
   }
 
   &__logo-wrapper {

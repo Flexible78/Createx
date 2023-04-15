@@ -11,7 +11,45 @@
 
 <body class="home-page">
    <div class="page__wrapper">
-      
+      <header class="header">
+  <div class="container header__container">
+    <a class="logo" href="index.html">
+      <img class="logo__img" src="../assets/img/svg/logo.svg" alt="logo" />
+    </a>
+    <nav class="menu header__menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="about-us.html">About Us</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="services.html">Services</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="work.html">Work</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="news.html">News</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="contacts.html">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="connections">
+      <a class="connections__item connections__item--phone" href="tel:4055550128">
+        <span class="connections__descr connections__descr--title">Call us</span><span class="connections__descr">(405) 555-0128</span>
+      </a>
+      <a
+        class="connections__item connections__item--email"
+        href="mailto:
+            hello@createx.com?subject=Mail from Createx website">
+        <span class="connections__descr connections__descr--title">Talk to us</span
+        ><span class="connections__descr">hello@createx.com</span>
+      </a>
+    </div>
+  </div>
+</header>
+
       <main class="main">
          <section class="promo home-page__promo">
   <div class="container">
@@ -252,15 +290,196 @@
     </ul>
 
     <div class="portfolio__more-info more-info-block">
-      <h2 class="block-heading block-heading--regular">Explore all our works</h2>
-      <a class="btn btn--fill btn--large" href="#">View portfolio</a>
+      <h2 class="block-heading block-heading--regular more-info-block__heading">Explore all our works</h2>
+      <a class="btn btn--fill btn--large more-info-block__btn" href="#">View portfolio</a>
     </div>
   </div>
 </section>
 
-         
-         
-         
+         <section class="clients home-page__clients">
+  <div class="container">
+    <h2 class="section-title section-title--center clients__title">Supported by 12+ partners</h2>
+    <ul class="partners-list clients__partners-list">
+      <li>
+        <a href="#" class="partners-list__item">
+          <img class="partners-list__logo" src="../assets/img/content/partners-list/in-depth.png" alt="in-depth" />
+        </a>
+      </li>
+      <li>
+        <a href="#" class="partners-list__item">
+          <img class="partners-list__logo" src="../assets/img/content/partners-list/higher-fit.png" alt="higher-fit" />
+        </a>
+      </li>
+      <li>
+        <a href="#" class="partners-list__item">
+          <img class="partners-list__logo" src="../assets/img/content/partners-list/sent-cons.png" alt="sentinal-consulting" />
+        </a>
+      </li>
+      <li>
+        <a href="#" class="partners-list__item">
+          <img class="partners-list__logo" src="../assets/img/content/partners-list/happy-home.png" alt="happy-home" />
+        </a>
+      </li>
+      <li>
+        <a href="#" class="partners-list__item">
+          <img class="partners-list__logo" src="../assets/img/content/partners-list/for-sale.png" alt="for-sale" />
+        </a>
+      </li>
+      <li>
+        <a href="#" class="partners-list__item">
+          <img class="partners-list__logo" src="../assets/img/content/partners-list/suns-real.png" alt="suns-real" />
+        </a>
+      </li>
+    </ul>
+    <div class="feedback-block clients__feedback-block">
+      <div class="feedback-block__content">
+        <h2 class="section-title feedback-block__section-title">What our clients are saying</h2>
+        <div class="testimonial-slider feedback-block__testimonial-slider">
+          <div class="testimonial-slider__wrapper">
+            <div class="testimonial-slider__item">
+              <div class="testimonial">
+                <div class="testimonial__img-wrapper">
+                  <img class="testimonial__img" src="assets/img/content/review/reviewer.png" alt="profile photo" />
+                </div>
+                <p class="text-descr text-descr--grey-800 testimonial__text-descr">
+                  Ipsum aute sunt aliquip aute et&nbsp;occaecat. Anim minim do&nbsp;cillum eiusmod enim. Consectetur magna cillum consequat
+                  minim laboris cillum laboris voluptate minim proident exercitation ullamco.
+                </p>
+                <p class="block-heading block-heading--extra testimonial__author">Shawn Edwards</p>
+                <p class="text-descr text-descr--small testimonial__position">Position, Company name</p>
+              </div>
+            </div>
+          </div>
+          <nav class="slider-nav testimonial-slider__slider-nav">
+            <button class="slider-btn slider-btn--primary slider-btn--prev">
+              <svg class="slider-btn__icon">
+                <use href="../assets/img/svg/svg-sprite.svg#slider-btn-prev"></use>
+              </svg>
+            </button>
+            <button class="slider-btn slider-btn--primary slider-btn--next">
+              <svg class="slider-btn__icon">
+                <use href="../assets/img/svg/svg-sprite.svg#slider-btn-next"></use>
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <div class="feedback-block__logo-wrapper">
+        <img class="feedback-block__logo" src="assets/img/content/review/2worker.jpg" alt="logo" />
+      </div>
+    </div>
+  </div>
+</section>
+
+         <section class="progress-circles home-page__progress-circles">
+  <h2 class="section-title section-title--center progress-circles__title">Some facts and figures</h2>
+
+  <ul class="circles-bar">
+    <li class="circles-bar__item circles-bar__item--orange-circle">
+      <h3 class="block-heading block-heading--center circles-bar__title">98%</h3>
+      <p class="text-descr text-descr--center text-descr--small circles-bar__descr">Totally satisfied clients</p>
+    </li>
+    <li class="circles-bar__item circles-bar__item--red-circle">
+      <h3 class="block-heading block-heading--center circles-bar__title">20</h3>
+      <p class="text-descr text-descr--center text-descr--small circles-bar__descr">Years of experience</p>
+    </li>
+    <li class="circles-bar__item circles-bar__item--blue-circle">
+      <h3 class="block-heading block-heading--center circles-bar__title">9452</h3>
+      <p class="text-descr text-descr--center text-descr--small circles-bar__descr">Working hours spent</p>
+    </li>
+    <li class="circles-bar__item circles-bar__item--green-circle">
+      <h3 class="block-heading block-heading--center circles-bar__title">100%</h3>
+      <p class="text-descr text-descr--center text-descr--small circles-bar__descr">Succeeded projects</p>
+    </li>
+  </ul>
+</section>
+
+         <section class="news home-page__news">
+  <div class="container">
+    <h2 class="section-title section-title--center news__section-title">Recent news</h2>
+    <ul class="news-list">
+      <li class="news-list__item news-list__item--large">
+        <article class="news-article news-article__large">
+          <div class="news-article__logo">
+            <img class="news-article__logo-img" src="assets/img/content/news/man.jpg" alt="man with puncher" />
+          </div>
+          <div class="news-article__content">
+            <a class="block-heading block-heading--small news-article__heading" href="#">
+              How to&nbsp;Build Climate Change-Resilient Infrastructure
+            </a>
+            <div class="meta-info news-article__meta-info text-descr text-descr--small text-descr--grey-700">
+              <a class="meta-info__item" href="#">Industry News</a>
+              <time class="meta-info__item" datetime="2020-06-24 19:00"> June&nbsp;24, 2020 </time>
+              <a class="meta-info__item meta-info__item--with-icon" href="#">
+                <svg class="meta-info__icon">
+                  <use href="assets/img/svg/svg-sprite.svg#ic-chat"></use>
+                </svg>
+                4&nbsp;comments
+              </a>
+            </div>
+            <p class="text-descr text-descr--grey-800 news-article__descr">
+              Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer
+              bibendum turpis convallis enim, nibh convallis...
+            </p>
+          </div>
+        </article>
+      </li>
+      <li class="news-list__item news-list__item--small">
+        <article class="news-article news-article__small">
+          <div class="news-article__logo">
+            <img class="news-article__logo-img" src="assets/img/content/news/cap.jpg" alt="cap" />
+          </div>
+          <div class="news-article__content">
+            <a class="block-heading block-heading--small news-article__heading" href="#"> How Construction Can Help Itself </a>
+            <div class="meta-info news-article__meta-info text-descr text-descr--small text-descr--grey-700">
+              <a class="meta-info__item" href="#">Innovation</a>
+              <time class="meta-info__item" datetime="2020-06-12 19:00">June 12, 2020</time>
+              <a class="meta-info__item meta-info__item--with-icon" href="#">
+                <svg class="meta-info__icon">
+                  <use href="assets/img/svg/svg-sprite.svg#ic-chat"></use>
+                </svg>
+                No&nbsp;comments</a
+              >
+            </div>
+            <p class="text-descr text-descr--grey-800 news-article__descr">
+              Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer
+              bibendum turpis convallis enim, nibh convallis...
+            </p>
+          </div>
+        </article>
+      </li>
+      <li class="news-list__item news-list__item--small">
+        <article class="news-article news-article__small">
+          <div class="news-article__logo">
+            <img class="news-article__logo-img" src="assets/img/content/news/floor.jpg" alt="cleaning floor" />
+          </div>
+          <div class="news-article__content">
+            <a class="block-heading block-heading--small news-article__heading" href="#"> Types of&nbsp;Flooring Materials </a>
+            <div class="meta-info news-article__meta-info text-descr text-descr--small text-descr--grey-700">
+              <a class="meta-info__item" href="#">Company News</a>
+              <time class="meta-info__item" datetime="2019-12-1 19:00">December&nbsp;1, 2019</time>
+              <a class="meta-info__item meta-info__item--with-icon" href="#">
+                <svg class="meta-info__icon">
+                  <use href="assets/img/svg/svg-sprite.svg#ic-chat"></use>
+                </svg>
+                No&nbsp;comments</a
+              >
+            </div>
+            <p class="text-descr text-descr--grey-800 news-article__descr">
+              Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer
+              bibendum turpis convallis enim, nibh convallis...
+            </p>
+          </div>
+        </article>
+      </li>
+    </ul>
+    <div class="news__more-info more-info-block">
+      <div class="block-heading block-heading--regular">Explore all our news posts</div>
+      <a class="btn btn--fill btn--large more-info-block__btn" href="#">View all news</a>
+    </div>
+  </div>
+</section>
+
          
       </main>
       

@@ -24,6 +24,10 @@
   &__large {
     --content-pb: 25px;
     --logo-height: 360px;
+
+    @media (max-width: 1200px) {
+      --logo-height: 156px;
+    }
   }
 
   &__logo {
@@ -70,5 +74,9 @@
   &__descr {
     display: var(--descr-display);
     margin-top: 16px;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 }

@@ -15,14 +15,51 @@
 
   &__item {
     grid-column: 6 span;
+    transition:
+      visibility 0.5s ease-in-out,
+      opacity 0.5s ease-in-out;
+
+    &--hidden {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    &--visible {
+      position: static;
+      z-index: auto;
+      opacity: 1;
+    }
   }
 
   &__item--small {
     grid-column: 5 span;
+
+    @media (max-width: 1200px) {
+      grid-column: 4 / 11;
+      grid-row: 2 span;
+    }
   }
 
   &__item--large {
     grid-column: 7 span;
     grid-row: 2 span;
+
+    @media (max-width: 600px) {
+      grid-template-columns: auto;
+    }
+
+    @media (max-width: 1200px) {
+      grid-column: 4 / 11;
+      grid-row: 2 span;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    grid-column: 4 / 11;
+  }
+
+  @media (max-width: 600px) {
+    grid-column: 1 / -1;
   }
 }

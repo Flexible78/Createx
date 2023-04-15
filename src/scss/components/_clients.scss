@@ -14,5 +14,12 @@
 
   &__title {
     margin-bottom: 60.1px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
 }

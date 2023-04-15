@@ -2328,6 +2328,19 @@ main {
 
 .news-list__item {
   grid-column: 6 span;
+  transition: visibility .5s ease-in-out,opacity .5s ease-in-out;
+}
+
+.news-list__item--hidden {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.news-list__item--visible {
+  position: static;
+  z-index: auto;
+  opacity: 1;
 }
 
 .news-list__item--small {
@@ -4586,18 +4599,42 @@ main {
   fill: var(--color-primary);
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1560px) {
+  .about-mission__form-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .news-article__large {
+    --logo-height: 156px;
+  }
+
+  .news-article__descr {
+    display: none;
+  }
+
+  .news-list__item--small {
+    grid-column: 4/11;
+    grid-row: 2 span;
+  }
+
+  .news-list__item--large {
+    grid-column: 4/11;
+    grid-row: 2 span;
+  }
+
+  .news-list {
+    grid-column: 4/11;
+  }
+}
+
+@media (max-width: 1024px) {
   .mission__form-actions {
     flex-flow: column wrap;
     row-gap: 24px;
     align-items: center;
     justify-content: center;
-  }
-}
-
-@media (max-width: 1560px) {
-  .about-mission__form-actions {
-    flex-direction: column;
   }
 }
 
@@ -4621,9 +4658,8 @@ main {
     font-size: 13px;
   }
 
-  .more-info-block__btn {
-    padding: 0 14px;
-    font-size: 12px;
+  .feedback-block__section-title {
+    font-size: 32px;
   }
 
   .about__section-title {
@@ -4646,11 +4682,45 @@ main {
   .our-service__title {
     font-size: 36px;
   }
+
+  .portfolio__title {
+    font-size: 32px;
+  }
+
+  .clients__title {
+    font-size: 32px;
+  }
+
+  .clients__title {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 600px) {
   .more-info-block__title {
     font-size: 16px;
+  }
+
+  .news-list__item--large {
+    grid-template-columns: auto;
+  }
+
+  .news-list {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 567px) {
+  .more-info-block {
+    flex-direction: column;
+    row-gap: 36px;
+  }
+}
+
+@media (max-width: 500px) {
+  .more-info-block__btn {
+    padding: 0 14px;
+    font-size: 12px;
   }
 }
 
@@ -4668,11 +4738,20 @@ main {
   .mission__form-title {
     font-size: 16px;
   }
+
+  .portfolio__title {
+    font-size: 28px;
+  }
 }
 
-@media (max-width: 430px) {
-  .more-info-block {
-    flex-direction: column;
-    row-gap: 36px;
+@media (max-width: 467px) {
+  .feedback-block__section-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 420px) {
+  .portfolio__title {
+    font-size: 22px;
   }
 }
