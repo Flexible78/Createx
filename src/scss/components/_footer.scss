@@ -1,9 +1,9 @@
 .footer {
-  position: relative;
   color: rgba($color: #fff, $alpha: 60%);
   background-color: var(--color-grey--900);
 
   &__container {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 30px;

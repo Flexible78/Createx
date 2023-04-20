@@ -74,9 +74,5 @@
   &__descr {
     display: var(--descr-display);
     margin-top: 16px;
-
-    @media (max-width: 1200px) {
-      display: none;
-    }
   }
 }

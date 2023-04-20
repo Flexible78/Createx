@@ -11,12 +11,18 @@ html {
   max-width: 1260px;
   margin: 0 auto;
   padding: 0 15px;
-}
 
-.container-hd {
-  max-width: 1950px;
-  margin: 0 auto;
-  padding: 0 15px;
+  @media (max-width: 1200px) {
+    max-width: 1170px;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 990px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 750px;
+  }
 }
 
 .page__wrapper {

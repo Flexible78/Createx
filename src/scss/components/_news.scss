@@ -19,6 +19,15 @@
       visibility 0.5s ease-in-out,
       opacity 0.5s ease-in-out;
 
+    &--small {
+      grid-column: 5 span;
+    }
+
+    &--large {
+      grid-column: 7 span;
+      grid-row: 2 span;
+    }
+
     &--hidden {
       position: absolute;
       z-index: -1;
@@ -30,36 +39,5 @@
       z-index: auto;
       opacity: 1;
     }
-  }
-
-  &__item--small {
-    grid-column: 5 span;
-
-    @media (max-width: 1200px) {
-      grid-column: 4 / 11;
-      grid-row: 2 span;
-    }
-  }
-
-  &__item--large {
-    grid-column: 7 span;
-    grid-row: 2 span;
-
-    @media (max-width: 600px) {
-      grid-template-columns: auto;
-    }
-
-    @media (max-width: 1200px) {
-      grid-column: 4 / 11;
-      grid-row: 2 span;
-    }
-  }
-
-  @media (max-width: 1200px) {
-    grid-column: 4 / 11;
-  }
-
-  @media (max-width: 600px) {
-    grid-column: 1 / -1;
   }
 }

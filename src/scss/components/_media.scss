@@ -1,0 +1,262 @@
+@media (max-width: 1200px) {
+  .news-list {
+    &__item--small {
+      grid-column: 6 span;
+    }
+
+    &__item--large {
+      grid-column: 1/13;
+      grid-row: 1 span;
+    }
+  }
+
+  .news-article {
+    max-width: none;
+  }
+}
+
+.footer-nav {
+  grid-column: 7 span;
+}
+
+@media (max-width: 992px) {
+  .news-list {
+    &__item--small {
+      grid-column: 12 span;
+    }
+  }
+
+  .news-article {
+    --logo-height: 235px;
+    --descr-display: block;
+    --content-pt: 18px;
+    --content-pr: 24px;
+    --content-pb: 19px;
+    --content-pl: 24px;
+    --heading-offset-down: 8px;
+
+    max-width: none;
+
+    &__descr {
+      margin-top: 8px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+
+  .home-page__contacts {
+    background-image: none;
+  }
+
+  .footer-nav {
+    grid-column: 6 span;
+    column-gap: 26px;
+    padding-left: 0;
+  }
+
+  .footer-address {
+    grid-column: 8 span;
+  }
+
+  .footer-form {
+    grid-column: 7 span;
+  }
+}
+
+@media (max-width: 768px) {
+  .news {
+    &__section-title {
+      margin-bottom: 40px;
+    }
+
+    .news-article {
+      --logo-height: 206px;
+      --descr-display: block;
+      --content-pt: 14px;
+      --content-pr: 18px;
+      --content-pb: 15px;
+      --content-pl: 18px;
+      --heading-offset-down: 6px;
+
+      max-width: none;
+
+      &__descr {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+
+    .footer-address {
+      grid-column: 12 span;
+    }
+
+    // .footer-nav {
+    //   grid-column: 6 span;
+    //   column-gap: 23px;
+    //   padding-left: 0;
+    // }
+  }
+
+  .btn--regular {
+    padding: 0 24px;
+    font-size: 12px;
+    line-height: 3;
+  }
+
+  .footer-nav {
+    grid-column: 10 span;
+    column-gap: 120px;
+  }
+
+  .footer-about {
+    grid-column: 8 span;
+  }
+}
+
+@media (max-width: 576px) {
+  .news {
+    &__section-title {
+      margin-bottom: 40px;
+
+      &__section-title {
+        font-size: 36px;
+      }
+    }
+
+    .news-article {
+      --logo-height: 206px;
+      --descr-display: none;
+      --content-pt: 11px;
+      --content-pr: 15px;
+      --content-pb: 12px;
+      --content-pl: 15px;
+      --heading-offset-down: 5px;
+
+      max-width: none;
+
+      &__logo {
+        display: none;
+      }
+
+      &__heading {
+        font-size: 15px;
+        line-height: 1.35;
+      }
+
+      &__meta-info {
+        --meta-col-gap: 22px;
+
+        flex-wrap: wrap;
+        row-gap: 10px;
+        font-size: 13px;
+      }
+    }
+
+    &__descr {
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+
+  .footer-about {
+    grid-column: 12 span;
+  }
+
+  .footer-address {
+    grid-column: 12 span;
+  }
+
+  .footer-nav {
+    column-gap: 17px;
+  }
+
+  .copyright {
+    grid-column: 6 span;
+  }
+
+  .footer-form {
+    grid-column: 8 span;
+  }
+
+  .footer-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer-form-group__input {
+    width: 100%;
+    border-radius: 1px;
+    padding-bottom: 7px;
+  }
+
+  .footer-form-group__btn {
+    border-radius: 1px;
+  }
+}
+
+@media (max-width: 400px) {
+  .news-article {
+    &__meta-info {
+      .meta-info__item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &__heading {
+      font-size: 15px;
+    }
+  }
+
+  .meta-info__item:not(:last-child)::after {
+    width: 0;
+    height: 0;
+  }
+
+  .meta-info__icon {
+    display: none;
+  }
+
+  .block-heading {
+    &--regular {
+      font-size: 24px;
+    }
+  }
+
+  .btn--regular {
+    padding: 0 19px;
+    font-size: 11px;
+    line-height: 3;
+  }
+
+  .footer-address {
+    grid-column: 11 span;
+  }
+
+  .footer-nav {
+    grid-column: 12 span;
+  }
+
+  .footer-nav__heading {
+    letter-spacing: 0;
+  }
+
+  .footer-about__text {
+    padding-right: 37px;
+  }
+  .block-heading--regular {
+    font-size: 23px;
+    text-align: center;
+  }
+  .home-page__news {
+    padding: calc(var(--section-offset) + 40px) 0 10px;
+  }
+}
+
+@media (max-width: 320px) {
+
+}
